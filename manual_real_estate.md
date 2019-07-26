@@ -163,11 +163,11 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 | `<PrecoCondominio>` | 8 | Não | Valor do condomínio do imóvel. Número inteiro, sem parte decimal, sem separador de milhares|
 | `<ValorIPTU>` | 20 | Não | Valor mensal do IPTU do imóvel. Número inteiro, sem parte decimal, sem separador de milhares|
 | `<AreaUtil>` | 15 | Não | Tamanho em metros quadrados do imóvel. Número inteiro, sem parte decimal|
-| `<QtdDormitorios>` | 1 | Sim | Número de quartos do imóvel, até no máximo 5 quartos por imóvel|
+| `<QtdDormitorios>` | 1 | Sim | Número de quartos do imóvel. Valores de `1` a `5`. Com o valor `5`, informamos que o imóvel mais de 5 dormitórios.|
 | `<Observacao>` | 6000 | Sim | Descrição do anúncio|
 | `<Latitude>` | 20 | Não | Coordenada geográfica de latitude do imóvel|
 | `<Longitude>` | 20 | Não | Coordenada geográfica de longitude do imóvel|
-| `<QtdVagas>` | 4 | Não | Número de vagas de garagem|
+| `<QtdVagas>` | 4 | Não | Número de vagas do imóvel. Valores de `1` a `5`. Com o valor `5`, informamos que o imóvel mais de 5 vagas.|
 | `<ArCondicionado>`,<br>`<SalaGinastica>`,<br>`<ArmarioEmbutido>`,<br>`<Varanda>`,<br>`<AreaServico>`,<br>`<Churrasqueira>`,<br>`<QuartoWCEmpregada>`,<br>`<Piscina>`,<br>`<SalaoFestas>`,<br>`<Porteiro>`||| Características adicionais do imóvel. Se o imóvel tem algum desses atributos, inclua esse parâmetro com valor `1`|
 | `<Foto>` `<NomeArquivo>` | 255 | Não | Nome da imagem no banco de dados do cliente|
 | `<Foto>` `<URLArquivo>` | 255 | Não | Link em que a imagem está hospedada|
@@ -222,7 +222,7 @@ Caso o campo `<Titulo>` esteja em branco no XML enviado, utilizaremos o Título 
 | Sobrado | Sobrado Residencial | Padrão | 3-Condomínio fechado | Sobrado |
 
 
-#### Category (OLX): Lojas, Salas e Outros - `1120`
+#### Category (OLX): Comércio e indústria - `1120`
 
 | `<TipoImovel>` (XML)   | `<SubTipoImovel>` (XML)     | `<CategoriaImovel>` (XML)   | Type (OLX)  | Título (OLX) |
 |-----------------------|-------------------------- |------------------------  |------------ |--------------------------|
@@ -236,7 +236,7 @@ Caso o campo `<Titulo>` esteja em branco no XML enviado, utilizaremos o Título 
 | Comercial/Industrial | Loja / Salão | Padrão | Não aplica   | Loja / Salão |
 | Comercial/Industrial | Prédio Inteiro   | Padrão | Não aplica   | Prédio Comercial   |
 
-#### Category (OLX): Terreno - `1100`			
+#### Category (OLX): Terrenos, sítios e fazendas - `1100`			
 
 | `<TipoImovel>` (XML)   | `<SubTipoImovel>` (XML)     | Categoria Imóvel (XML)   | Type (OLX)  | Título (OLX)  |
 |-------------------  |------------------------   |------------------------  |------------ |------------------------|
