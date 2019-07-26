@@ -177,7 +177,7 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 
 Essas informações definem a categorização dos anúncios dentro da OLX. É necessário informar o `<SubTipoImovel>` para que o imóvel seja apresentado na categoria correta.
 
-Caso o campo `<Titulo>` esteja em branco no XML enviado, utilizaremos o Título apropriado para cada categoria e tipo de imóvel, conforme tabelas abaixo.
+Caso o campo `<TituloAnuncio>` esteja em branco no XML enviado, utilizaremos o Título apropriado para cada categoria e tipo de imóvel, conforme tabelas abaixo.
 
 #### Category (OLX): Apartamentos - `1020`
 
