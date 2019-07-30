@@ -34,8 +34,6 @@ Abaixo está um exemplo de XML com os campos mínimos obrigatórios na OLX:
       <Endereco>Miguel Teixeira</Endereco>
       <Numero>66</Numero>
       <CEP>90050250</CEP>
-      <Latitude>-23,4593654</Latitude>
-      <Longitude>-46,5169560</Longitude>
       <PrecoVenda>482745</PrecoVenda>
       <PrecoLocacao>0</PrecoLocacao>
       <PrecoCondominio>1</PrecoCondominio>
@@ -63,8 +61,6 @@ Abaixo está um exemplo de XML com os campos mínimos obrigatórios na OLX:
       <Endereco>Marcelo Gama</Endereco>
       <Numero>1030</Numero>
       <CEP>90540041</CEP>
-      <Latitude>-23,4593654</Latitude>
-      <Longitude>-46,5169560</Longitude>
       <PrecoVenda>536485</PrecoVenda>
       <PrecoLocacao>0</PrecoLocacao>
       <PrecoCondominio>1</PrecoCondominio>
@@ -122,8 +118,6 @@ Abaixo está um exemplo de XML com os campos mínimos obrigatórios na OLX:
       <Endereco>Marcelo Gama</Endereco>
       <Numero>1030</Numero>
       <CEP>90540041</CEP>
-      <Latitude>-23,4593654</Latitude>
-      <Longitude>-46,5169560</Longitude>
       <PrecoVenda>367387</PrecoVenda>
       <PrecoLocacao>0</PrecoLocacao>
       <PrecoCondominio>1</PrecoCondominio>
@@ -162,11 +156,10 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 | `<PrecoLocacao>` | 8 | Sim | Valor de aluguel do imóvel. Número inteiro, sem parte decimal, sem separador de milhares|
 | `<PrecoCondominio>` | 8 | Não | Valor do condomínio do imóvel. Número inteiro, sem parte decimal, sem separador de milhares|
 | `<ValorIPTU>` | 20 | Não | Valor mensal do IPTU do imóvel. Número inteiro, sem parte decimal, sem separador de milhares|
+| `<AreaTotal>` | 15 | Não | Tamanho em metros quadrados do imóvel. Número inteiro, sem parte decimal|
 | `<AreaUtil>` | 15 | Não | Tamanho em metros quadrados do imóvel. Número inteiro, sem parte decimal|
 | `<QtdDormitorios>` | 1 | Sim | Número de quartos do imóvel. Valores de `1` a `5`. Com o valor `5`, informamos que o imóvel mais de 5 dormitórios.|
 | `<Observacao>` | 6000 | Sim | Descrição do anúncio|
-| `<Latitude>` | 20 | Não | Coordenada geográfica de latitude do imóvel|
-| `<Longitude>` | 20 | Não | Coordenada geográfica de longitude do imóvel|
 | `<QtdVagas>` | 4 | Não | Número de vagas do imóvel. Valores de `1` a `5`. Com o valor `5`, informamos que o imóvel mais de 5 vagas.|
 | `<ArCondicionado>`,<br>`<SalaGinastica>`,<br>`<ArmarioEmbutido>`,<br>`<Varanda>`,<br>`<AreaServico>`,<br>`<Churrasqueira>`,<br>`<QuartoWCEmpregada>`,<br>`<Piscina>`,<br>`<SalaoFestas>`,<br>`<Porteiro>`||| Características adicionais do imóvel. Se o imóvel tem algum desses atributos, inclua esse parâmetro com valor `1`|
 | `<Foto>` `<NomeArquivo>` | 255 | Não | Nome da imagem no banco de dados do cliente|
@@ -179,76 +172,75 @@ Essas informações definem a categorização dos anúncios dentro da OLX. É ne
 
 Caso o campo `<TituloAnuncio>` esteja em branco no XML enviado, utilizaremos o Título apropriado para cada categoria e tipo de imóvel, conforme tabelas abaixo.
 
-#### Category (OLX): Apartamentos - `1020`
+#### Para que seu anúncio apareça na categoria `Apartamentos`, na OLX:
 
-| `<TipoImovel>` (XML) | `<SubTipoImovel>` (XML) | `<CategoriaImovel>` (XML)   | Apartment_type (OLX) | Título do anúncio (OLX)      |
-|---------------------|---------------------------------|------------------------  |----------------------|-------------------------     |
-| Apartamento | Loft | Duplex | 5-Loft/Studio | Loft Duplex  |
-| Apartamento | Loft | Triplex | 5-Loft/Studio | Loft Triplex  |
-| Apartamento | Loft | Padrão | 5-Loft/Studio | Loft |
-| Apartamento | Apartamento Padrão | Cobertura | 2-Cobertura | Cobertura |
-| Apartamento | Apartamento Padrão | Duplex | 3-Duplex/Triplex | Duplex |
-| Apartamento | Apartamento Padrão | Triplex | 3-Duplex/Triplex | Triplex |
-| Apartamento | Apartamento Padrão | Cobertura Duplex  | 2-Cobertura | Cobertura Duplex  |
-| Apartamento | Apartamento Padrão | Cobertura Triplex  | 2-Cobertura | Cobertura Triplex  |
-| Apartamento | Apartamento Padrão | Padrão | 1-Padrão | Apartamento |
-| Apartamento | Kitchenette/ Conjugados | Padrão | 4-Kitchenette | Conjugado |
-| Flat/Aparthotel | Flat | Padrão | 1-Padrão | Flat/Aparthotel |
-| Flat/Aparthotel | Flat | Padrão | 1-Padrão | Flat/Aparthotel |
-| Apartamento Duplex | Apartamento Duplex Residencial | Padrão | 3-Duplex/Triplex | Duplex |
-| Apartamento Triplex | Apartamento Triplex Residencial | Padrão | 3-Duplex/Triplex | Triplex |
-| Cobertura | Cobertura Residencial | Padrão | 2-Cobertura | Cobertura |
-| Flat | Flat Residencial | Padrão | 1-Padrão | Flat/Aparthotel |
-| Apartamento | Apartamento Residencial | Padrão | 1-Padrão | Apartamento |
-| Apartamento | Apartamento de Condomínio | Padrão | 1-Padrão | Apartamento |
-| Kitnet | Kitnet Residencial | Padrão | 4-Kitchenette | Conjugado |
-
-
-#### Category (OLX): Casas - `1040`			
-
-| `<TipoImovel>` (XML) | `<SubTipoImovel>` (XML)     | `<CategoriaImovel>` (XML)   | Home_type (OLX) | Título (OLX) |
-|------------------|-----------------------    |------------------------  |----------------------|--------------------|
-| Casa | Casa de Condomínio   | Sobrado/Duplex | 3-Condomínio fechado | Casa de Condomínio     |
-| Casa | Casa de Condomínio   | Sobrado/Triplex | 3-Condomínio fechado | Casa de Condomínio   |
-| Casa | Casa de Condomínio   | Térrea | 3-Condomínio fechado | Casa de Condomínio     |
-| Casa | Casa de Condomínio   | Padrão | 3-Condomínio fechado | Casa de Condomínio     |
-| Casa | Casa de Vila    | Sobrado/Duplex | 2-Vila | Casa de Vila    |
-| Casa | Casa de Vila    | Sobrado/Triplex | 2-Vila | Casa de Vila    |
-| Casa | Casa de Vila    | Térrea | 2-Vila | Casa de Vila    |
-| Casa | Casa Padrão   | Sobrado/Duplex | 1-Rua pública   | Casa |
-| Casa | Casa Padrão   | Sobrado/Triplex | 1-Rua pública   | Casa |
-| Casa | Casa Padrão   | Térrea | 1-Rua pública   | Casa |
-| Casa | Casa Padrão   | Padrão | 1-Rua pública   | Casa |
-| Sobrado | Sobrado Residencial | Padrão | 3-Condomínio fechado | Sobrado |
+| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
+|---------------------|---------------------------------|------------------------  |-------------------------     |
+| Apartamento | Loft | Duplex | Loft Duplex  |
+| Apartamento | Loft | Triplex | Loft Triplex  |
+| Apartamento | Loft | Padrão | Loft |
+| Apartamento | Apartamento Padrão | Cobertura | Cobertura |
+| Apartamento | Apartamento Padrão | Duplex | Duplex |
+| Apartamento | Apartamento Padrão | Triplex | Triplex |
+| Apartamento | Apartamento Padrão | Cobertura Duplex  | Cobertura Duplex  |
+| Apartamento | Apartamento Padrão | Cobertura Triplex  | Cobertura Triplex  |
+| Apartamento | Apartamento Padrão | Padrão | Apartamento |
+| Apartamento | Kitchenette/ Conjugados | Padrão | Conjugado |
+| Flat/Aparthotel | Flat | Padrão | Flat/Aparthotel |
+| Flat/Aparthotel | Flat | Padrão | Flat/Aparthotel |
+| Apartamento Duplex | Apartamento Duplex Residencial | Padrão |Duplex |
+| Apartamento Triplex | Apartamento Triplex Residencial | Padrão | Triplex |
+| Cobertura | Cobertura Residencial | Padrão | Cobertura |
+| Flat | Flat Residencial | Padrão | Flat/Aparthotel |
+| Apartamento | Apartamento Residencial | Padrão | Apartamento |
+| Apartamento | Apartamento de Condomínio | Padrão | Apartamento |
+| Kitnet | Kitnet Residencial | Padrão | Conjugado |
 
 
-#### Category (OLX): Comércio e indústria - `1120`
+#### Para que seu anúncio apareça na categoria `Casas`, na OLX:
 
-| `<TipoImovel>` (XML)   | `<SubTipoImovel>` (XML)     | `<CategoriaImovel>` (XML)   | Type (OLX)  | Título (OLX) |
-|-----------------------|-------------------------- |------------------------  |------------ |--------------------------|
-| Comercial | Casa Comercial  | Padrão | Não aplica   | Casa Comercial  |
-| Comercial | Conjunto Comercial / Sala | Padrão | Não aplica   | Conjunto Comercial |
-| Comercial | Loja/Salão | Padrão | Não aplica   | Loja / Salão     |
-| Comercial | Hotel | Padrão | Não aplica   | Hotel |
-| Comercial/Industrial | Box/Garagem | Padrão | Não aplica   | Box / Garagem |
-| Comercial/Industrial | Conjunto Comercial / Sala | Padrão | Não aplica   | Conjunto Comercial |
-| Comercial/Industrial | Galpão / Depósito / Armazém   | Padrão | Não aplica   | Galpão / Depósito / Armazém   |
-| Comercial/Industrial | Loja / Salão | Padrão | Não aplica   | Loja / Salão |
-| Comercial/Industrial | Prédio Inteiro   | Padrão | Não aplica   | Prédio Comercial   |
+| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
+|------------------|-----------------------    |------------------------  |--------------------|
+| Casa | Casa de Condomínio   | Sobrado/Duplex | Casa de Condomínio     |
+| Casa | Casa de Condomínio   | Sobrado/Triplex | Casa de Condomínio   |
+| Casa | Casa de Condomínio   | Térrea | Casa de Condomínio     |
+| Casa | Casa de Condomínio   | Padrão | Casa de Condomínio     |
+| Casa | Casa de Vila    | Sobrado/Duplex | Casa de Vila    |
+| Casa | Casa de Vila    | Sobrado/Triplex | Casa de Vila    |
+| Casa | Casa de Vila    | Térrea | Casa de Vila    |
+| Casa | Casa Padrão   | Sobrado/Duplex | Casa |
+| Casa | Casa Padrão   | Sobrado/Triplex | Casa |
+| Casa | Casa Padrão   | Térrea | Casa |
+| Casa | Casa Padrão   | Padrão | Casa |
+| Sobrado | Sobrado Residencial | Padrão | Sobrado |
 
-#### Category (OLX): Terrenos, sítios e fazendas - `1100`			
+#### Para que seu anúncio apareça na categoria `Comércio e indústria`, na OLX:
 
-| `<TipoImovel>` (XML)   | `<SubTipoImovel>` (XML)     | Categoria Imóvel (XML)   | Type (OLX)  | Título (OLX)  |
-|-------------------  |------------------------   |------------------------  |------------ |------------------------|
-| Terreno | Terreno Padrão   | Padrão | 1 | Terreno |
-| Terreno | Loteamento/Condomínio | Padrão | 1 | Loteamento/Condomínio |
-| Chácara | Chácara Rural   | Padrão | 1 | Chácara |
-| Sítio | Sítio Rural   | Padrão | 1 | Sítio |
+| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
+|-----------------------|-------------------------- |------------------------  |--------------------------|
+| Comercial | Casa Comercial  | Padrão | Casa Comercial  |
+| Comercial | Conjunto Comercial / Sala | Padrão | Conjunto Comercial |
+| Comercial | Loja/Salão | Padrão | Loja / Salão     |
+| Comercial | Hotel | Padrão | Hotel |
+| Comercial/Industrial | Box/Garagem | Padrão | Box / Garagem |
+| Comercial/Industrial | Conjunto Comercial / Sala | Padrão | Conjunto Comercial |
+| Comercial/Industrial | Galpão / Depósito / Armazém   | Padrão | Galpão / Depósito / Armazém   |
+| Comercial/Industrial | Loja / Salão | Padrão | Loja / Salão |
+| Comercial/Industrial | Prédio Inteiro   | Padrão | Prédio Comercial   |
+
+#### Para que seu anúncio apareça na categoria `Terrenos, sítios e fazendas`, na OLX:
+
+| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
+|-------------------  |------------------------   |------------------------  |------------------------|
+| Terreno | Terreno Padrão   | Padrão | Terreno |
+| Terreno | Loteamento/Condomínio | Padrão | Loteamento/Condomínio |
+| Chácara | Chácara Rural   | Padrão | Chácara |
+| Sítio | Sítio Rural   | Padrão | Sítio |
 
 
 ### Observações
 
-Orientamos que as fotos precisam estar obrigatoriamente no tamanho igual ou superior a 260x350 px, além de formato compatível (JPG ou PNG).
+Orientamos que as fotos precisam estar obrigatoriamente no tamanho igual ou superior a 260 x 350 pixels, além de formato compatível (JPG ou PNG).
 
 O formato do encoding do arquivo a ser enviado deverá ser UTF8:
 
