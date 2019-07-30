@@ -166,11 +166,10 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 | `<Foto>` `<URLArquivo>` | 255 | Não | Link em que a imagem está hospedada|
 
 
-## Título e categorização dos anúncios
+## Categorização dos anúncios
 
-Essas informações definem a categorização dos anúncios dentro da OLX. É necessário informar o `<SubTipoImovel>` para que o imóvel seja apresentado na categoria correta.
+Essas informações definem a categorização dos anúncios dentro da OLX. Os parâmetros `<TipoImovel>`, `<SubTipoImovel>` e `<CategoriaImovel>` são obrigatórios.
 
-Caso o campo `<TituloAnuncio>` esteja em branco no XML enviado, utilizaremos o Título apropriado para cada categoria e tipo de imóvel, conforme tabelas abaixo.
 
 #### Para que seu anúncio apareça na categoria `Apartamentos`, na OLX:
 
