@@ -14,42 +14,44 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
 
 ```json
-[
-    {
-        "subject": "Peça de carro em ótimo estado",
-        "body": "Peça de carro",
-        "category": "2101",
-        "id": "CAR005_ROD1",
-        "images": [
+{  
+   "account_id":"123445",
+   "ad_list":[  
+      {  
+         "subject":"Peça de carro em ótimo estado",
+         "body":"Peça de carro",
+         "category":"2101",
+         "id":"CAR005_ROD1",
+         "images":[  
             "http://img1.jpg",
             "http://img2.jpg"
-        ],
-        "params": {
-            "carcolor": "1",
-            "condition": "1",
-            "exchange": "2"
-        },
-        "price": 1000,
-        "type": "s",
-        "zipcode": "20521160"
-    },
-    {
-        "subject": "Peça de carro em ótimo estado",
-        "body": "Peça de carro",
-        "category": "2101",
-        "id": "CAR005_ROD2",
-        "images": [
+         ],
+         "params":{  
+            "carcolor":"1",
+            "condition":"1",
+            "exchange":"2"
+         },
+         "price":1000,
+         "type":"s",
+         "zipcode":"20521160"
+      },
+      {  
+         "subject":"Peça de carro em ótimo estado",
+         "body":"Peça de carro",
+         "category":"2101",
+         "id":"CAR005_ROD2",
+         "images":[  
             "http://img1.jpg",
             "http://img2.jpg"
-        ],
-        "params": {
-            "carcolor": "1",
-            "condition": "1",
-            "exchange": "2"
-        },
-        "price": 1000,
-        "type": "s",
-        "zipcode": "20521160"
-    }
-]
-```
+         ],
+         "params":{  
+            "carcolor":"1",
+            "condition":"1",
+            "exchange":"2"
+         },
+         "price":1000,
+         "type":"s",
+         "zipcode":"20521160"
+      }
+   ]
+}```
