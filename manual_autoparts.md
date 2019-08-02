@@ -18,7 +18,7 @@ Além da validação contida nesse manual, há validações adicionais que são 
 |-------------------------------------------------|-----------------|-----------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `subject` |  | string | sim | Título do anúncio Mínimo: 2 Máximo: 90    |
 | `body` |  | string | sim | Descrição do anúncio Mínimo: 2 Máximo: 6000     |
-| `category` | 2101 | string | sim | Categoria do anúncio. Deve ser 2101 para peças  |
+| `category` |  | string | sim | Categoria do anúncio. Deve ser preenchido conforme a subcategoria (mais informação ao final desta página)  |
 | `id` |  | string | sim | Identificador do anúncio. Regular expression : [A-Za-z0- 9_{}- ]{1,19}<br>Atenção​: o campo id deve ser único no arquivo. |
 | `images` | URL das imagens | Array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Para carro só serão permitidas no máximo 6 imagens. No máximo 20 imagens nas outras categorias.<br>Importante: a primeira imagem da lista será a imagem principal do anúncio!         |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos)   |
