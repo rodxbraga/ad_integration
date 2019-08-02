@@ -19,7 +19,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
    "ad_list":[  
       {  
          "subject":"Peça de carro em ótimo estado",
-         "body":"Peça de carro",
+         "body":"Peça de carro do tipo X, usado no caso Y.\nPeça em excelente estado, não aceito trocas.",
          "category":"2101",
          "id":"CAR005_ROD1",
          "images":[  
@@ -28,6 +28,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
          ],
          "params":{  
             "carcolor":"1",
+            "parts_name_cars":"9",
             "condition":"1",
             "exchange":"2"
          },
@@ -37,7 +38,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
       },
       {  
          "subject":"Peça de carro em ótimo estado",
-         "body":"Peça de carro",
+         "body":"Peça de carro do tipo X, usado no caso Y.\nPeça em excelente estado, não aceito trocas.",
          "category":"2101",
          "id":"CAR005_ROD2",
          "images":[  
@@ -46,6 +47,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
          ],
          "params":{  
             "carcolor":"1",
+            "parts_name_cars":"9",
             "condition":"1",
             "exchange":"2"
          },
@@ -54,4 +56,5 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
          "zipcode":"20521160"
       }
    ]
-}```
+}
+```
