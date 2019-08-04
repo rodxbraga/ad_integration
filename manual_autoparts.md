@@ -18,12 +18,37 @@ Além da validação contida nesse manual, há validações adicionais que são 
 |-------------------------------------------------|-----------------|-----------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `subject` |  | string | sim | Título do anúncio Mínimo: 2 Máximo: 90    |
 | `body` |  | string | sim | Descrição do anúncio Mínimo: 2 Máximo: 6000     |
-| `category` |  | string | sim | Categoria do anúncio. Deve ser preenchido conforme a subcategoria (mais informação ao final desta página)  |
+| `category` | `2101` para `Carros, vans e utilitários`<br>`2102` para `Caminhões`<br>`2103` para `Motos`<br>`2104` para `Barcos e aeronaves`<br>`2105` para `Ônibus`| string | sim | Categoria do anúncio. Deve ser preenchido conforme a subcategoria (mais informação ao final desta página)  |
 | `id` |  | string | sim | Identificador do anúncio. Regular expression : [A-Za-z0- 9_{}- ]{1,19}<br>Atenção​: o campo id deve ser único no arquivo. |
 | `images` | URL das imagens | Array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Para carro só serão permitidas no máximo 6 imagens. No máximo 20 imagens nas outras categorias.<br>Importante: a primeira imagem da lista será a imagem principal do anúncio!         |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos)   |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. Caso o anúncio seja de uma categoria de Imóveis, deve ser o CEP do endereço do imóvel. Caso contrário, o CEP deve ser o do vendedor / loja.|
 | `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
+
+e": "2101",
+"label": "Carros, vans e utilitários",
+"max_images": 20
+},
+{
+"code": "2103",
+"label": "Motos",
+"max_images": 20
+},
+{
+"code": "2105",
+"label": "Ônibus",
+"max_images": 20
+},
+{
+"code": "2102",
+"label": "Caminhões",
+"max_images": 20
+},
+{
+"code": "2104",
+"label": "Barcos e aeronaves",
+"max_images": 20
+}
 
 
 ### Parâmetros específicos por subcategoria
