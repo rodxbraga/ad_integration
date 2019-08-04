@@ -6,7 +6,7 @@ Este manual tem como objetivo auxiliar a implantação de importação de anúnc
 
 Atendendo a este modelo de JSON, o anunciante ou seu integrador ficam responsáveis por disponibilizar uma URL onde o JSON ficará armazenado e sempre disponível, para que a OLX consulte o arquivo a cada importação.
 
-A partir dos anúncios contidos no arquivo XML e o respectivo `<id>` contido em cada anúncio, a OLX vai inferir a inserção, edição ou deleção.
+A partir dos anúncios contidos no arquivo JSON e o respectivo `<id>` contido em cada anúncio, a OLX vai inferir a inserção, edição ou deleção.
 
 
 ### Sobre a publicação dos anúncios
