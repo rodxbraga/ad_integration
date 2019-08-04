@@ -23,7 +23,7 @@ Além da validação contida nesse manual, há validações adicionais que são 
 | `images` | URL das imagens | Array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Para carro só serão permitidas no máximo 6 imagens. No máximo 20 imagens nas outras categorias.<br>Importante: a primeira imagem da lista será a imagem principal do anúncio!         |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos)   |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. Caso o anúncio seja de uma categoria de Imóveis, deve ser o CEP do endereço do imóvel. Caso contrário, o CEP deve ser o do vendedor / loja.|
-| `type` | `s` | string | sim | Tipo de oferta do anúncio: s: venda |
+| `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
 
 
 ### Parâmetros específicos por subcategoria
