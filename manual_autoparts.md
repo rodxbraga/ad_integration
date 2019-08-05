@@ -25,31 +25,6 @@ Além da validação contida nesse manual, há validações adicionais que são 
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. Caso o anúncio seja de uma categoria de Imóveis, deve ser o CEP do endereço do imóvel. Caso contrário, o CEP deve ser o do vendedor / loja.|
 | `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
 
-e": "2101",
-"label": "Carros, vans e utilitários",
-"max_images": 20
-},
-{
-"code": "2103",
-"label": "Motos",
-"max_images": 20
-},
-{
-"code": "2105",
-"label": "Ônibus",
-"max_images": 20
-},
-{
-"code": "2102",
-"label": "Caminhões",
-"max_images": 20
-},
-{
-"code": "2104",
-"label": "Barcos e aeronaves",
-"max_images": 20
-}
-
 
 ### Parâmetros específicos por subcategoria
 
