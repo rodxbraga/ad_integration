@@ -8,7 +8,7 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|-------------|------------------------------------------------|
 | `carcolor` | `1` para Preto<br>`2` para Branco<br>`3` para Prata<br>`4` para Vermelho<br>`5` para Cinza<br>`6` para Azul<br>`7` para Amarelo<br>`8` para Verde<br>`9` para Laranja<br>`10` para Outra | string | não | Cor do veículo |
 | `parts_name_boats` | `1` para Motores<br>`2` para Inversores<br>`3` para Bombas<br>`4` para Iluminação<br>`5` para Rotores<br>`6` para Cabos<br>`7` para Velas<br>`8` para Sonares e GPS<br>`9` para Hélices<br>`10` para Âncoras<br>`11` para Outros | string | não | Indica o tipo de peça |
-| `condition` | `1` para Novo<br>`2` para Usado | String | não | Produto novo ou de segunda mão  |
+| `condition` | `1` para Novo<br>`2` para Usado | String | sim | Produto novo ou de segunda mão  |
 | `exchange` | `1` para Sim<br>`2` para Não | String | não | Aceita troca como pagamento |
 
 Aqui está um exemplo de JSON para a subcategoria `Barcos e aeronaves`:
