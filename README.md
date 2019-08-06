@@ -29,4 +29,4 @@ Para ter informações sobre a integração via API atual (chamada de Autoupload
 
 Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
 
-Alternativamente, você pode simplesmente abrir uma `Issue` aqui neste repositório, que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
+Alternativamente, você pode simplesmente abrir uma [`Issue` aqui neste repositório](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
