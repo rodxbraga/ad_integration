@@ -20,121 +20,117 @@ Abaixo está um exemplo de XML com os campos mínimos obrigatórios na OLX:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Carga xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-  xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Imoveis>
-    <Imovel>
-      <CodigoCliente />
-      <CodigoImovel>17-DU63501</CodigoImovel>
-      <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
-      <TipoImovel>Apartamento</TipoImovel>
-      <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
-      <CategoriaImovel>Padrão</CategoriaImovel>
-      <Cidade>Porto Alegre</Cidade>
-      <Bairro>Cidade Baixa</Bairro>
-      <Endereco>Miguel Teixeira</Endereco>
-      <Numero>66</Numero>
-      <CEP>90050250</CEP>
-      <PrecoVenda>482745</PrecoVenda>
-      <PrecoLocacao>0</PrecoLocacao>
-      <PrecoCondominio>1</PrecoCondominio>
-      <ValorIPTU>500</ValorIPTU>
-      <QtdVagas>0</QtdVagas>
-      <AreaUtil>67</AreaUtil>
-      <QtdDormitorios>1</QtdDormitorios>
-      <Observacao>Residencial projetado para você em cada detalhe.\nPrédio com 2 Elevadores, Salão de Festas, Sala Fitness, Apartamento Zelador, Guarita e Bicicletário.\nRef.: 17-DU63501</Observacao>
-      <Fotos>
-        <Foto>
-          <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
-          <URLArquivo>http://multimidia.lopes.com.br/383/17-DU63501/apartamento-cidade-baixa-porto-alegre-imagem-iy8m8p_6349957eab f8c06807.jpg</URLArquivo>
-        </Foto>
-      </Fotos>
-    </Imovel>
-    <Imovel>
-      <CodigoCliente />
-      <CodigoImovel>17-DU65009</CodigoImovel>
-      <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
-      <TipoImovel>Apartamento</TipoImovel>
-      <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
-      <CategoriaImovel>Padrão</CategoriaImovel>
-      <Cidade>Porto Alegre</Cidade>
-      <Bairro>Auxiliadora</Bairro>
-      <Endereco>Marcelo Gama</Endereco>
-      <Numero>1030</Numero>
-      <CEP>90540041</CEP>
-      <PrecoVenda>536485</PrecoVenda>
-      <PrecoLocacao>0</PrecoLocacao>
-      <PrecoCondominio>1</PrecoCondominio>
-      <ValorIPTU>500</ValorIPTU>
-      <QtdVagas>0</QtdVagas>
-      <AreaUtil>60</AreaUtil>
-      <QtdDormitorios>2</QtdDormitorios>
-      <Observacao>Apartamentos com dois dormitórios, suíte e vaga dupla e 1 dormitório com vaga e lavabo.\nAcabamento muito acima da média, apartamentos entregues com porcelanato nas áreas frias e laminado na sala e quartos, medidores de água e gás instalados, gesso, mármore e granito nos banheiros e cozinha. Todos os apartamentos possuem churrasqueira na cozinha. - Ref.: 17-DU65009</Observacao>
-      <Fotos>
-        <Foto>
-          <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
-          <URLArquivo>http://multimidia.lopes.com.br/383/17-DU65009/apartamento-auxiliadora-porto-alegre-imagem-ig5v7l_6500657eab57 356e8d.jpg</URLArquivo>
-        </Foto>
-      </Fotos>
-    </Imovel>
-    <Imovel>
-      <CodigoCliente />
-      <CodigoImovel>17-DU63821</CodigoImovel>
-      <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
-      <TipoImovel>Apartamento</TipoImovel>
-      <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
-      <CategoriaImovel>Padrão</CategoriaImovel>
-      <Cidade>Porto Alegre</Cidade>
-      <Bairro>Jardim Botânico</Bairro>
-      <Endereco>Itaboraí</Endereco>
-      <Numero>1158</Numero>
-      <CEP>90670030</CEP>
-      <Latitude>-23,4593654</Latitude>
-      <Longitude>-46,5169560</Longitude>
-      <PrecoVenda>298991</PrecoVenda>
-      <PrecoLocacao>0</PrecoLocacao>
-      <PrecoCondominio>1</PrecoCondominio>
-      <ValorIPTU>500</ValorIPTU>
-      <QtdVagas>0</QtdVagas>
-      <AreaUtil>42</AreaUtil>
-      <QtdDormitorios>1</QtdDormitorios>
-      <Observacao>Apartamentos de 42m2 a 68m2, 1 e 2 dormitórios com suíte ou sem suíte e 1 vaga de garagem. Apartamentos com excelente orientação solar. Localizado no Bairro Jardim Botânico, próximo ao Shopping Bourbon Ipiranga, PUC e a todos os recursos do bairro. Condomínio conta, ainda com elevador, salão de festas, água quente e gás central. - Ref.: 17-DU63821</Observacao>
-      <Fotos>
-        <Foto>
-          <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
-          <URLArquivo>http://multimidia.lopes.com.br/383/17-DU63821/apartamento-jardim-botanico-porto-alegre-imagem-iy0b2g_63820560 163a8c514c.jpg</URLArquivo>
-          <Alterada>1</Alterada>
-        </Foto>
-      </Fotos>
-    </Imovel>
-    <Imovel>
-      <CodigoCliente />
-      <CodigoImovel>17-DU65007</CodigoImovel>
-      <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
-      <TipoImovel>Apartamento</TipoImovel>
-      <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
-      <CategoriaImovel>Padrão</CategoriaImovel>
-      <Cidade>Porto Alegre</Cidade>
-      <Bairro>Auxiliadora</Bairro>
-      <Endereco>Marcelo Gama</Endereco>
-      <Numero>1030</Numero>
-      <CEP>90540041</CEP>
-      <PrecoVenda>367387</PrecoVenda>
-      <PrecoLocacao>0</PrecoLocacao>
-      <PrecoCondominio>1</PrecoCondominio>
-      <ValorIPTU>500</ValorIPTU>
-      <QtdVagas>0</QtdVagas>
-      <AreaUtil>39</AreaUtil>
-      <QtdDormitorios>1</QtdDormitorios>
-      <Observacao>Apartamentos com dois dormitórios, suíte e vaga dupla e 1 dormitório com vaga e lavabo. Acabamento muito acima da média, Apartamentos entregues com porcelanato nas áreas frias e laminado na sala e quartos, medidores de água e gás instalados, gesso, mármore e granito nos banheiros e cozinha. Todos os apartamentos possuem churrasqueira na cozinha. - Ref.: 17-DU65007</Observacao>
-      <Fotos>
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Imoveis>
+        <Imovel>
+            <CodigoImovel>17-DU63501</CodigoImovel>
+            <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
+            <TipoImovel>Apartamento</TipoImovel>
+            <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
+            <CategoriaImovel>Padrão</CategoriaImovel>
+            <Cidade>Porto Alegre</Cidade>
+            <Bairro>Cidade Baixa</Bairro>
+            <Endereco>Miguel Teixeira</Endereco>
+            <Numero>66</Numero>
+            <CEP>90050250</CEP>
+            <PrecoVenda>482745</PrecoVenda>
+            <PrecoLocacao>0</PrecoLocacao>
+            <PrecoCondominio>1</PrecoCondominio>
+            <ValorIPTU>500</ValorIPTU>
+            <QtdVagas>0</QtdVagas>
+            <AreaUtil>67</AreaUtil>
+            <QtdDormitorios>1</QtdDormitorios>
+            <Observacao>Residencial projetado para você em cada detalhe.\nPrédio com 2 Elevadores, Salão de Festas, Sala Fitness, Apartamento Zelador, Guarita e Bicicletário.\nRef.: 17-DU63501</Observacao>
+            <Fotos>
+                <Foto>
+                    <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
+                    <URLArquivo>http://multimidia.lopes.com.br/383/17-DU63501/apartamento-cidade-baixa-porto-alegre-imagem-iy8m8p_6349957eab f8c06807.jpg</URLArquivo>
+                </Foto>
+            </Fotos>
+        </Imovel>
+        <Imovel>
+            <CodigoImovel>17-DU65009</CodigoImovel>
+            <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
+            <TipoImovel>Apartamento</TipoImovel>
+            <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
+            <CategoriaImovel>Padrão</CategoriaImovel>
+            <Cidade>Porto Alegre</Cidade>
+            <Bairro>Auxiliadora</Bairro>
+            <Endereco>Marcelo Gama</Endereco>
+            <Numero>1030</Numero>
+            <CEP>90540041</CEP>
+            <PrecoVenda>536485</PrecoVenda>
+            <PrecoLocacao>0</PrecoLocacao>
+            <PrecoCondominio>1</PrecoCondominio>
+            <ValorIPTU>500</ValorIPTU>
+            <QtdVagas>0</QtdVagas>
+            <AreaUtil>60</AreaUtil>
+            <QtdDormitorios>2</QtdDormitorios>
+            <Observacao>Apartamentos com dois dormitórios, suíte e vaga dupla e 1 dormitório com vaga e lavabo.\nAcabamento muito acima da média, apartamentos entregues com porcelanato nas áreas frias e laminado na sala e quartos, medidores de água e gás instalados, gesso, mármore e granito nos banheiros e cozinha. Todos os apartamentos possuem churrasqueira na cozinha. - Ref.: 17-DU65009</Observacao>
+            <Fotos>
+                <Foto>
+                    <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
+                    <URLArquivo>http://multimidia.lopes.com.br/383/17-DU65009/apartamento-auxiliadora-porto-alegre-imagem-ig5v7l_6500657eab57 356e8d.jpg</URLArquivo>
+                </Foto>
+            </Fotos>
+        </Imovel>
+        <Imovel>
+            <CodigoImovel>17-DU63821</CodigoImovel>
+            <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
+            <TipoImovel>Apartamento</TipoImovel>
+            <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
+            <CategoriaImovel>Padrão</CategoriaImovel>
+            <Cidade>Porto Alegre</Cidade>
+            <Bairro>Jardim Botânico</Bairro>
+            <Endereco>Itaboraí</Endereco>
+            <Numero>1158</Numero>
+            <CEP>90670030</CEP>
+            <Latitude>-23,4593654</Latitude>
+            <Longitude>-46,5169560</Longitude>
+            <PrecoVenda>298991</PrecoVenda>
+            <PrecoLocacao>0</PrecoLocacao>
+            <PrecoCondominio>1</PrecoCondominio>
+            <ValorIPTU>500</ValorIPTU>
+            <QtdVagas>0</QtdVagas>
+            <AreaUtil>42</AreaUtil>
+            <QtdDormitorios>1</QtdDormitorios>
+            <Observacao>Apartamentos de 42m2 a 68m2, 1 e 2 dormitórios com suíte ou sem suíte e 1 vaga de garagem. Apartamentos com excelente orientação solar. Localizado no Bairro Jardim Botânico, próximo ao Shopping Bourbon Ipiranga, PUC e a todos os recursos do bairro. Condomínio conta, ainda com elevador, salão de festas, água quente e gás central. - Ref.: 17-DU63821</Observacao>
+            <Fotos>
+                <Foto>
+                    <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
+                    <URLArquivo>http://multimidia.lopes.com.br/383/17-DU63821/apartamento-jardim-botanico-porto-alegre-imagem-iy0b2g_63820560 163a8c514c.jpg</URLArquivo>
+                    <Alterada>1</Alterada>
+                </Foto>
+            </Fotos>
+        </Imovel>
+        <Imovel>
+            <CodigoImovel>17-DU65007</CodigoImovel>
+            <TituloAnuncio>Apartamento espaçoso</TituloAnuncio>
+            <TipoImovel>Apartamento</TipoImovel>
+            <SubTipoImovel>Apartamento Padrão</SubTipoImovel>
+            <CategoriaImovel>Padrão</CategoriaImovel>
+            <Cidade>Porto Alegre</Cidade>
+            <Bairro>Auxiliadora</Bairro>
+            <Endereco>Marcelo Gama</Endereco>
+            <Numero>1030</Numero>
+            <CEP>90540041</CEP>
+            <PrecoVenda>367387</PrecoVenda>
+            <PrecoLocacao>0</PrecoLocacao>
+            <PrecoCondominio>1</PrecoCondominio>
+            <ValorIPTU>500</ValorIPTU>
+            <QtdVagas>0</QtdVagas>
+            <AreaUtil>39</AreaUtil>
+            <QtdDormitorios>1</QtdDormitorios>
+            <Observacao>Apartamentos com dois dormitórios, suíte e vaga dupla e 1 dormitório com vaga e lavabo. Acabamento muito acima da média, Apartamentos entregues com porcelanato nas áreas frias e laminado na sala e quartos, medidores de água e gás instalados, gesso, mármore e granito nos banheiros e cozinha. Todos os apartamentos possuem churrasqueira na cozinha. - Ref.: 17-DU65007</Observacao>
+            <Fotos>
 
-        <Foto>
-          <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
-          <URLArquivo>http://multimidia.lopes.com.br/383/17-DU65007/apartamento-auxiliadora-porto-alegre-imagem-ig5v7l_6500657eab57 356e8d.jpg</URLArquivo>
-        </Foto>
-      </Fotos>
-    </Imovel>
-  </Imoveis>
+                <Foto>
+                    <NomeArquivo>Imagem de Destaque Home - 500x500</NomeArquivo>
+                    <URLArquivo>http://multimidia.lopes.com.br/383/17-DU65007/apartamento-auxiliadora-porto-alegre-imagem-ig5v7l_6500657eab57 356e8d.jpg</URLArquivo>
+                </Foto>
+            </Fotos>
+        </Imovel>
+    </Imoveis>
 </Carga>
 ```
 
@@ -168,74 +164,108 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 
 ## Categorização dos anúncios
 
-Essas informações definem a categorização dos anúncios dentro da OLX. Os parâmetros `<TipoImovel>`, `<SubTipoImovel>` e `<CategoriaImovel>` são obrigatórios.
+Essas informações definem a categorização dos anúncios dentro da OLX. Caso não seja enviado nenhum valor para `<TituloAnuncio>` (Título de Anúncio), será montado um título para o anúncio baseado no `<SubTipoImovel>` e outros atributos, como número de quartos, localização, etc. 
 
 
 #### Para que seu anúncio apareça na categoria `Apartamentos`, na OLX:
 
-| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
-|---------------------|---------------------------------|------------------------  |-------------------------     |
-| Apartamento | Loft | Duplex | Loft Duplex  |
-| Apartamento | Loft | Triplex | Loft Triplex  |
-| Apartamento | Loft | Padrão | Loft |
-| Apartamento | Apartamento Padrão | Cobertura | Cobertura |
-| Apartamento | Apartamento Padrão | Duplex | Duplex |
-| Apartamento | Apartamento Padrão | Triplex | Triplex |
-| Apartamento | Apartamento Padrão | Cobertura Duplex  | Cobertura Duplex  |
-| Apartamento | Apartamento Padrão | Cobertura Triplex  | Cobertura Triplex  |
-| Apartamento | Apartamento Padrão | Padrão | Apartamento |
-| Apartamento | Kitchenette/ Conjugados | Padrão | Conjugado |
-| Flat/Aparthotel | Flat | Padrão | Flat/Aparthotel |
-| Flat/Aparthotel | Flat | Padrão | Flat/Aparthotel |
-| Apartamento Duplex | Apartamento Duplex Residencial | Padrão |Duplex |
-| Apartamento Triplex | Apartamento Triplex Residencial | Padrão | Triplex |
-| Cobertura | Cobertura Residencial | Padrão | Cobertura |
-| Flat | Flat Residencial | Padrão | Flat/Aparthotel |
-| Apartamento | Apartamento Residencial | Padrão | Apartamento |
-| Apartamento | Apartamento de Condomínio | Padrão | Apartamento |
-| Kitnet | Kitnet Residencial | Padrão | Conjugado |
-
+| `<SubTipoImovel>` | Título do anúncio |
+|-----------------------------------|-----------------------|
+| `Apartamento` | Apartamento |
+| `Apartamento de Condomínio` | Apartamento |
+| `Apartamento Duplex Residencial` | Apartamento |
+| `Apartamento Padrão` | Apartamento |
+| `Apartamento Residencial` | Apartamento |
+| `Apartamento Triplex Residencial` | Apartamento |
+| `Conjunto Residencial` | Apartamento |
+| `Padrão` | Apartamento |
+| `Cobertura` | Cobertura |
+| `Cobertura Duplex` | Cobertura |
+| `Cobertura Residencial` | Cobertura |
+| `Cobertura Triplex` | Cobertura |
+| `Penthouse Residencial` | Cobertura |
+| `Flat` | Loft |
+| `Flat Padrão` | Loft |
+| `Flat Residencial` | Loft |
+| `Loft` | Loft |
+| `Loft Residencial` | Loft |
+| `Kitchenette / Conjugados` | Kitchenette/conjugado |
+| `Kitchenette / Studio` | Kitchenette/conjugado |
+| `Kitnet` | Kitchenette/conjugado |
+| `Kitnet / Conjugado` | Kitchenette/conjugado |
+| `Kitnet Residencial` | Kitchenette/conjugado |
+| `Studio` | Studio |
+  
 
 #### Para que seu anúncio apareça na categoria `Casas`, na OLX:
 
-| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
-|------------------|-----------------------    |------------------------  |--------------------|
-| Casa | Casa de Condomínio   | Sobrado/Duplex | Casa de Condomínio     |
-| Casa | Casa de Condomínio   | Sobrado/Triplex | Casa de Condomínio   |
-| Casa | Casa de Condomínio   | Térrea | Casa de Condomínio     |
-| Casa | Casa de Condomínio   | Padrão | Casa de Condomínio     |
-| Casa | Casa de Vila    | Sobrado/Duplex | Casa de Vila    |
-| Casa | Casa de Vila    | Sobrado/Triplex | Casa de Vila    |
-| Casa | Casa de Vila    | Térrea | Casa de Vila    |
-| Casa | Casa Padrão   | Sobrado/Duplex | Casa |
-| Casa | Casa Padrão   | Sobrado/Triplex | Casa |
-| Casa | Casa Padrão   | Térrea | Casa |
-| Casa | Casa Padrão   | Padrão | Casa |
-| Sobrado | Sobrado Residencial | Padrão | Sobrado |
+| `<SubTipoImovel> | Título do anúncio |
+|-----------------------|--------------------|
+| `Casa` | Casa |
+| `Casa de Rua` | Casa |
+| `Casa Padrão` | Casa |
+| `Casa Padrão Térrea` | Casa |
+| `Casa Residencial` | Casa |
+| `Sobrado` | Casa |
+| `Sobrado Residencial` | Casa |
+| `Village Residencial` | Casa |
+| `Casa de Condomínio` | Casa de condomínio |
+| `Casa em Condomínio` | Casa de condomínio |
+| `Casa de Vila` | Casa de vila |
 
 #### Para que seu anúncio apareça na categoria `Comércio e indústria`, na OLX:
 
-| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
-|-----------------------|-------------------------- |------------------------  |--------------------------|
-| Comercial | Casa Comercial  | Padrão | Casa Comercial  |
-| Comercial | Conjunto Comercial / Sala | Padrão | Conjunto Comercial |
-| Comercial | Loja/Salão | Padrão | Loja / Salão     |
-| Comercial | Hotel | Padrão | Hotel |
-| Comercial/Industrial | Box/Garagem | Padrão | Box / Garagem |
-| Comercial/Industrial | Conjunto Comercial / Sala | Padrão | Conjunto Comercial |
-| Comercial/Industrial | Galpão / Depósito / Armazém   | Padrão | Galpão / Depósito / Armazém   |
-| Comercial/Industrial | Loja / Salão | Padrão | Loja / Salão |
-| Comercial/Industrial | Prédio Inteiro   | Padrão | Prédio Comercial   |
+| `<SubTipoImovel>` | Título do anúncio |
+|---------------------------------------|-------------------------|
+| `Andar` | Escritório |
+| `Casa Comercial` | Escritório |
+| `Conjunto Comercial` | Escritório |
+| `Conjunto Comercial / Sala` | Escritório |
+| `Laje Comercial` | Escritório |
+| `Salão Comercial` | Escritório |
+| `Sobrado Comercial` | Escritório |
+| `Área Comercial` | Galpão/Depósito/Armazém |
+| `Galpão / Depósito / Armazém`   | Galpão/Depósito/Armazém |
+| `Galpão / Depósito / Barracão`  | Galpão/Depósito/Armazém |
+| `Galpão Comercial` | Galpão/Depósito/Armazém |
+| `Indústria` | Galpão/Depósito/Armazém |
+| `Box Garagem` | Garagem/vaga |
+| `Hotel` | Hotel |
+| `Hotel Residencial` | Hotel |
+| `Motel` | Hotel |
+| `Pousada / Chalé` | Hotel |
+| `Barracão Comercial` | Loja Comercial |
+| `Centro Comercial` | Loja Comercial |
+| `Comercial` | Loja Comercial |
+| `Loja` | Loja Comercial |
+| `Loja Comercial` | Loja Comercial |
+| `Loja de Shopping` | Loja Comercial |
+| `Loja de Shopping / Centro Comercial` | Loja Comercial |
+| `Loja Salão` | Loja Comercial |
+| `Ponto Comercial` | Loja Comercial |
+| `Prédio` | Prédio Comercial |
+| `Prédio Comercial` | Prédio Comercial |
+| `Prédio Inteiro` | Prédio Inteiro |
+| `Sala` | Sala Comercial |
+| `Sala Comercial` | Sala Comercial |
 
 #### Para que seu anúncio apareça na categoria `Terrenos, sítios e fazendas`, na OLX:
 
-| `<TipoImovel>` | `<SubTipoImovel>` | `<CategoriaImovel>` | Título do anúncio (OLX)      |
-|-------------------  |------------------------   |------------------------  |------------------------|
-| Terreno | Terreno Padrão   | Padrão | Terreno |
-| Terreno | Loteamento/Condomínio | Padrão | Loteamento/Condomínio |
-| Chácara | Chácara Rural   | Padrão | Chácara |
-| Sítio | Sítio Rural   | Padrão | Sítio |
-
+| `<SubTipoImovel>` | Título do anúncio |
+|-------------------------|-----------------------|
+| `Loteamento Condomínio` | Loteamento/condomínio |
+| `Loteamento Padrão` | Loteamento/condomínio |
+| `Sítio` | Sítio |
+| `Sítio Chácara` | Sítio |
+| `Sítio Rural` | Sítio |
+| `Terreno` | Terreno |
+| `Terreno Padrão` | Terreno |
+| `Chácara` | Chácara |
+| `Chácara Rural` | Chácara |
+| `Fazenda` | Chácara |
+| `Fazenda Rural` | Chácara |
+| `Haras` | Chácara |
+| `Haras Rural` | Chácara |
 
 ### Observações
 
