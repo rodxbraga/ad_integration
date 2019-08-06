@@ -19,7 +19,7 @@ A OLX funciona com um modelo de inserção paga de anúncios. Para a importaçã
 
 ## Integração via API
 
-Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Automóveis` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível.
+Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Carros, vans e utilitários` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível.
 
 Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
 
