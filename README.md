@@ -14,7 +14,7 @@ Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de 
 
 #### Inferência de Inserção
 
-A OLX funciona com um modelo de inserção paga de anúncios. Para a importação de anúncios via arquivo, a OLX vai inferir que há uma nova inserção quando houver um `id` inédito no arquivo. Se um anúncio com um `id` já existente estiver no arquivo, presumiremos que é o mesmo anúncio e, no máximo, trataremos a operação como uma `edição` (e não `inserção`) caso hajam alterações nas informações do arquivo.
+A OLX funciona com um modelo de inserção paga de anúncios. Para a importação de anúncios via arquivo, a OLX vai inferir que há uma nova inserção quando houver um `id` (ou `<CodigoImovel>`, para XMLs de Real Estate) inédito no arquivo. Se um anúncio com um `id` ou `<CodigoImovel>` já existente estiver no arquivo, presumiremos que é o mesmo anúncio e, no máximo, trataremos a operação como uma `edição` (e não `inserção`) caso hajam alterações nas informações do arquivo.
 
 
 ## Integração via API
@@ -23,4 +23,8 @@ Atualmente a OLX tem uma API para integração, que suporta apenas as categorias
 
 Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
 
+## Dúvidas, sugestões e comentários
 
+Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
+
+Alternativamente, você pode simplesmente abrir uma `Issue` aqui neste repositório, que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
