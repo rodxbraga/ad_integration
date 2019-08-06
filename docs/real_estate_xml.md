@@ -2,18 +2,9 @@
 
 Este manual tem como objetivo auxiliar a implantação de importação de anúncios de XML para o segmento de Imóveis.
 
-### Como integrar com a OLX?
-
-Atendendo a este modelo de XML, o anunciante ou seu integrador ficam responsáveis por disponibilizar uma URL onde o XML ficará armazenada e sempre disponível, para que a OLX consulte o arquivo a cada importação.
-
-A partir dos anúncios contidos no arquivo XML e o respectivo `<CodigoImovel>` contido em cada anúncio, a OLX vai inferir a inserção, edição ou deleção.
-
-
-### Sobre a publicação dos anúncios
-
 A OLX não utiliza necessariamente todos os campos previstos no formato ZAP, ainda que o portal siga este modelo. Além disso, a validação de cada campo pode ser diferente de outros portais onde o anunciante/integrador publica anúncios.
 
-Além da validação contida nesse manual, há validações adicionais que são feitas sobre os anúncios. Com isso, a importação com sucesso dos anúncios não garante a publicação e/ou a permanência dos anúncios publicados. Caso infrinjam qualquer regra na OLX, o anúncio pode ser recusado imediatamente.
+No caso de XML, o parâmetro utilizado para inferir inserção de um anúncio é o `CodigoImovel` (diferente de importação via JSON, que usa `id` para essas inferências).
 
 Abaixo está um exemplo de XML com os campos mínimos obrigatórios na OLX:
 
