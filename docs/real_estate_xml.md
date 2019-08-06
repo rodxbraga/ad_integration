@@ -199,7 +199,7 @@ Essas informações definem a categorização dos anúncios dentro da OLX. Caso 
 
 #### Para que seu anúncio apareça na categoria `Casas`, na OLX:
 
-| `<SubTipoImovel> | Título do anúncio |
+| `<SubTipoImovel>` | Título do anúncio |
 |-----------------------|--------------------|
 | `Casa` | Casa |
 | `Casa de Rua` | Casa |
