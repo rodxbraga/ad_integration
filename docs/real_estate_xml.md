@@ -267,7 +267,3 @@ O formato do encoding do arquivo a ser enviado deverá ser UTF8:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 ```
-
-## Dúvidas e sugestões
-
-Em caso de dúvidas sobre o processo de importação via XML na OLX, entre em contato com suporteintegrador@olxbr.com.
