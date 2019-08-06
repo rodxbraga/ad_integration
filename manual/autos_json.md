@@ -32,8 +32,8 @@ Cada subcategoria tem seu conjunto de parâmetros e valores específicos. Para i
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/auto/auto.md) (WIP)
-- [Motos](https://github.com/olxbr/ad_integration/blob/master/auto/motorcycle.md) (WIP)
-- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/auto/bus.md) (WIP)
-- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/auto/truck.md)
-- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/auto/boat_plane.md) (WIP)
+- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/manual/subs/auto/auto.md) (WIP)
+- [Motos](https://github.com/olxbr/ad_integration/blob/master/manual/subs/auto/motorcycle.md) (WIP)
+- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/manual/subs/auto/bus.md) (WIP)
+- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/manual/subs/auto/truck.md)
+- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/manual/subs/auto/boat_plane.md) (WIP)
