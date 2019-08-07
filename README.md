@@ -16,11 +16,11 @@ Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de 
 
 A OLX funciona com um modelo de inserção paga de anúncios. Para a importação de anúncios via arquivo, a OLX vai inferir que há uma nova inserção quando houver um anúncio com identificar inédito. Para JSONs, o identificador é o parâmetro `id` e, para XMLs, o identificador é o parâmetro `<CodigoImovel>`. 
 
-Se um anúncio com um identificador já existente estiver no arquivo, presumiremos que é o mesmo anúncio e trataremos a operação como uma `edição` (e não `inserção`), caso hajam alterações nas informações do arquivo.
+Se um anúncio com um identificador já existente estiver no arquivo, presumiremos que é o mesmo anúncio e trataremos a operação como uma edição (e não inserção), caso hajam alterações nas informações do arquivo.
 
 Para que ocorra a deleção de um anúncio, basta que ele deixe de existir no arquivo e, no próximo processamento dessa carga vamos inferir que esse anúncio deve ser removido. 
 
-Importante: se um anúncio for removido e no próximo processamento ele voltar a aparecer no arquivo, vamos inferir (e, portanto, contabilizar) uma nova inserção. Por isso é crítico que um anúncio sempre esteja disponível no arquivo e deixe de aparecer quando de fato tivermos que removê-lo do seu inventário.
+Importante: se um anúncio for removido e no próximo processamento ele voltar a aparecer no arquivo (ou, especificamente, se um anúncio com um determinado identificador , vamos inferir (e, portanto, contabilizar) uma nova inserção. Por isso é crítico que um anúncio sempre esteja disponível no arquivo e deixe de aparecer quando de fato tivermos que removê-lo do seu inventário.
 
 
 ## Integração via API
