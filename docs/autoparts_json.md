@@ -2,17 +2,7 @@
 
 Este manual tem como objetivo auxiliar a implantação de importação de anúncios de autopeças para as subcategorias `Carros, vans e utilitários`, `Ônibus`, `Caminhões`, `Motos` e `Barcos e aeronaves`, via JSON.
 
-### Como integrar com a OLX?
-
-Atendendo a este modelo de JSON, o anunciante ou seu integrador ficam responsáveis por disponibilizar uma URL onde o JSON ficará armazenado e sempre disponível, para que a OLX consulte o arquivo a cada importação.
-
-A partir dos anúncios contidos no arquivo JSON e o respectivo `<id>` contido em cada anúncio, a OLX vai inferir a inserção, edição ou deleção.
-
-
-### Sobre a publicação dos anúncios
-
-Além da validação contida nesse manual, há validações adicionais que são feitas sobre os anúncios. Com isso, a importação com sucesso dos anúncios não garante a publicação e/ou a permanência dos anúncios publicados. Caso infrinjam qualquer regra na OLX, o anúncio pode ser recusado imediatamente.
-
+Para todas essas subcategorias há um conjunto de parâmetros básicos compartilhados, detalhados a seguir:
 
 | Parâmetro | Valor | Tipo | Obrigatório | Descrição  |
 |-------------------------------------------------|---------------------------------------------------------|-------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -32,8 +22,8 @@ Cada subcategoria de autopeças tem seu conjunto de parâmetros e valores espec�
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/autoparts/auto.md)
-- [Motos](https://github.com/olxbr/ad_integration/blob/master/autoparts/motorcycle.md)
-- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/autoparts/bus.md)
-- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/autoparts/truck.md)
-- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/autoparts/boat_plane.md)
+- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/auto.md)
+- [Motos](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/motorcycle.md)
+- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/bus.md)
+- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/truck.md)
+- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/boat_plane.md)
