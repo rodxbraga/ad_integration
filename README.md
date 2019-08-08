@@ -10,7 +10,8 @@ Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de 
 
 [Categoria Imóveis, via arquivo (XML)](https://github.com/olxbr/ad_integration/blob/master/docs/real_estate_xml.md)<br>
 [Categoria Veículos, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autos_json.md)<br>
-[Categoria Autopeças, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autoparts_json.md)
+[Categoria Autopeças, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autoparts_json.md)<br>
+[Categoria Agro e Indústria, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/agro_json.md)
 
 #### Inserção e Deleção
 
