@@ -26,6 +26,6 @@ Para ter informações sobre a integração via API atual (chamada de Autoupload
 
 Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
 
-Alternativamente, você pode simplesmente [abrir uma Issue neste repo](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
+Ou você pode [abrir uma Issue neste repo](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai olhar e responder a issue.
 
 **Importante**: Esta documentação está focada na importação de anúncios para o portal OLX Brasil. Para importação de anúncios para os portais Autoshift e Storia Imóveis, contate suporteintegrador@olxbr.com.
