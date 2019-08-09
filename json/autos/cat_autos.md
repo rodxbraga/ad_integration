@@ -8,11 +8,11 @@ Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada a
 
 | `category` | Categoria na OLX |
 |------------|----------------------------|
-| 2020 | Carros, vans e utilitários |
-| 2060 | Motos |
-| 2050 | Ônibus |
-| 2040 | Caminhões |
-| 2080 | Barcos e aeronaves |
+| `2020` | Carros, vans e utilitários |
+| `2060` | Motos |
+| `2050` | Ônibus |
+| `2040` | Caminhões |
+| `2080` | Barcos e aeronaves |
 
 ### Parâmetros específicos por subcategoria
 
