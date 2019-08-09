@@ -30,7 +30,7 @@ As subcategorias Agro e Indústria não possuem parâmetros específicos. Desta 
       {  
          "subject":"Trator em bom estado",
          "body":"Trator excelente, quase não foi usado.\nTem com características X, Y e Z.",
-         "category":"2105",
+         "category":"12020",
          "id":"AGRO01",
          "images":[  
             "http://img1.jpg",
