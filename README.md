@@ -4,24 +4,15 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 
 Há duas formas principais para integrar anúncios: via API ou via arquivo (JSON ou XML).
 
-## Integração via arquivo (JSON ou XML)
 
-Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de uma vez por dia) o arquivo disponibilizado pelo anunciante. Para isso, caberá ao anunciante (junto com seu integrador, quando isso for aplicável) disponibilizar uma URL onde esse arquivo estará sempre disponível.
+## Integração via Arquivo (JSON ou XML)
 
-[Categoria Imóveis, via arquivo (XML)](https://github.com/olxbr/ad_integration/blob/master/docs/real_estate_xml.md)<br>
-[Categoria Veículos, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autos_json.md)<br>
-[Categoria Autopeças, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autoparts_json.md)<br>
-[Categoria Agro e Indústria, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/agro_json.md)
+Para integração via Arquivo, temos dois formatos diferentes: JSON e XML. O formato JSON suporta qualquer categoria na OLX, enquanto XML é um formato específico para a Categoria `Imóveis`.
 
-#### Inserção e Deleção
+A documentação para essas integrações está a seguir:
 
-A OLX funciona com um modelo de inserção paga de anúncios. Para a importação de anúncios via arquivo, a OLX vai inferir que há uma nova inserção quando houver um anúncio com identificador inédito. Para JSONs, o identificador é o parâmetro `id` e, para XMLs, o identificador é o parâmetro `<CodigoImovel>`. 
-
-Se um anúncio com um identificador já existente estiver no arquivo em uma nova importação, não realizaremos nenhuma operação, a menos que haja alguma alteração nas outras informações desses anúncio. Nesse caso, trataremos a operação como uma edição (e não inserção).
-
-Para que ocorra a deleção de um anúncio, basta que ele deixe de existir no arquivo e, no próximo processamento dessa carga vamos inferir que esse anúncio deve ser removido. 
-
-**Importante**: se um anúncio for removido e no próximo processamento ele voltar a aparecer no arquivo (ou, especificamente, se um determinado identificar deixar de existir no arquivo e, em outra importação, voltar a aparecer, vamos inferir (e, portanto, contabilizar) uma nova inserção. Por isso é crítico que um anúncio sempre esteja disponível com o mesmo identificado no arquivo e só deixe de aparecer quando de fato tivermos que removê-lo do seu inventário.
+- [Importação de Anúncios via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/docs/json.md)
+- [Importação de Anúncios via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/docs/xml.md)<br>
 
 
 ## Integração via API
@@ -30,8 +21,11 @@ Atualmente a OLX tem uma API para integração, que suporta apenas as categorias
 
 Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
 
+
 ## Dúvidas, sugestões e comentários
 
 Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
 
-Alternativamente, você pode simplesmente abrir uma [`Issue` aqui neste repositório](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
+Alternativamente, você pode simplesmente abrir uma [`Issue`](https://github.com/olxbr/ad_integration/issues) neste repo, que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
+
+Obs: Esta documentação está focada na importação de anúncios para o portal OLX Brasil. Para importação para os portais verticais (Autoshift e Storia Imóveis), recomendamos contato com suporteintegrador@olxbr.com.
