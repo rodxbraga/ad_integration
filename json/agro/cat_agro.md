@@ -2,20 +2,26 @@
 
 Este manual tem como objetivo auxiliar a implantação de importação de anúncios de Agro e Indústria para as subcategorias `Tratores e máquinas agrícolas`, `Máquinas pesadas para construção`, `Máquinas para produção industrial`, `Peças para tratores e máquinas`, `Animais para agropecuária`, `Produção Rural` e `Outros itens para agro e indústria`, via JSON.
 
-Os parâmetros para preenchimento do JSON para essas subcategorias estão explicador a seguir: 
+### Subcategorias 
 
-| Parâmetro | Valor | Tipo | Obrigatório | Descrição  |
-|-------------------------------------------------|------------------------------------------------------------------------|-------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `subject` |  | string | sim | Título do anúncio Mínimo: 2 Máximo: 90    |
-| `body` |  | string | sim | Descrição do anúncio Mínimo: 2 Máximo: 6000     |
-| `category` | `12020` para Tratores e máquinas agrícolas,<br> `12120` para Máquinas pesadas para construção,<br> `12140` para Máquinas para produção industrial,<br> `12040` para Peças para tratores e máquinas,<br> `12100` para Animais para agropecuária,<br> `12180` para Produção Rural,<br> `12160` para Outros itens para agro e indústria| string | sim | Categoria do anúncio. |
-| `id` |  | string | sim | Identificador do anúncio. Regular expression : [A-Za-z0- 9_{}- ]{1,19}<br>Atenção: o campo id deve ser único no arquivo. |
-| `images` | URL das imagens | Array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens.<br>Importante: a primeira imagem da lista será a imagem principal do anúncio.         |
-| `price` |  | integer | não | Preço do anúncio (não aceita centavos).   |
-| `zipcode` |  | string numérica | sim | O CEP do anúncio.|
-| `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
+Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada anúncio esteja associado à `category` correspondente:
 
-Aqui está um exemplo de JSON para esta categoria:
+| `category` | Categoria na OLX |
+|------------|------------------------------------|
+| `12020` | Tratores e máquinas agrícolas |
+| `12120` | Máquinas pesadas para construção |
+| `12140` | Máquinas para produção industrial |
+| `12040` | Peças para tratores e máquinas |
+| `12100` | Animais para agropecuária |
+| `12180` | Produção Rural |
+| `12160` | Outros itens para agro e indústria |
+
+
+### Parâmetros específicos por subcategoria
+
+As subcategorias Agro e Indústria não possuem parâmetros específicos. Desta forma, basta respeitar os [parâmetros gerais para quaisquer anúncio na OLX](https://github.com/olxbr/ad_integration/blob/master/json/json.md).
+
+### Exemplo de JSON para a categoria
 
 ```json
 {  
