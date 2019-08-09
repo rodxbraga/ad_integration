@@ -2,6 +2,23 @@
 
 Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de uma vez por dia) o arquivo disponibilizado pelo anunciante. Para isso, caberá ao anunciante (junto com seu integrador, quando isso for aplicável) disponibilizar uma URL onde esse arquivo estará sempre disponível.
 
+### Parâmetros básicos
+
+Para a montagem do JSON, é necessário respeitar parâmetros genéricos e específicos de cada categoria e/ou subcategoria. Os parâmtros básicos são os seguintes:
+
+| Parâmetro | Valor | Tipo | Obrigatório | Descrição  |
+|-------------------------------------------------|---------------------------------------------------------|-------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `subject` |  | string | sim | Título do anúncio Mínimo: 2 Máximo: 90    |
+| `body` |  | string | sim | Descrição do anúncio Mínimo: 2 Máximo: 6000     |
+| `category` | | string | sim | Código que define onde o anúncio vai ser exibido na OLX. Verifique a documentação da categoria (ou subcategoria) para saber qual valor inserir para o parâmetro. |
+| `id` |  | string | sim | Identificador do anúncio.<br>Regular expression : [A-Za-z0- 9_{}- ]{1,19}<br>Atenção: o campo id deve ser único no arquivo. |
+| `images` | URL das imagens | Array de string | não | URL das imagens do anúncio. Não pode haver URLs repetidas neste array. Máximo de 20 imagens por anúncio.<br>Importante: a primeira imagem da lista será a imagem principal do anúncio.         |
+| `price` |  | integer | não | Preço do anúncio (não aceita centavos)   |
+| `zipcode` |  | string numérica | sim | CEP do local onde o produto está disponível.|
+| `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
+
+Exemplos de JSONs de cada categoria podem ser achados na documentação específica por categoria.
+
 
 ### Categorias Suportadas
 
