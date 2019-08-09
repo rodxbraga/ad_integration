@@ -2,6 +2,17 @@
 
 Este manual tem como objetivo auxiliar a implantação de importação de anúncios de veículos para as subcategorias `Carros, vans e utilitários`, `Ônibus`, `Caminhões`, `Motos` e `Barcos e aeronaves`, via JSON.
 
+### Subcategorias 
+
+Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada anúncio esteja associado à `category` correspondente:
+
+| `category` | Categoria na OLX |
+|------------|----------------------------|
+| 2020 | Carros, vans e utilitários |
+| 2060 | Motos |
+| 2050 | Ônibus |
+| 2040 | Caminhões |
+| 2080 | Barcos e aeronaves |
 
 ### Parâmetros específicos por subcategoria
 
