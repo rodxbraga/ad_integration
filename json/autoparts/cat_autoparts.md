@@ -22,8 +22,8 @@ Cada subcategoria de autopeças tem seu conjunto de parâmetros e valores espec�
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/auto.md)
-- [Motos](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/motorcycle.md)
-- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/bus.md)
-- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/truck.md)
-- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/docs/subs/autoparts/boat_plane.md)
+- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/json/autoparts/sub_autos.md)
+- [Motos](https://github.com/olxbr/ad_integration/blob/master/json/autoparts/sub_motorcycle.md)
+- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/json/autoparts/sub_bus.md)
+- [Caminhões](https://github.com/olxbr/ad_integration/blob/master/json/autoparts/sub_truck.md)
+- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/json/autoparts/sub_boat_plane.md)
