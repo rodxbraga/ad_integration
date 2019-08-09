@@ -22,7 +22,7 @@ Exemplos de JSONs de cada categoria podem ser achados na documentação específ
 
 ### Categorias Suportadas
 
-A Integração via JSON é suportada para anúncios de todas as categorias da OLX. Atualmente temos a documentação escrita para as seguintes categorias:
+**A Integração via JSON é suportada para anúncios de todas as categorias da OLX**. Atualmente temos a documentação escrita para as seguintes categorias:
 
 - [Autopeças](https://github.com/olxbr/ad_integration/tree/master/json/autoparts/cat_autoparts.md)
 - [Veículos](https://github.com/olxbr/ad_integration/tree/master/json/autos/cat_autos.md)
