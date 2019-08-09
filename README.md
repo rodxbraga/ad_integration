@@ -1,8 +1,6 @@
 # Documentação para a Importação de Anúncios da OLX Brasil
 
-A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que querem gerenciar seus anúncios a partir de um software terceiro (ou seja, sem passar pelas interfaces nativas da OLX para gestão de inventário).
-
-Há duas formas principais para integrar anúncios: via API ou via arquivo (JSON ou XML).
+A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que querem gerenciar seus anúncios a partir de um software terceiro (ou seja, sem passar pelas interfaces nativas da OLX para gestão de inventário): via API ou via arquivo (JSON ou XML).
 
 
 ### Integração via Arquivo (JSON ou XML)
