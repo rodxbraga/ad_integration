@@ -27,13 +27,13 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Autos e peças | Carros vans e utilitários | Sim* | Não | Sim** |
 | Autos e peças | Motos | Sim* | Não | Sim** |
 | Autos e peças | Ônibus | Sim* | Não | Não** |
-| Autos e peças | Caminhões | Sim | Não | Não** |
+| Autos e peças | Caminhões | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/auto/readme.md) | Não | Não** |
 | Autos e peças | Barcos e aeronaves | Sim* | Não | Não** |
-| Peças e acessórios | Carros vans e utilitários | Sim* | Não | Não** |
-| Peças e acessórios | Motos | Sim | Não | Não** |
-| Peças e acessórios | Ônibus | Sim | Não | Não** |
-| Peças e acessórios | Caminhões | Sim | Não | Não** |
-| Peças e acessórios | Barcos e aeronaves | Sim | Não | Não** |
+| Peças e acessórios | Carros vans e utilitários | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/autoparts/readme.md) | Não | Não** |
+| Peças e acessórios | Motos | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/autoparts/readme.md) | Não | Não** |
+| Peças e acessórios | Ônibus | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/autoparts/readme.md) | Não | Não** |
+| Peças e acessórios | Caminhões | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/autoparts/readme.md) | Não | Não** |
+| Peças e acessórios | Barcos e aeronaves | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/autoparts/readme.md) | Não | Não** |
 | Para a sua casa | Móveis | Sim* | Não | Não** |
 | Para a sua casa | Eletrodomésticos | Sim* | Não | Não** |
 | Para a sua casa | Materiais de construção e jardim | Sim* | Não | Não** |
@@ -61,13 +61,13 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Moda e beleza | Roupas e calçados | Sim* | Não | Não** |
 | Moda e beleza | Bolsas malas e mochilas | Sim* | Não | Não** |
 | Moda e beleza | Bijouterias relógios e acessórios | Sim* | Não | Não** |
-| Agro e indústria | Tratores e máquinas agrícolas | Sim | Não | Não** |
-| Agro e indústria | Máquinas pesadas para construção | Sim | Não | Não** |
-| Agro e indústria | Máquinas para produção industrial | Sim | Não | Não** |
-| Agro e indústria | Peças para tratores e máquinas | Sim | Não | Não** |
-| Agro e indústria | Animais para agropecuária | Sim | Não | Não** |
-| Agro e indústria | Produção Rural | Sim | Não | Não** |
-| Agro e indústria | Outros itens para agro e indústria | Sim | Não | Não** |
+| Agro e indústria | Tratores e máquinas agrícolas | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Máquinas pesadas para construção | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Máquinas para produção industrial | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Peças para tratores e máquinas | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Animais para agropecuária | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Produção Rural | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
+| Agro e indústria | Outros itens para agro e indústria | [Sim](https://github.com/olxbr/ad_integration/master/blob/json/agro/readme.md) | Não | Não** |
 | Comércio e escritório | Equipamentos e mobiliário | Sim* | Não | Não** |
 | Comércio e escritório | Trailers e carrinhos comerciais | Sim* | Não | Não** |
 | Comércio e escritório | Outros itens para comércio e escritório | Sim* | Não | Não** |
