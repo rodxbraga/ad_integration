@@ -11,8 +11,8 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 | [JSON](https://github.com/olxbr/ad_integration/blob/master/json/readme.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
 | [XML](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Estável | Imóveis | Nenhuma evolução prevista. |
 
-- [Documentação da Integração via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/docs/json.md)
-- [Documentação da Integração via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/docs/xml.md)<br>
+- [Documentação da Integração via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/json/readme.md)
+- [Documentação da Integração via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md)<br>
 
 Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com. Uma nova versão da API está em desenvolvimento e terá rollout em breve. 
 
@@ -22,12 +22,12 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 
 | Categoria | Subcategoria | JSON | XML | API |
 |-------------------------|-----------------------------------------|------|-----|-----|
-| Imóveis | Apartamentos | Sim* | Sim | Sim** |
-| Imóveis | Casas | Sim* | Sim | Sim** |
+| Imóveis | Apartamentos | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
+| Imóveis | Casas | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Imóveis | Aluguel de quartos | Sim* | Não | Não** |
-| Imóveis | Temporada | Sim* | Sim | Sim** |
-| Imóveis | Terrenos sítios e fazendas | Sim* | Sim | Sim** |
-| Imóveis | Comércio e indústria | Sim* | Sim | Sim** |
+| Imóveis | Temporada | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
+| Imóveis | Terrenos sítios e fazendas | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
+| Imóveis | Comércio e indústria | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Autos e peças | Carros vans e utilitários | Sim* | Não | Sim** |
 | Autos e peças | Motos | Sim* | Não | Sim** |
 | Autos e peças | Ônibus | Sim* | Não | Não** |
