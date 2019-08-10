@@ -11,8 +11,13 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 | [JSON](https://github.com/olxbr/ad_integration/blob/master/json/readme.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
 | [XML](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Estável | Imóveis | Nenhuma evolução prevista. |
 
+- [Documentação da Integração via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/docs/json.md)
+- [Documentação da Integração via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/docs/xml.md)<br>
 
-## Status das Integrações da OLX
+Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com.
+
+
+## Categorias Suportadas por cada Modelo de Integração
 
 Nem todas as categorias de anúncios na OLX são suportadas pelas integrações existentes:
 
@@ -77,24 +82,8 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 `*` A OLX suporta atualmente integração via JSON para essa categoria, mas a documentação ainda não está atualizada. Se deseja integrar com essa categoria, entre em contato com suporterintegrador@olxbr.com ou abra uma issue nesse repositório.<br>
 `**` Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente.
 
-### Integração via Arquivo (JSON ou XML)
 
-Para integração via Arquivo, temos dois formatos diferentes: JSON e XML. O formato JSON suporta qualquer categoria na OLX, enquanto XML é um formato específico para a Categoria `Imóveis`.
-
-A documentação para essas integrações está a seguir:
-
-- [Importação de Anúncios via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/docs/json.md)
-- [Importação de Anúncios via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/docs/xml.md)<br>
-
-
-### Integração via API
-
-Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Carros, vans e utilitários` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível.
-
-Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
-
-
-## Dúvidas, sugestões e comentários
+## Dúvidas, Sugestões e Comentários
 
 Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
 
