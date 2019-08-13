@@ -25,7 +25,7 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Imóveis | Apartamentos | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Imóveis | Casas | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Imóveis | Aluguel de quartos | Sim* | Não | Não** |
-| Imóveis | Temporada | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
+| Imóveis | Temporada | Sim* | Não | Sim** |
 | Imóveis | Terrenos sítios e fazendas | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Imóveis | Comércio e indústria | Sim* | [Sim](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Sim** |
 | Autos e peças | Carros vans e utilitários | Sim* | Não | Sim** |
