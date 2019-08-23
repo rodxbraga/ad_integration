@@ -14,3 +14,7 @@ header: `Content-type: application/json`
 ### Status
 `POST /autoupload/import/{id}`<br>
 header: `Content-type: application/json`
+
+## Dúvidas e sugestões?
+
+Abram uma `Issue` aqui nesse repo, para contato direto com a equipe de desenvolvimento da OLX. Se quiser agendar uma conversa direto com o Gerente de Produto da equipe, é só agendar aqui: https://calendly.com/renato-cairo-olx/papo_integracao_olx
