@@ -26,7 +26,7 @@ Importante: se um anúncio for removido e no próximo processamento ele voltar a
 
 ## Integração via API
 
-Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Carros, vans e utilitários` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível.
+Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Carros, vans e utilitários` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível: https://github.com/olxbr/ad_integration/blob/master/api/README.md
 
 Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
 
