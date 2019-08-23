@@ -79,7 +79,7 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Vagas de emprego |  | Sim* | Não | Não** |
 
 `*` A OLX suporta atualmente integração via JSON para essa categoria, mas a documentação ainda não está atualizada. Se deseja integrar com essa categoria, entre em contato com suporterintegrador@olxbr.com ou abra uma issue nesse repositório.<br>
-`**` Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente.
+`**` Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/readme.md
 
 
 ## Dúvidas, Sugestões e Comentários
