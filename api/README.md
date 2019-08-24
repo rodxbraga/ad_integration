@@ -1,10 +1,7 @@
 # Documentação da API de Integração de Anúncios da OLX
 
-**!!! IMPORTANTE !!!**
+> **IMPORTANTE**: A nova versão da API de Integração de Anúncios da OLX está em construção. Se você já está integrado com a OLX, preste atenção nas mudanças iminentes.
 
-A nova versão da API de Integração de Anúncios da OLX está em construção. A documentação será escrita e disponibilizada nesse repositório, mas por enquanto vamos já alinhando sobre as primeiras mudanças necessárias.
-
-Se voc
 
 ## Ajuste inicial de chamadas da nova API
 
@@ -18,6 +15,10 @@ header: `Content-type: application/json`
 ### Status
 `POST /autoupload/import/{id}`<br>
 header: `Content-type: application/json`
+
+
+***
+
 
 ## Dúvidas e sugestões?
 
