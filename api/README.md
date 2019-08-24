@@ -1,8 +1,8 @@
 # Documentação da API de Integração de Anúncios da OLX
 
-> **IMPORTANTE**: A nova versão da API de Integração de Anúncios da OLX está em construção. Se você já está integrado com a OLX, preste atenção nas mudanças iminentes.
+> **IMPORTANTE**: Se você já está integrado com a OLX, veja [aqui](https://github.com/olxbr/ad_integration/blob/master/api/autouploadtaffarel.md) o que muda na nova API, que está em processo de rollout.
 
-> Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
+Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
 
 ***
 
@@ -29,7 +29,7 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | Parâmetro | Valores | Tipo | Obrigatório | Descrição  |
 |--------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | access_token | | string | sim | Token de acesso |
-| id |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio. Deve ser único no JSON (caso haja mais de um anúncio no JSON. |
+| id |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio. Deve ser único no JSON (caso haja mais de um anúncio no JSON). |
 | operation | `insert` ou `delete` | string | sim | Valores para identificar qual será a operação a ser feita:<br>`insert` para inserir anúncios<br>`delete` para apagar anúncios. |
 | category |  | integer | sim | Categoria do anúncio. |
 | Subject |  | string | sim | Título do anúncio. Mínimo de 2 e máximo de 90 caracteres. |
@@ -52,56 +52,56 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 | [Imóveis](www.lerolero.com) | [Terrenos sítios e fazendas](www.lerolero.com) |
 | [Imóveis](www.lerolero.com) | [Comércio e indústria](www.lerolero.com) |
 | Autos e peças<sup>1</sup> | Carros vans e utilitários |
-| Autos e peças | Motos |
-| Autos e peças | Ônibus |
-| Autos e peças | Caminhões |
-| Autos e peças | Barcos e aeronaves |
-| Peças e acessórios | Carros vans e utilitários |
-| Peças e acessórios | Motos |
-| Peças e acessórios | Ônibus |
-| Peças e acessórios | Caminhões |
-| Peças e acessórios | Barcos e aeronaves |
-| Para a sua casa | Móveis |
-| Para a sua casa | Eletrodomésticos |
-| Para a sua casa | Materiais de construção e jardim |
-| Para a sua casa | Utilidades domésticas |
-| Para a sua casa | Objetos de decoração |
-| Eletrônicos e celulares | Videogames |
-| Eletrônicos e celulares | Computadores e acessórios |
-| Eletrônicos e celulares | Celulares e telefonia |
-| Eletrônicos e celulares | Áudio TV vídeo e fotografia |
-| Música e hobbies | Instrumentos musicais |
-| Música e hobbies | CDs DVDs etc |
-| Música e hobbies | Livros e revistas |
-| Música e hobbies | Antiguidades |
-| Música e hobbies | Hobbies e coleções |
-| Esportes e lazer | Esportes e ginástica |
-| Esportes e lazer | Ciclismo |
-| Artigos infantis |  |
-| Animais de estimação | Cachorros e acessórios |
-| Animais de estimação | Gatos e acessórios |
-| Animais de estimação | Cavalos e acessórios |
-| Animais de estimação | Aquários e acessórios |
-| Animais de estimação | Roedores e acessórios |
-| Animais de estimação | Outros animais e acessórios |
-| Moda e beleza | Beleza e saúde |
-| Moda e beleza | Roupas e calçados |
-| Moda e beleza | Bolsas malas e mochilas |
-| Moda e beleza | Bijouterias relógios e acessórios |
-| Agro e indústria | Tratores e máquinas agrícolas |
-| Agro e indústria | Máquinas pesadas para construção |
-| Agro e indústria | Máquinas para produção industrial |
-| Agro e indústria | Peças para tratores e máquinas |
-| Agro e indústria | Animais para agropecuária |
-| Agro e indústria | Produção Rural |
-| Agro e indústria | Outros itens para agro e indústria |
-| Comércio e escritório | Equipamentos e mobiliário |
-| Comércio e escritório | Trailers e carrinhos comerciais |
-| Comércio e escritório | Outros itens para comércio e escritório |
-| Serviços |  |
-| Vagas de emprego |  |
+| Autos e peças<sup>1</sup> | Motos |
+| Autos e peças<sup>1</sup> | Ônibus |
+| Autos e peças<sup>1</sup> | Caminhões |
+| Autos e peças<sup>1</sup> | Barcos e aeronaves |
+| Peças e acessórios<sup>1</sup> | Carros vans e utilitários<sup>1</sup> |
+| Peças e acessórios<sup>1</sup> | Motos<sup>1</sup> |
+| Peças e acessórios<sup>1</sup> | Ônibus<sup>1</sup> |
+| Peças e acessórios<sup>1</sup> | Caminhões<sup>1</sup> |
+| Peças e acessórios<sup>1</sup> | Barcos e aeronaves<sup>1</sup> |
+| Para a sua casa<sup>1</sup> | Móveis<sup>1</sup> |
+| Para a sua casa<sup>1</sup> | Eletrodomésticos<sup>1</sup> |
+| Para a sua casa<sup>1</sup> | Materiais de construção e jardim<sup>1</sup> |
+| Para a sua casa<sup>1</sup> | Utilidades domésticas<sup>1</sup> |
+| Para a sua casa<sup>1</sup> | Objetos de decoração<sup>1</sup> |
+| Eletrônicos e celulares<sup>1</sup> | Videogames<sup>1</sup> |
+| Eletrônicos e celulares<sup>1</sup> | Computadores e acessórios<sup>1</sup> |
+| Eletrônicos e celulares<sup>1</sup> | Celulares e telefonia<sup>1</sup> |
+| Eletrônicos e celulares<sup>1</sup> | Áudio TV vídeo e fotografia<sup>1</sup> |
+| Música e hobbies<sup>1</sup> | Instrumentos musicais<sup>1</sup> |
+| Música e hobbies<sup>1</sup> | CDs DVDs etc<sup>1</sup> |
+| Música e hobbies<sup>1</sup> | Livros e revistas<sup>1</sup> |
+| Música e hobbies<sup>1</sup> | Antiguidades<sup>1</sup> |
+| Música e hobbies<sup>1</sup> | Hobbies e coleções<sup>1</sup> |
+| Esportes e lazer<sup>1</sup> | Esportes e ginástica<sup>1</sup> |
+| Esportes e lazer<sup>1</sup> | Ciclismo<sup>1</sup> |
+| Artigos infantis<sup>1</sup> |  |
+| Animais de estimação<sup>1</sup> | Cachorros e acessórios<sup>1</sup> |
+| Animais de estimação<sup>1</sup> | Gatos e acessórios<sup>1</sup> |
+| Animais de estimação<sup>1</sup> | Cavalos e acessórios<sup>1</sup> |
+| Animais de estimação<sup>1</sup> | Aquários e acessórios<sup>1</sup> |
+| Animais de estimação<sup>1</sup> | Roedores e acessórios<sup>1</sup> |
+| Animais de estimação<sup>1</sup> | Outros animais e acessórios<sup>1</sup> |
+| Moda e beleza<sup>1</sup> | Beleza e saúde<sup>1</sup> |
+| Moda e beleza<sup>1</sup> | Roupas e calçados<sup>1</sup> |
+| Moda e beleza<sup>1</sup> | Bolsas malas e mochilas<sup>1</sup> |
+| Moda e beleza<sup>1</sup> | Bijouterias relógios e acessórios<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Tratores e máquinas agrícolas<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Máquinas pesadas para construção<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Máquinas para produção industrial<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Peças para tratores e máquinas<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Animais para agropecuária<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Produção Rural<sup>1</sup> |
+| Agro e indústria<sup>1</sup> | Outros itens para agro e indústria<sup>1</sup> |
+| Comércio e escritório<sup>1</sup> | Equipamentos e mobiliário<sup>1</sup> |
+| Comércio e escritório<sup>1</sup> | Trailers e carrinhos comerciais<sup>1</sup> |
+| Comércio e escritório<sup>1</sup> | Outros itens para comércio e escritório<sup>1</sup> |
+| Serviços<sup>1</sup> |  |
+| Vagas de emprego<sup>1</sup> |  |
 
-<sup>1</sup> Estamos escrevendo a documentação gradualmente. Caso tenha interesse em integrar para uma categoria com documentação ainda não disponível, abra uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
+<sup>1</sup> Estamos escrevendo a documentação gradualmente. Caso tenha interesse em integrar para uma categoria com documentação ainda não disponível, abra uma Issue ou entre em contato via suporteintegrador@olxbr.com.
 
 
 ### Deleção de Anúncios
@@ -122,7 +122,7 @@ A seguir um JSON de exemplo com uma deleção:
 }
 ```
 
-O anúncio permanecerá publicado a menos que uma operação de deleção seja enviada para a OLX Brasil com o `id` utilizado em sua inserção. Portanto recomendamos que todo integrador envie a operação de deleção em toda instância na qual o anunciante remover o anúncio.
+O anúncio permanecerá publicado a menos que uma operação de deleção seja enviada para a OLX Brasil com o `id` utilizado em sua inserção. Portanto recomendamos atenção redobrada para o integrador enviar a deleção para a OLX Brasil, para evitar que anúncios de produtos já vendidos continuem publicados - prejudicando a experiência do anunciante e do comprador.
 
 
 ### Retorno Esperado 
