@@ -19,7 +19,7 @@ O processo de integração de anúncios via API consiste no envio de um arquivo 
 
 A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
 
-O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser UTF-8.
+O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8`.
 
 
 ### Inserção ou Edição de Anúncios
@@ -41,7 +41,7 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | params |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | images | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 
-Os parâmetros específicos de categorias podem ser encontrados na documentação de cada categoria:
+Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrados na documentação de cada categoria:
 
 | Categoria | Subcategoria |
 |-------------------------|-----------------------------------------|
@@ -51,7 +51,7 @@ Os parâmetros específicos de categorias podem ser encontrados na documentaçã
 | [Imóveis](www.lerolero.com) | [Temporada](www.lerolero.com) |
 | [Imóveis](www.lerolero.com) | [Terrenos sítios e fazendas](www.lerolero.com) |
 | [Imóveis](www.lerolero.com) | [Comércio e indústria](www.lerolero.com) |
-| Autos e peças | Carros vans e utilitários |
+| Autos e peças<sup>1</sup> | Carros vans e utilitários |
 | Autos e peças | Motos |
 | Autos e peças | Ônibus |
 | Autos e peças | Caminhões |
@@ -101,7 +101,7 @@ Os parâmetros específicos de categorias podem ser encontrados na documentaçã
 | Serviços |  |
 | Vagas de emprego |  |
 
-Estamos escrevendo a documentação ad hoc. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
+<sup>1</sup> Estamos escrevendo a documentação gradualmente. Caso tenha interesse em integrar para uma categoria com documentação ainda não disponível, abra uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
 
 
 ### Deleção de Anúncios
@@ -122,6 +122,9 @@ A seguir um JSON de exemplo com uma deleção:
 }
 ```
 
+O anúncio permanecerá publicado a menos que uma operação de deleção seja enviada para a OLX Brasil com o `id` utilizado em sua inserção. Portanto recomendamos que todo integrador envie a operação de deleção em toda instância na qual o anunciante remover o anúncio.
+
+
 ### Retorno Esperado 
    
 O formato do retorno de nosso servidor será do tipo JSON.
@@ -135,7 +138,6 @@ O formato do retorno de nosso servidor será do tipo JSON.
 | `statusCode` | `0` |  |
 | `errors` | `array` | Retorna uma lista de erros |
 
-2.7.3 Exemplo de Retorno
 
 ```json
 {
@@ -207,18 +209,3 @@ O formato do retorno de nosso servidor será do tipo JSON.
 | `ERROR_UNKNOWN_CAR_FEATURES` | Parâmetro adicional de carros desconhecido |
 | `ERROR_NO_SUCH_PARAMETER` | Indica que não existe o parâmetro passado  |
 | `ERROR_OPERATION_INVALID` | Tipo de operação inválida   |
-
-| Parâmetro | Valores | Tipo | Obrigatório | Descrição  |
-|--------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| access_token | A identificação fornecida pelo olx.com.br através do handshake do oAuth.   | string | sim | Token de acesso |
-| id |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio |
-| operation | insert delete | string | Sim | Valores para identificar qual será a operação a ser feita:<br>Insert - inserir anúncios<br>Delete - apagar anúncios     |
-| category | 1020<br>1040<br>1060<br>1080<br>1100<br>1120<br>1140<br>2020<br>2060 | integer | Sim | Categoria do anúncio: 1020–Apartamentos<br> 1040–Casas<br> 1060–Aluguel de Quartos<br> 1080–T emporada<br> 1100–Terrenos, sítios e fazendas<br> 1120–Lojas, salas e outros<br> 1140–Lançamentos<br> 2020–Carros<br>2060–Motos   |
-| Subject |  | string | Sim | Título do anúncio. Mínimo: 2 Máximo: 90    |
-| Body |  | string | sim | Descrição do anúncio. Mínimo: 2 Máximo: 6000     |
-| Phone |  | string númerica | sim | Telefone para contato Mínimo: 10 Máximo: 11 (telefones com 9 dígitos) Formato: <ddd><telefone> Exemplo: 21999998888   |
-| type | `s` para categorias 2020 e 1140.<br> `u` para categorias 1060 e 1080.<br> `s` ou `u` para as demais | string | sim | Tipo de oferta do anúncio: s: venda u: aluguel |
-| price |  | integer | não | Preço do anúncio (não aceita centavos)   |
-| zipcode |  | string numérica | sim | O CEP do anúncio. Caso o anúncio seja de uma categoria de Imóveis, deve ser o CEP do endereço do imóvel. Caso contrário, o CEP deve ser o do vendedor / loja.      |
-| params | (ver tabela abaixo) | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio.    |
-| images | URL da imagem | array de string |  | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Para carro só serão permitidas no máximo 6 imagens. No máximo 20 imágens nas outras categorias. Importante: a primeira imagem da lista será a imagem principal do anúncio!          |
