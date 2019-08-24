@@ -2,37 +2,24 @@
 
 > **IMPORTANTE**: A nova versão da API de Integração de Anúncios da OLX está em construção. Se você já está integrado com a OLX, preste atenção nas mudanças iminentes.
 
-> Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
+> Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
 
 ***
 
 ## Autenticação oAuth no OLX
 
-Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. No processo de autenticação, o integrador utilizado deve ser homologado com o olx.com.br. O processo de homologação encontra-se descrito em https://github.com/olxbr/ad_integration/blob/master/oauth/README.md.
+Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
 
-No cadastro, o solicitante (Integrador/Administrador) receberá o `client_id` e o `client_secret` que deverão ser usados na url de conexão. Durante o fluxo oAuth será requisitado ao usuário que dê permissão ao integrador para gerenciar seus anúncios no OLX através do sistema de importação. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação cliente necessitará. Para utilizar o sistema de importação automática, é preciso o `scope` `autoupload`.
+No cadastro, o solicitante (Integrador/Administrador) receberá o `client_id` e o `client_secret` que deverão ser usados na url de conexão. Durante o fluxo oAuth será requisitado ao usuário que dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
+
 
 ## Requisição de importação ao servidor olx.com.br
 
 O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção. Ao receber este arquivo, nosso servidor faz a validação das informações presentes e insere os anúncios em uma fila, onde serão posteriormente processados e inseridos.
 
-Ao final do processamento do arquivo JSON, é gerado um token que será retornado como resposta. Com esse token é possível consultar o status da importação e dos anúncios importados.
-
-Um anúncio importado passa pelos seguintes estados:
-
-- `pending`: anúncio na fila de inserção;
-- `queued`: anúncio inserido na fila de revisão;
-- `accepted`: anúncio publicado;
-- `refused`: anúncio recusado;
-- `error`: ocorreu um erro no anúncio.
-
-Abaixo, as instruções para realizar uma importação:
-
-### Configurações básicas para integração
-
 A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
 
-O nosso servidor deve receber a requisição com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`.
+O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser UTF-8.
 
 
 ### Inserção, Edição e Deleção
@@ -42,13 +29,6 @@ Na integração de anúncios via API, é possível realizar operações de `
 - Insert - Indica a inserção de um anúncio. Caso o anúncio já exista em nossa base, nosso sistema irá tratá-lo como uma edição;
 - Delete - Realiza a deleção do anúncio de nossa base. Neste caso, basta passar o id do anúncio (ver exemplo abaixo). 
 
-## Formato
-
-O formato do arquivo a ser enviado deverá ser do tipo JSON.
-
-## Codificação
-
-O formato do encode do arquivo a ser enviado deverá ser UTF8.
 
 ## Exemplo
 
@@ -124,18 +104,18 @@ A seguir, um exemplo de um arquivo, contendo duas inserções e uma deleçã
 }
 ```
 
-2.7 Retorno Esperado 
+### Retorno Esperado 
    
-2.7.1 Formato
 O formato do retorno de nosso servidor será do tipo JSON.
-2.7.2 Sucesso
 
-| Parameter | Value | Description |
+#### Sucesso
+
+| Paramêtro | Valor | Descrição |
 |---------------|------------------------------------------|------------------------------------------------------------------------|
-| token |  | Retorna umastringcom umtokena ser usado para acessar o status doimport |
-| statusMessage | The ads wereimported andwill beprocessed | Os anúncios foram importados e serão processados  |
-| statusCode | 0 |  |
-| errors | array | Retorna uma lista de erros |
+| `token` |  | Retorna uma string com um token a ser usado para acessar o status da importação |
+| `statusMessage` | `The ads were imported and will beprocessed` | Os anúncios foram importados e serão processados  |
+| `statusCode` | `0` |  |
+| `errors` | `array` | Retorna uma lista de erros |
 
 2.7.3 Exemplo de Retorno
 
