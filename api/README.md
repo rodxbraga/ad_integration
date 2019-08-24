@@ -139,3 +139,62 @@ A seguir, um exemplo de um arquivo, contendo duas inserções e uma deleçã
     ]
 }
 ```
+
+2.7 Retorno Esperado 
+   
+2.7.1 Formato
+O formato do retorno de nosso servidor será do tipo JSON.
+2.7.2 Sucesso
+
+| Parameter | Value | Description |
+|---------------|------------------------------------------|------------------------------------------------------------------------|
+| token |  | Retorna umastringcom umtokena ser usado para acessar o status doimport |
+| statusMessage | The ads wereimported andwill beprocessed | Os anúncios foram importados e serão processados  |
+| statusCode | 0 |  |
+| errors | array | Retorna uma lista de erros |
+
+2.7.3 Exemplo de Retorno
+
+```json
+{
+    "token": "06fb235e216f3095ba913654d10afee2f55eae35",
+    "statusCode": 0,
+    "statusMessage": "The ads were imported and will be processed",
+    "errors": []
+}
+```
+
+
+
+| Código | Mensagem | Descrição  |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 0 | The ads were imported and will be processed | Os anúncios foram importados com sucesso e serão processados  |
+| -1 | Unexpected error | Erro inesperado |
+| -2 | The request was blocked | Usuário não pode importar pois está bloqueado temporariamente por excesso de requisições     |
+| -3 | There is no ad to import | Não há anúncios para importar   |
+| -4 | An ad had problems on import | Se um anúncio falhar em sua validação, a importação é cancelada      |
+| -5 | Import is down | O serviço de importação está desativado    |
+| -6 | Without permission | Usuário sem permissão  |
+| -7 | Trying to import <n> ad(s), but user just have slot for <f> more. | O usuário está tentando importar <n> anúncios mas só podem importar mais <f>.    |
+| -8 | Trying to import <n> ad(s), only <f> were imported and will be processed. The following ads were ignored due to limit exceeded: <t> | Tentando importar <n> anúncios, só <f> foram importados e serão processados. Os seguintes anúncios foram ignorados devido ao limite excedido.    |
+
+
+
+```json
+{
+    "token": null,
+    "statusCode": -4,
+    "statusMessage": "An ad had problems on import",
+    "errors": [
+        {
+            "id": "5555555555",
+            "status": "error",
+            "messages": []
+        }
+   {
+            "category": "ERROR_CATEGORY_INVALID"
+        }
+    ]
+}
+```
+
