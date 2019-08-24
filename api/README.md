@@ -2,32 +2,10 @@
 
 > **IMPORTANTE**: A nova versão da API de Integração de Anúncios da OLX está em construção. Se você já está integrado com a OLX, preste atenção nas mudanças iminentes.
 
-
-## Ajuste inicial de chamadas da nova API
-
-Nós estamos trabalhando para melhorar a experiência de integração com a OLX. Estamos ajustando nossa API para garantir uma maior disponibilidade e performance para o gerênciamento do seu anúncio. A API tem como objetivo dar maior transparência do status do seu anúncio, assim como facilitar a manipulação do mesmo.
-
-Nesse primeiro momento precisamos uniformizar as chamadas que são feitas para a API. A versão atual aceita chamadas feitas incorretamente e, para avançarmos com a nova versão, precisamos ajustar esse ponto. Os endpoints que podem ser utilizados para a importação e consulta de status deverão receber chamadas seguindo o padrão:
-
-### Inserção, edição e deleção
 `PUT /autoupload/import`<br>
-header: `Content-type: application/json`
-### Status
-`POST /autoupload/import/{id}`<br>
-header: `Content-type: application/json`
-
+Se precisar de ajuda em qualquer momento, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
 
 ***
-
-
-## Dúvidas e sugestões?
-
-Abram uma `Issue` aqui nesse repositório, para contato direto com a equipe de desenvolvimento da OLX. Se quiser agendar uma conversa direto com o Gerente de Produto da equipe, é só agendar aqui: https://calendly.com/renato-cairo-olx/papo_integracao_olx
-
-
-
-
-# Documentação da Importação de Anúncios via API
 
 ## Autenticação oAuth no OLX
 
