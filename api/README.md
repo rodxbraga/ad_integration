@@ -1,6 +1,10 @@
-# Documentação da API de Integração de Anúncios da OLX 
+# Documentação da API de Integração de Anúncios da OLX
+
+**!!! IMPORTANTE !!!**
 
 A nova versão da API de Integração de Anúncios da OLX está em construção. A documentação será escrita e disponibilizada nesse repositório, mas por enquanto vamos já alinhando sobre as primeiras mudanças necessárias.
+
+Se voc
 
 ## Ajuste inicial de chamadas da nova API
 
@@ -26,13 +30,16 @@ Abram uma `Issue` aqui nesse repositório, para contato direto com a equipe de d
 
 ## Autenticação oAuth no OLX
 
-Para utilizar a importação automática é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. No processo de autenticação, o integrador utilizado deve ser homologado com o olx.com.br. O processo de homologação encontra-se descrito  (https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
+Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. No processo de autenticação, o integrador utilizado deve ser homologado com o olx.com.br. O processo de homologação encontra-se descrito em https://github.com/olxbr/ad_integration/blob/master/oauth/README.md.
 
-No cadastro, o solicitante (Integrador/Administrador) receberá o client_id e o client_secret que deverão ser usados na url de conexão. Durante o fluxo oAuth será requisitado ao usuário que dê permissão ao integrador para gerenciar seus anúncios no OLX através do sistema de importação. No handshake do oAuth, é requisitado também o scope que a aplicação cliente necessitará. Para utilizar o sistema de importação automática, é preciso o scope autoupload.
+No cadastro, o solicitante (Integrador/Administrador) receberá o `client_id` e o `client_secret` que deverão ser usados na url de conexão. Durante o fluxo oAuth será requisitado ao usuário que dê permissão ao integrador para gerenciar seus anúncios no OLX através do sistema de importação. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação cliente necessitará. Para utilizar o sistema de importação automática, é preciso o `scope` `autoupload`.
 
 ## Requisição de importação ao servidor olx.com.br
-O processo de importação de anúncios de forma automática no olx.com.br consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção e/ou deleção. Ao receber este arquivo, nosso servidor faz a validação das informações presentes e insere os anúncios em uma fila, onde serão posteriormente processados e inseridos.
+
+O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção. Ao receber este arquivo, nosso servidor faz a validação das informações presentes e insere os anúncios em uma fila, onde serão posteriormente processados e inseridos.
+
 Ao final do processamento do arquivo JSON, é gerado um token que será retornado como resposta. Com esse token é possível consultar o status da importação e dos anúncios importados.
+
 Um anúncio importado passa pelos seguintes estados:
 
 - `pending`: anúncio na fila de inserção;
@@ -43,17 +50,16 @@ Um anúncio importado passa pelos seguintes estados:
 
 Abaixo, as instruções para realizar uma importação:
 
-## URL
+### Configurações básicas para integração
 
 A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
 
-## Método
+O nosso servidor deve receber a requisição com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`.
 
-O nosso servidor deve receber a requisição com método do tipo PUT.
 
-## Operações
+### Inserção, Edição e Deleção
 
-Na importação automática de anúncios, é possível realizar operações de insert ou delete, que indicam, respectivamente, inserção ou deleção de anúncios. Para definir qual operação executar para um determinado anúncio, deve-se utilizar o parâmetro operation em seu arquivo JSON.
+Na integração de anúncios via API, é possível realizar operações de `insert` ou `delete`, que indicam inserção ou deleção de anúncios. Para definir qual operação executar para um determinado anúncio, deve-se utilizar o parâmetro `operation` em seu arquivo JSON.
 
 - Insert - Indica a inserção de um anúncio. Caso o anúncio já exista em nossa base, nosso sistema irá tratá-lo como uma edição;
 - Delete - Realiza a deleção do anúncio de nossa base. Neste caso, basta passar o id do anúncio (ver exemplo abaixo). 
