@@ -10,24 +10,35 @@
 
 Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
 
-No cadastro, o solicitante (Integrador/Administrador) receberá o `client_id` e o `client_secret` que deverão ser usados na url de conexão. Durante o fluxo oAuth será requisitado ao usuário que dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
+Na autenticação, o sistema solicitante receberá o `client_id` e o `client_secret` que deverão ser usados na URL de conexão. Durante o fluxo oAuth será requisitado que o usuário dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
 
 
 ## Requisição de importação ao servidor olx.com.br
 
-O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção. Ao receber este arquivo, nosso servidor faz a validação das informações presentes e insere os anúncios em uma fila, onde serão posteriormente processados e inseridos.
+O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção.
 
 A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
 
 O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser UTF-8.
 
 
-### Inserção, Edição e Deleção
+Para uma inserção ou edição de anúncios, é necessário respeitar parâmetros básicos, além de específicos de cada categoria e/ou subcategoria. Os parâmtros básicos são os seguintes:
 
-Na integração de anúncios via API, é possível realizar operações de `insert` ou `delete`, que indicam inserção ou deleção de anúncios. Para definir qual operação executar para um determinado anúncio, deve-se utilizar o parâmetro `operation` em seu arquivo JSON.
+| Parâmetro | Valores | Tipo | Obrigatório | Descrição  |
+|--------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| access_token | A identificação fornecida pelo olx.com.br através do handshake do oAuth.   | string | sim | Token de acesso |
+| id |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio |
+| operation | insert delete | string | Sim | Valores para identificar qual será a operação a ser feita:<br>Insert - inserir anúncios<br>Delete - apagar anúncios     |
+| category | 1020<br>1040<br>1060<br>1080<br>1100<br>1120<br>1140<br>2020<br>2060 | integer | Sim | Categoria do anúncio: 1020–Apartamentos<br> 1040–Casas<br> 1060–Aluguel de Quartos<br> 1080–T emporada<br> 1100–Terrenos, sítios e fazendas<br> 1120–Lojas, salas e outros<br> 1140–Lançamentos<br> 2020–Carros<br>2060–Motos   |
+| Subject |  | string | Sim | Título do anúncio. Mínimo: 2 Máximo: 90    |
+| Body |  | string | sim | Descrição do anúncio. Mínimo: 2 Máximo: 6000     |
+| Phone |  | string númerica | sim | Telefone para contato Mínimo: 10 Máximo: 11 (telefones com 9 dígitos) Formato: <ddd><telefone> Exemplo: 21999998888   |
+| type | `s` para categorias 2020 e 1140.<br> `u` para categorias 1060 e 1080.<br> `s` ou `u` para as demais | string | sim | Tipo de oferta do anúncio: s: venda u: aluguel |
+| price |  | integer | não | Preço do anúncio (não aceita centavos)   |
+| zipcode |  | string numérica | sim | O CEP do anúncio. Caso o anúncio seja de uma categoria de Imóveis, deve ser o CEP do endereço do imóvel. Caso contrário, o CEP deve ser o do vendedor / loja.      |
+| params | (ver tabela abaixo) | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio.    |
+| images | URL da imagem | array de string |  | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Para carro só serão permitidas no máximo 6 imagens. No máximo 20 imágens nas outras categorias. Importante: a primeira imagem da lista será a imagem principal do anúncio!          |
 
-- Insert - Indica a inserção de um anúncio. Caso o anúncio já exista em nossa base, nosso sistema irá tratá-lo como uma edição;
-- Delete - Realiza a deleção do anúncio de nossa base. Neste caso, basta passar o id do anúncio (ver exemplo abaixo). 
 
 
 ## Exemplo
