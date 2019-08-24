@@ -22,7 +22,9 @@ A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/auto
 O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser UTF-8.
 
 
-Para uma inserção ou edição de anúncios, é necessário respeitar parâmetros básicos, além de específicos de cada categoria e/ou subcategoria. Os parâmtros básicos são os seguintes:
+### Inserção ou Edição de Anúncios
+
+Para uma inserção ou edição de anúncios, é necessário montar o JSON com parâmetros básicos para qualquer categorias, além de específicos de cada categoria e/ou subcategoria. Os parâmtros básicos são os seguintes:
 
 | Parâmetro | Valores | Tipo | Obrigatório | Descrição  |
 |--------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -39,74 +41,25 @@ Para uma inserção ou edição de anúncios, é necessário respeitar parâmetr
 | params |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | images | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 
+Os parâ
+
+* [Veículos](www.lerolero.com)
+* [Autopeças](www.lerolero.com)
+* [Imóveis](www.lerolero.com)
+
+Estamos escrevendo a documentação ad hoc. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
 
 
-## Exemplo
+### Deleção de Anúncios
 
-A seguir, um exemplo de um arquivo, contendo duas inserções e uma deleção:
+Para uma deleção, basta enviar o `id` e a operação `delete`.
+
+A seguir um JSON de exemplo com uma deleção:
 
 ```json
 {
     "access_token": "ca18abccaadd282490e75173f98b8ec6f0c1c6c8",
     "ad_list": [
-        {
-            "id": "5555555555",
-            "operation": "insert",
-            "category": 2020,
-            "subject": "Carro Novo",
-            "body": "Corpo do anúnucio",
-            "phone": 2155555555,
-            "type": "s",
-            "price": 10500,
-            "zipcode": "24230090",
-            "params": {
-                "vehicle_brand": "3",
-                "vehicle_model": "6",
-                "vehicle_version": "2",
-                "regdate": "1988",
-                "gearbox": "1",
-                "fuel": "1",
-                "cartype": "2",
-                "mileage": "10000",
-                "doors": "1",
-                "end_tag": "1",
-                "car_features": [
-                    "1",
-                    "2"
-                ]
-            },
-            "images": [
-                "http://www.a.com/image1.png",
-                "http://www.a.com/image2.png"
-            ]
-        },
-        {
-            "id": "666666666",
-            "operation": "insert",
-            "category": 2020,
-            "subject": "Carro Novo 2",
-            "body": "Corpo do anúnucio 2",
-            "phone": 2155555544,
-            "type": "s",
-            "price": 12500,
-            "zipcode": "24234590",
-            "params": {
-                "regdate": "2001",
-                "gearbox": "2",
-                "fuel": "3",
-                "cartype": "2",
-                "mileage": "1",
-                "doors": "1",
-                "end_tag": "1",
-                "car_features": [
-                    "1",
-                    "2"
-                ]
-            },
-            "images": [
-                "http://www.a.com/image3.png"
-            ]
-        },
         {
             "id": "444444444",
             "operation": "delete"
