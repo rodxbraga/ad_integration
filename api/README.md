@@ -198,3 +198,30 @@ O formato do retorno de nosso servidor será do tipo JSON.
 }
 ```
 
+| Código | Descrição  |
+|--------------------------------|--------------------------------------------|
+| `ERROR_CATEGORY_INVALID` | Categoria inválida |
+| `ERROR_REGION_MISSING` | Região inválida  |
+| `ERROR_ZIPCODE_INVALID` | CEP inválido |
+| `ERROR_TYPE_INVALID` | Tipo inválido |
+| `ERROR_PHONE_INVALID` | Número de telefone inválido  |
+| `ERROR_PHONE_TOO_SHORT` | Número de telefone muito curto |
+| `ERROR_PHONE_TOO_LONG` | Número de telefone muito longo |
+| `ERROR_BODY_TOO_SHORT` | Descrição muito curta  |
+| `ERROR_BODY_TOO_LONG` | Descrição muito longa  |
+| `ERROR_SUBJECT_TOO_SHORT` | Título muito curto |
+| `ERROR_SUBJECT_TOO_LONG` | Título muito longo |
+| `ERROR_FUEL_INVALID` | Tipo de combustível inválido  |
+| `ERROR_FUEL_MISSING` | Tipo de combustível ausente |
+| `ERROR_CARTYPE_INVALID` | Tipo de carro inválido |
+| `ERROR_DOORS_MISSING` | Tipo de portas inválidos |
+| `ERROR_ROOMS_INVALID` | Total de quartos inválidos |
+| `ERROR_ROOMS_MISSING` | Número de quartos ausente |
+| `ERROR_CATEGORY_SUBTYPE_MISSING` | Tipo de apartamento inválido |
+| `ERROR_SIZE_INVALID` | Tamanho inválido |
+| `ERROR_UNKNOWN_APARTMENT_TYPE` | Tipo de apartamento desconhecido |
+| `ERROR_MILEAGE_INVALID` | Quilometragem incorreta |
+| `ERROR_REGDATE_INVALID` | Ano inválido para carro |
+| `ERROR_UNKNOWN_CAR_FEATURES` | Parâmetro adicional de carros desconhecido |
+| `ERROR_NO_SUCH_PARAMETER` | Indica que não existe o parâmetro passado  |
+| `ERROR_OPERATION_INVALID` | Tipo de operação inválida   |
