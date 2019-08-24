@@ -41,11 +41,65 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | params |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | images | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 
-Os parâ
+Os parâmetros específicos de categorias podem ser encontrados na documentação de cada categoria:
 
-* [Veículos](www.lerolero.com)
-* [Autopeças](www.lerolero.com)
-* [Imóveis](www.lerolero.com)
+| Categoria | Subcategoria |
+|-------------------------|-----------------------------------------|
+| [Imóveis](www.lerolero.com) | [Apartamentos](www.lerolero.com) |
+| [Imóveis](www.lerolero.com) | [Casas](www.lerolero.com) |
+| [Imóveis](www.lerolero.com) | [Aluguel de quartos](www.lerolero.com) |
+| [Imóveis](www.lerolero.com) | [Temporada](www.lerolero.com) |
+| [Imóveis](www.lerolero.com) | [Terrenos sítios e fazendas](www.lerolero.com) |
+| [Imóveis](www.lerolero.com) | [Comércio e indústria](www.lerolero.com) |
+| Autos e peças | Carros vans e utilitários |
+| Autos e peças | Motos |
+| Autos e peças | Ônibus |
+| Autos e peças | Caminhões |
+| Autos e peças | Barcos e aeronaves |
+| Peças e acessórios | Carros vans e utilitários |
+| Peças e acessórios | Motos |
+| Peças e acessórios | Ônibus |
+| Peças e acessórios | Caminhões |
+| Peças e acessórios | Barcos e aeronaves |
+| Para a sua casa | Móveis |
+| Para a sua casa | Eletrodomésticos |
+| Para a sua casa | Materiais de construção e jardim |
+| Para a sua casa | Utilidades domésticas |
+| Para a sua casa | Objetos de decoração |
+| Eletrônicos e celulares | Videogames |
+| Eletrônicos e celulares | Computadores e acessórios |
+| Eletrônicos e celulares | Celulares e telefonia |
+| Eletrônicos e celulares | Áudio TV vídeo e fotografia |
+| Música e hobbies | Instrumentos musicais |
+| Música e hobbies | CDs DVDs etc |
+| Música e hobbies | Livros e revistas |
+| Música e hobbies | Antiguidades |
+| Música e hobbies | Hobbies e coleções |
+| Esportes e lazer | Esportes e ginástica |
+| Esportes e lazer | Ciclismo |
+| Artigos infantis |  |
+| Animais de estimação | Cachorros e acessórios |
+| Animais de estimação | Gatos e acessórios |
+| Animais de estimação | Cavalos e acessórios |
+| Animais de estimação | Aquários e acessórios |
+| Animais de estimação | Roedores e acessórios |
+| Animais de estimação | Outros animais e acessórios |
+| Moda e beleza | Beleza e saúde |
+| Moda e beleza | Roupas e calçados |
+| Moda e beleza | Bolsas malas e mochilas |
+| Moda e beleza | Bijouterias relógios e acessórios |
+| Agro e indústria | Tratores e máquinas agrícolas |
+| Agro e indústria | Máquinas pesadas para construção |
+| Agro e indústria | Máquinas para produção industrial |
+| Agro e indústria | Peças para tratores e máquinas |
+| Agro e indústria | Animais para agropecuária |
+| Agro e indústria | Produção Rural |
+| Agro e indústria | Outros itens para agro e indústria |
+| Comércio e escritório | Equipamentos e mobiliário |
+| Comércio e escritório | Trailers e carrinhos comerciais |
+| Comércio e escritório | Outros itens para comércio e escritório |
+| Serviços |  |
+| Vagas de emprego |  |
 
 Estamos escrevendo a documentação ad hoc. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
 
