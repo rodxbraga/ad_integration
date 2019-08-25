@@ -134,7 +134,7 @@ O formato do retorno de nosso servidor será do tipo JSON.
 | Paramêtro | Valor | Descrição |
 |---------------|------------------------------------------|------------------------------------------------------------------------|
 | `token` |  | Retorna uma string com um token a ser usado para acessar o status da importação |
-| `statusMessage` | `The ads were imported and will beprocessed` | Os anúncios foram importados e serão processados  |
+| `statusMessage` | `The ads were imported and will be processed` | Os anúncios foram importados e serão processados  |
 | `statusCode` | `0` |  |
 | `errors` | `array` | Retorna uma lista de erros |
 
