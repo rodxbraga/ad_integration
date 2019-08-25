@@ -173,10 +173,11 @@ O formato do retorno de nosso servidor será do tipo JSON.
         {
             "id": "5555555555",
             "status": "error",
-            "messages": []
-        }
-   {
-            "category": "ERROR_CATEGORY_INVALID"
+            "messages": [
+                {
+                    "category": "ERROR_CATEGORY_INVALID"
+                }
+            ]
         }
     ]
 }
