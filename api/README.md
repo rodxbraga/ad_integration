@@ -4,6 +4,48 @@
 
 Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
 
+
+***
+
+## Rollout da Nova API de Integração de Anúncios
+
+### Por que uma nova API?
+
+Estamos construindo uma nova API para atacar diferentes restrições técnicas e de negócio da Integração de Anúncios proporcionada pela API atual. Os principais benefícios que estamos buscando essa nova API:
+
+- **Suporte para todas as categorias de anúncios da OLX**<br>
+A API atual é restrita para algumas categorias (Imóveis e Automóveis). A nova versão será flexível para atender qualquer categoria de anúncio existente na OLX.
+- **Consistência na contagem de anúncios inseridos**<br>
+Um dos pontos críticos da API atual é a discrepância entre o limite disponível para inserção de anúncios que é exibido na área do anunciante da OLX e a resposta da API. A nova API podemos 
+- **Melhorias técnicas na importação**<br>
+Ajustes
+
+### O que muda?
+
+Validações assíncronas. 
+
+
+### Quais as fases do rollout?
+
+1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
+
+incorretamente e, para avançarmos com a nova versão, precisamos ajustar esse ponto. Os endpoints que podem ser utilizados para a importação e consulta de status deverão receber chamadas seguindo o padrão:
+**Inserção, edição e deleção**
+PUT /autoupload/import
+header: Content-type: application/json
+**Status**
+POST /autoupload/import/{id}
+header: Content-type: application/json
+A partir de 30/08, chamadas que não seguem esse padrão vão parar de funcionar. Se você já está usando assim, não precisa fazer nada agora. Mas é necessário checar e corrigir se você não está em conformidade. (edited) 
+PRONTO! Essa mensagem deixa claro que a a data é até dia 30/08 (edited) 
+
+2) **Rota de Importação**: Início de setembro
+
+3) **Rota de Status**: Final de setembro
+
+
+
+
 ***
 
 ## Autenticação oAuth no OLX
