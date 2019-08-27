@@ -11,48 +11,67 @@ Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https:/
 
 ### Por que uma nova API?
 
-Estamos construindo uma nova API para atacar diferentes restrições técnicas e de negócio da Integração de Anúncios proporcionada pela API atual. Os principais benefícios que estamos buscando essa nova API:
+Estamos construindo uma nova API para atacar diferentes restrições técnicas e de negócio da Integração de Anúncios proporcionada pela API atual. Ela vai substituir duas rotas existentes na API atual: a rota de importação e a rota de status de publicação.
+
+Os principais benefícios da mudança:
 
 - **Suporte para todas as categorias de anúncios da OLX**<br>
 A API atual é restrita para algumas categorias (Imóveis e Automóveis). A nova versão será flexível para atender qualquer categoria de anúncio existente na OLX.
 - **Consistência na contagem de anúncios inseridos**<br>
-Um dos pontos críticos da API atual é a discrepância entre o limite disponível para inserção de anúncios que é exibido na área do anunciante da OLX e a resposta da API. A nova API podemos 
+Um dos pontos críticos da API atual é a discrepância entre o limite disponível para inserção de anúncios que é exibido na área do anunciante da OLX e a resposta da API. A nova API manterá consistência ao informar o limite disponível de inserção.
 - **Melhorias técnicas na importação**<br>
-Ajustes
+Por baixo dos panos a nova API trará maior robustez, auxiliando na correção de erros e permitindo melhorias. Erros que hoje acontecem correntemente e melhorias que já identificamos (e são inviáveis de serem realizadas na API atual) já serão atendidas com a nova API.
+
 
 ### O que muda?
 
-Validações assíncronas. 
+Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em especial, algumas validações que eram síncronas passam a ser assíncronas. Mais detalhes [aqui](lerolerolero.com).
 
 
 ### Quais as fases do rollout?
 
 1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
+A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaixo:
 
-incorretamente e, para avançarmos com a nova versão, precisamos ajustar esse ponto. Os endpoints que podem ser utilizados para a importação e consulta de status deverão receber chamadas seguindo o padrão:
-**Inserção, edição e deleção**
-PUT /autoupload/import
-header: Content-type: application/json
-**Status**
-POST /autoupload/import/{id}
-header: Content-type: application/json
-A partir de 30/08, chamadas que não seguem esse padrão vão parar de funcionar. Se você já está usando assim, não precisa fazer nada agora. Mas é necessário checar e corrigir se você não está em conformidade. (edited) 
-PRONTO! Essa mensagem deixa claro que a a data é até dia 30/08 (edited) 
+> **Rota Inserção, edição e deleção**
+> `PUT /autoupload/import`
+> header: `Content-type: application/json`
+> **Status**
+> `POST /autoupload/import/{id}`
+> header: `Content-type: application/json`
 
 2) **Rota de Importação**: Início de setembro
 
+No início de Setembro vamos começar a comunicar e virar os integradores elegíveis para a API 2.0, modificando apenas a rota de importação. 
+
 3) **Rota de Status**: Final de setembro
 
-
+Ao final de setembro, vamos virar o restante dos integradores para a nova API, desta vez alterando tanto as rotas de importação quanto a rota de status de publicação.
 
 
 ***
+
+A API da OLX 
+
 
 ## Autenticação oAuth no OLX
 
 Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
 
 Na autenticação, o sistema solicitante receberá o `client_id` e o `client_secret` que deverão ser usados na URL de conexão. Durante o fluxo oAuth será requisitado que o usuário dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
+
+
+
+Rota de Importação
+
+
+Rota de Status
+
+Consulta de Marcas Disponíveis
+
+Consulta de Limite Disponível
+
+Consulta de Anúncios Publicados
 
 
 ## Requisição de importação ao servidor olx.com.br
