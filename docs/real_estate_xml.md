@@ -151,6 +151,7 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 | `<ArCondicionado>`,<br>`<SalaGinastica>`,<br>`<ArmarioEmbutido>`,<br>`<Varanda>`,<br>`<AreaServico>`,<br>`<Churrasqueira>`,<br>`<QuartoWCEmpregada>`,<br>`<Piscina>`,<br>`<SalaoFestas>`,<br>`<Porteiro>`||| Características adicionais do imóvel. Se o imóvel tem algum desses atributos, inclua esse parâmetro com valor `1`|
 | `<Foto>` `<NomeArquivo>` | 255 | Não | Nome da imagem no banco de dados do cliente|
 | `<Foto>` `<URLArquivo>` | 255 | Não | Link em que a imagem está hospedada|
+| `<Foto>` `<Principal>` | 1 | Não | Valor `1` caso a imagem seja a imagem principal do anúncio|
 
 
 ## Categorização dos anúncios
