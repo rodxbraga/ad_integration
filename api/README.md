@@ -27,12 +27,12 @@ Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em espec
 1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
 A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaixo:
 
-> **Rota Inserção, edição e deleção**
-> `PUT /autoupload/import`
-> header: `Content-type: application/json`
-> **Status**
-> `POST /autoupload/import/{id}`
-> header: `Content-type: application/json`
+> **Rota Inserção, edição e deleção**<br>
+> `PUT /autoupload/import`<br>
+> header: `Content-type: application/json`<br>
+> **Status**<br>
+> `POST /autoupload/import/{id}`<br>
+> header: `Content-type: application/json`<br>
 
 2) **Rota de Importação**: Início de setembro
 
