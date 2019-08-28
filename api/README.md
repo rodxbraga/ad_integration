@@ -29,7 +29,7 @@ A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaix
 
 > **Rota Inserção, edição e deleção**<br>
 > `PUT /autoupload/import`<br>
-> header: `Content-type: application/json`<br>
+> header: `Content-type: application/json`<br><br>
 > **Status**<br>
 > `POST /autoupload/import/{id}`<br>
 > header: `Content-type: application/json`<br>
