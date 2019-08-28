@@ -3,7 +3,7 @@
 > **IMPORTANTE**: A OLX está prestes a lançar uma **nova versão de sua API de Integração de Anúncios**. Leia este doc para saber o que muda.
 
 
-### Por que uma nova API?
+## Por que uma nova API?
 
 Estamos construindo uma nova API para atacar diferentes restrições técnicas e de negócio da Integração de Anúncios proporcionada pela API atual. Ela vai substituir duas rotas existentes na API atual: a rota de importação e a rota de status de publicação.
 
@@ -17,14 +17,15 @@ Um dos pontos críticos da API atual é a discrepância entre o limite disponív
 Por baixo dos panos a nova API trará maior robustez, auxiliando na correção de erros e permitindo melhorias. Erros que hoje acontecem correntemente e melhorias que já identificamos (e são inviáveis de serem realizadas na API atual) já serão atendidas com a nova API.
 
 
-### O que muda?
+## O que muda?
 
 Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em especial, algumas validações que eram síncronas passam a ser assíncronas. Mais detalhes [aqui](lerolerolero.com).
 
 
-### Quais as fases do rollout?
+## Quais as fases do rollout?
 
 1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
+
 A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaixo:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Rota Inserção, edição e deleção**<br>
@@ -44,13 +45,14 @@ No início de Setembro vamos começar a comunicar e virar os integradores elegí
 Ao final de setembro, vamos virar o restante dos integradores para a nova API, desta vez alterando tanto as rotas de importação quanto a rota de status de publicação.
 
 
-### Recursos da API
+## Recursos da API
+
 
 Autenticação oAuth
 Importação (Inserção/Edição/Deleção)
 Status de Importação
 Marcas/Modelos de Carros
-
+Consulta de Limite de Inser
 
 
 
