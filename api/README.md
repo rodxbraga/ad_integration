@@ -1,6 +1,6 @@
 # Documentação da API de Integração de Anúncios da OLX
 
-> **IMPORTANTE**: A OLX está prestes a lançar uma **nova versão de sua API de Integração de Anúncios**. Leia este doc para saber o que muda.
+## IMPORTANTE: A OLX está prestes a lançar uma **nova versão de sua API de Integração de Anúncios**. Este doc explica o funcionamento da API e detalha a mudança.
 
 A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades:
 
