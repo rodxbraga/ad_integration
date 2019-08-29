@@ -57,6 +57,19 @@ No início de Setembro vamos começar a comunicar e virar os integradores elegí
 Ao final de setembro, vamos virar o restante dos integradores para a nova API, desta vez alterando tanto as rotas de importação quanto a rota de status de publicação.
 
 
+## Quero me integrar com a OLX
+
+Verifique cada funcionalidade da API OLX e desenvolva do seu lado para realizar a integração conosco:
+
+| Funcionalidade                       | Descrição                                                                                                             | Status             |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------|
+| [Autenticação oAuth](https://github.com/olxbr/ad_integration/blob/master/api/oauth.md)                   | Permite que anunciantes autentiquem via integrador para configurar integração com OLX                                 | Disponível            |
+| [Importação (Inserção/Edição/Deleção)](https://github.com/olxbr/ad_integration/blob/master/api/import.md) | Permite gestão do inventário de anúncios publicados na OLX.                                                           | Em rollout         |
+| Status de Publicação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
+| [Marcas/Modelos de Carros/Motos](https://github.com/olxbr/ad_integration/blob/master/api/car_models.md)             | Disponibiliza o catálogo de marcas e modelos de carros e motos que podem ser publicados na OLX                                | Disponível            |
+| [Anúncios Publicados](https://github.com/olxbr/ad_integration/blob/master/api/published_ads.md)       | Lista todos os anúncios publicados, para o anunciante ter controle de quais anúncios estão disponívels na OLX no momento.                         | Disponível      |
+
+
 # Dúvidas e sugestões
 
 Se tiver dificuldades ou sugestões, [abra uma Issue nesse repositório](https://github.com/olxbr/ad_integration/issues/new) e a equipe de desenvolvimento da OLX vai responder seu contato. Em casos urgentes, entre em contato com suporteintegrador@olxbr.com. Se tiver sugestões ou quiser conversar sobre a integração de anúncios, [agende um *call* com o Gerente de Produto do time de Integrações](https://calendly.com/renato-cairo-olx/papo_integracao_olx).
