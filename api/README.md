@@ -6,7 +6,7 @@ A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades
 
 | Funcionalidade                       | Descrição                                                                                                             | Status             |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------|
-| [Autenticação oAuth](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md)                   | Permite que anunciantes autentiquem via integrador para configurar integração com OLX                                 | Disponível            |
+| [Autenticação oAuth](https://github.com/olxbr/ad_integration/blob/master/api/oauth.md)                   | Permite que anunciantes autentiquem via integrador para configurar integração com OLX                                 | Disponível            |
 | [Importação (Inserção/Edição/Deleção)](https://github.com/olxbr/ad_integration/blob/master/api/import.md) | Permite gestão do inventário de anúncios publicados na OLX.                                                           | Em rollout         |
 | Status de Publicação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
 | [Marcas/Modelos de Carros/Motos](https://github.com/olxbr/ad_integration/blob/master/api/car_models.md)             | Disponibiliza o catálogo de marcas e modelos de carros e motos que podem ser publicados na OLX                                | Disponível            |
@@ -36,7 +36,7 @@ Isso significa mudança nas rotas de `Importação` e `Status de Importação`, 
 
 ## Quais as fases do rollout?
 
-1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
+### 1) **Chamadas à API**: Em andamento, com finalização em 30/08/19
 
 A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaixo:
 
@@ -48,11 +48,11 @@ A partir de 30/08/19, as chamadas para a API terão que respeitar o modelo abaix
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`POST /autoupload/import/{id}`<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;header: `Content-type: application/json`
 
-2) **Rota de Importação**: Início de setembro
+### 2) **Rota de Importação**: Início de setembro
 
 No início de Setembro vamos começar a comunicar e virar os integradores elegíveis para a API 2.0, modificando apenas a rota de importação. 
 
-3) **Rota de Status**: Final de setembro
+### 3) **Rota de Status**: Final de setembro
 
 Ao final de setembro, vamos virar o restante dos integradores para a nova API, desta vez alterando tanto as rotas de importação quanto a rota de status de publicação.
 
