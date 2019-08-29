@@ -10,7 +10,7 @@ A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades
 | [Importação (Inserção/Edição/Deleção)](https://github.com/olxbr/ad_integration/blob/master/api/import.md) | Permite gestão do inventário de anúncios publicados na OLX.                                                           | Em rollout         |
 | Status de Importação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
 | [Marcas/Modelos de Carros/Motos](https://github.com/olxbr/ad_integration/blob/master/api/car_models.md)             | Disponibiliza o catálogo de marcas e modelos de carros e motos que podem ser publicados na OLX                                | Disponível            |
-| Anúncios Publicados       | Lista todos os anúncios publicados, para o anunciante ter controle de quais anúncios estão disponívels na OLX no momento.                         | Disponível      |
+| [Anúncios Publicados](https://github.com/olxbr/ad_integration/blob/master/api/published_ads.md)       | Lista todos os anúncios publicados, para o anunciante ter controle de quais anúncios estão disponívels na OLX no momento.                         | Disponível      |
 
 
 ## Por que uma nova API?
