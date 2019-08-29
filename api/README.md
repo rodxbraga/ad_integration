@@ -47,13 +47,15 @@ Ao final de setembro, vamos virar o restante dos integradores para a nova API, d
 
 ## Recursos da API
 
+A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades:
 
-Autenticação oAuth
-Importação (Inserção/Edição/Deleção)
-Status de Importação
-Marcas/Modelos de Carros
-Consulta de Limite de Inser
-
+| Funcionalidade                       | Descrição                                                                                                             | Status             |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------|
+| Autenticação oAuth                   | Permite que anunciantes autentiquem via integrador para configurar integração com OLX                                 | Estável            |
+| Importação (Inserção/Edição/Deleção) | Permite gestão do inventário de anúncios publicados na OLX.                                                           | Em rollout         |
+| Status de Importação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
+| Marcas/Modelos de Carros             | Disponibiliza o catálogo de marcas e modelos de carros que podem ser publicados na OLX                                | Estável            |
+| Consulta de Limite de Inserção       | Informa ao anunciante/integrador quantos anúncios ainda podem ser inseridos pelo anunciante.                          | Não-iniciado       |
 
 
 ## Autenticação oAuth no OLX
