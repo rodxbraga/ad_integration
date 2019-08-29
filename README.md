@@ -11,6 +11,8 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 | [JSON](https://github.com/olxbr/ad_integration/blob/master/json/readme.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
 | [XML](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md) | Estável | Imóveis | Nenhuma evolução prevista. |
 
+Para acessar a documentação que detalha cada modelo de Integração, acesse:
+
 - [Documentação da Integração via Arquivo JSON (Todas as Categorias)](https://github.com/olxbr/ad_integration/blob/master/json/readme.md)<br>
 - [Documentação da Integração via Arquivo XML (Categoria Imóveis)](https://github.com/olxbr/ad_integration/blob/master/xml/real_estate/readme.md)<br>
 - [Documentação da Integração via API (Todas as Categorias) - Em construção](https://github.com/olxbr/ad_integration/blob/master/api/readme.md)
