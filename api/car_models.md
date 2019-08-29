@@ -1,18 +1,22 @@
 # Listagem de Marcas e Modelos de Automóveis e Motos na OLX
 
-## Automóveis
+Os endpoints disponíveis para consultar detalhes de marcas, modelos, versões e cilindradas para Automóveis e Motos na OLX são os seguintes:
 
-A URL usada para fazer a requisição do arquivo JSON é https://apps.olx.com.br/autoupload/car_info, contendo as seguintes rotas:
-
-| Rota | Descrição |
-|---------------------------------------------------------------------|-------------------------------------------------------|
-| https://apps.olx.com.br/autoupload/car_info | Para listar todas as marcas disponíveis |
-| https://apps.olx.com.br/autoupload/car_info/{id_marca} | Para listar todos os modelos de determinada marca |
-| https://apps.olx.com.br/autoupload/car_info/{id_marca}/{id_modelo} | Para listar todas as versões de um determinado modelo |
+| Endpoint | Subcategoria | Descrição |
+|----------------------------------------------------------------------|--------------|--------------------------------------------------------|
+| https://apps.olx.com.br/autoupload/car_info | Carros | Marcas de carros disponíveis |
+| https://apps.olx.com.br/autoupload/car_info/{id_marca} | Carros | Modelos de carros de uma determinada marca |
+| https://apps.olx.com.br/autoupload/car_info/{id_marca}/{id_modelo} | Carros | Versões de um modelo de carro de uma determinada marca |
+| https://apps.olx.com.br/autoupload/moto_info | Motos | Marcas de motos disponíveis |
+| https://apps.olx.com.br/autoupload/moto_info/{id_marca} | Motos | Modelos de motos de uma determinada marca |
+| https://apps.olx.com.br/autoupload/moto_info/{id_marca}/{id_modelo} | Motos | Versões de um modelo de moto de uma determinada marca |
+| https://apps.olx.com.br/autoupload/moto_cubiccms_info | Motos | Cilindradas disponíveis para motos |
 
 Nosso servidor deve receber a requisição com método do tipo `POST`, sendo que o formato do arquivo a ser enviado para nosso servidor deverá ser do tipo JSON.
 
-### Listagem de Marcas Disponíveis
+## Automóveis
+
+### Marcas de Carros Disponíveis
 
 Exemplo de chamada para https://apps.olx.com.br/autoupload/car_info:
 
@@ -45,7 +49,7 @@ Exemplo de retorno:
 ```
 
 
-### Listagem de Modelos de Determinada Marca
+### Modelos de Carros de Determinada Marca
 
 Exemplo de chamada: https://apps.olx.com.br/autoupload/car_info/6 (no caso, o id `6` é a marca `AUDI`, conforme visto no exemplo acima):
 
@@ -74,7 +78,7 @@ Exemplo de retorno:
 }
 ```
 
-### Listagem de Versões de Determinado Modelo
+### Versões de Modelo de Carro de Marca Determinada
 
 Exemplo de chamada para: https://apps.olx.com.br/autoupload/car_info/6/3 (no caso, o id `6` identifica a marca `AUDI e o id `3` identifica o modelo `A3`, conforme exemplos acima):
 
@@ -102,3 +106,120 @@ Exemplo de retorno:
 ```
 
 ## Motos
+
+###  Marcas de Motos Disponíveis
+
+Exemplo de chamada para https://apps.olx.com.br/autoupload/moto_info:
+
+```json
+{
+    "access_token":"ca18abccaadd282490e75173f98b8ec6f0c1c6c8"
+}
+```
+
+Exemplo de retorno:
+
+```json
+{
+    "status": "ok",
+    "data": {
+        "DUCATI": 1,
+        "BUELL": 2,
+        "KTM": 3,
+        "KAHENA": 4,
+        "FOX": 5,
+        "MRX": 6,
+        "YAMAHA": 7
+    }
+}
+```
+
+
+### Modelos de Motos de Determinada Marca
+
+Exemplo de chamada: https://apps.olx.com.br/autoupload/moto_info/7 (no caso, o id `7` é a marca `YAMAHA`, conforme visto no exemplo acima):
+
+```json
+{
+    "access_token": "2cb68a524c25b9a934e9edf4102ef82db5babd77"
+}
+```
+
+Exemplo de retorno: 
+
+```json
+{
+    "status": "ok",
+    "data": {
+        "80": 2,
+        "750": 1,
+        "AXIS": 2,
+        "BW'S": 3,
+        "CRYPTON": 4,
+        "DT": 5,
+        "FAZER": 6
+    }
+}
+```
+
+### Versões de Modelo de Moto de Marca Determinada
+
+Exemplo de chamada para: https://apps.olx.com.br/autoupload/moto_info/7/6 (no caso, o id `7` identifica a marca `YAMAHA` e o id `6` identifica o modelo `FAZER`, conforme exemplos acima):
+
+```json
+{
+    "access_token": "2cb68a524c25b9a934e9edf4102ef82db5babd77"
+}
+```
+
+Exemplo de retorno:
+
+```json
+{
+    "status": "ok",
+    "data": {
+        "FAZER 600/ FZ6 S": 1
+    }
+}
+```
+
+### Cilindradas Disponíveis para Motos
+
+Exemplo de chamada para: https://apps.olx.com.br/autoupload/moto_cubiccms_info
+
+```json
+{
+    "access_token": "2cb68a524c25b9a934e9edf4102ef82db5babd77"
+}
+```
+
+Exemplo de retorno:
+```json
+{
+    "status": "ok",
+    "data": {
+        "1": "50",
+        "2": "125",
+        "3": "250",
+        "4": "500",
+        "5": "750",
+        "6": "1000",
+        "7": "150",
+        "8": "200",
+        "9": "300",
+        "10": "350",
+        "11": "400",
+        "12": "450",
+        "13": "550",
+        "14": "600",
+        "15": "650",
+        "16": "700",
+        "17": "800",
+        "18": "850",
+        "19": "900",
+        "20": "950",
+        "21": "Acima de 1.000",
+        "22": "100"
+    }
+}
+```
