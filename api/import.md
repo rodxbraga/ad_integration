@@ -1,5 +1,14 @@
 # Importação de Anúncios (Inserção/Edição/Deleção)
 
+## Autenticação oAuth no OLX
+
+Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
+
+Na autenticação, o sistema solicitante receberá o `client_id` e o `client_secret` que deverão ser usados na URL de conexão. Durante o fluxo oAuth será requisitado que o usuário dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
+
+
+## Importação de Anúncios
+
 O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção.
 
 A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
