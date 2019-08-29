@@ -12,7 +12,7 @@ Antes de iniciar o protocolo de autenticação com o servidor olx.com.br, o cl
 - Website
 - Telefone
 - E-mail
-- URIs de redirecionamento (identifica um endpoint do cliente que será alvo de redirecionamento no processo de autenticação; mínimo 1 e máximo 3; ver seção 2.1)
+- URIs de redirecionamento (identifica um endpoint do cliente que será alvo de redirecionamento no processo de autenticação; mínimo 1 e máximo 3)
 
 Após receber os dados, o olx.com.br entrará em contato com o cliente para fornecer sua identificação (`client_id`) e sua chave de segurança, necessários para iniciar a sequência de autorização.
 
