@@ -22,18 +22,18 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 
 | Parâmetro | Valores | Tipo | Obrigatório | Descrição  |
 |--------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| access_token | | string | sim | Token de acesso |
-| id |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio. Deve ser único no JSON (caso haja mais de um anúncio no JSON). |
-| operation | `insert` ou `delete` | string | sim | Valores para identificar qual será a operação a ser feita:<br>`insert` para inserir anúncios<br>`delete` para apagar anúncios. |
-| category |  | integer | sim | Categoria do anúncio. |
-| Subject |  | string | sim | Título do anúncio. Mínimo de 2 e máximo de 90 caracteres. |
-| Body |  | string | sim | Descrição do anúncio. Mínimo de 2 e máximo de 6 mil caracteres |
-| Phone |  | string númerica | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
-| type | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
-| price |  | integer | não | Preço do anúncio (não aceita centavos) |
-| zipcode |  | string numérica | sim | O CEP do anúncio. |
-| params |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
-| images | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
+| `access_token` | | string | sim | Token de acesso |
+| `id` |  | Regular expression: [A-Za-z0-9_{}-]{1,19} | sim | O identificador do anúncio. Deve ser único no JSON (caso haja mais de um anúncio no JSON). |
+| `operation` | `insert` ou `delete` | string | sim | Valores para identificar qual será a operação a ser feita:<br>`insert` para inserir ou editar anúncios<br>`delete` para despublicar anúncios. |
+| `category` |  | integer | sim | Categoria do anúncio. |
+| `Subject` |  | string | sim | Título do anúncio. Mínimo de 2 e máximo de 90 caracteres. |
+| `Body` |  | string | sim | Descrição do anúncio. Mínimo de 2 e máximo de 6 mil caracteres |
+| `Phone` |  | string númerica | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
+| `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
+| `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
+| `zipcode` |  | string numérica | sim | O CEP do anúncio. |
+| `params` |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
+| `images` | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 
 Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrados na documentação de cada categoria:
 
@@ -45,11 +45,11 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 | [Imóveis](www.lerolero.com) | [Temporada](www.lerolero.com) |
 | [Imóveis](www.lerolero.com) | [Terrenos sítios e fazendas](www.lerolero.com) |
 | [Imóveis](www.lerolero.com) | [Comércio e indústria](www.lerolero.com) |
-| Autos e peças<sup>1</sup> | Carros vans e utilitários |
-| Autos e peças<sup>1</sup> | Motos |
-| Autos e peças<sup>1</sup> | Ônibus |
-| Autos e peças<sup>1</sup> | Caminhões |
-| Autos e peças<sup>1</sup> | Barcos e aeronaves |
+| [Autos e peças](www.lerolero.com) | [Carros vans e utilitários](www.lerolero.com) |
+| [Autos e peças](www.lerolero.com) | [Motos](www.lerolero.com) |
+| [Autos e peças](www.lerolero.com) | [Ônibus](www.lerolero.com) |
+| [Autos e peças](www.lerolero.com) | [Caminhões](www.lerolero.com) |
+| [Autos e peças](www.lerolero.com) | [Barcos e aeronaves](www.lerolero.com) |
 | Peças e acessórios<sup>1</sup> | Carros vans e utilitários<sup>1</sup> |
 | Peças e acessórios<sup>1</sup> | Motos<sup>1</sup> |
 | Peças e acessórios<sup>1</sup> | Ônibus<sup>1</sup> |
@@ -121,17 +121,30 @@ O anúncio permanecerá publicado a menos que uma operação de deleção seja e
 
 ## Retorno Esperado 
    
-O formato do retorno de nosso servidor será do tipo JSON.
-
-### Sucesso
+O formato do retorno de nosso servidor será do tipo JSON, que contém a seguinte estrutura:
 
 | Paramêtro | Valor | Descrição |
 |---------------|------------------------------------------|------------------------------------------------------------------------|
-| `token` |  | Retorna uma string com um token a ser usado para acessar o status da importação |
-| `statusMessage` | `The ads were imported and will be processed` | Os anúncios foram importados e serão processados  |
-| `statusCode` | `0` |  |
+| `token` |  | Retorna uma string com um token a ser usado para posteriormente acessar o status da importação |
+| `statusMessage` | | Explica o retorno síncrono da importação, com detalhamento de erros da validação síncrona. |
+| `statusCode` | | Identifica o retorno síncrono da importação. |
 | `errors` | `array` | Retorna uma lista de erros |
 
+Os `statusCode` e `statusMessage` possíveis são os seguintes:
+
+| Código | Mensagem | Descrição  |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| `0` | `The ads were imported and will be processed` | No caso, os anúncios foram validados sincronamente. Não é garantia de publicação, dado que há a validação assíncrona posterior (moderação, etc). |
+| `-1` | `Unexpected error` | Erro inesperado. |
+| `-2` | `The request was blocked` | Usuário não pode importar pois está bloqueado temporariamente por excesso de requisições.    |
+| `-3` | `There is no ad to import` | Não há anúncios para importar.   |
+| `-4` | `An ad had problems on import` | Se um anúncio falhar em sua validação, a importação é cancelada.      |
+| `-5` | `Import is down` | O serviço de importação está desativado.    |
+| `-6` | `Without permission` | Usuário sem permissão.  |
+| `-7` | `Trying to import <n> ad(s), but user just have slot for <f> more.` | O usuário está tentando importar <n> anúncios mas só podem importar mais <f>.    |
+| `-8` | `Trying to import <n> ad(s), only <f> were imported and will be processed. The following ads were ignored due to limit exceeded: <t>` | Tentando importar <n> anúncios, só <f> foram importados e serão processados. Os seguintes anúncios foram ignorados devido ao limite excedido.    |
+
+Eis exemplos de JSONs de retorno da API.
 
 ```json
 {
@@ -141,21 +154,6 @@ O formato do retorno de nosso servidor será do tipo JSON.
     "errors": []
 }
 ```
-
-
-
-| Código | Mensagem | Descrição  |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| `0` | `The ads were imported and will be processed` | Os anúncios foram importados com sucesso e serão processados  |
-| `-1` | `Unexpected error` | Erro inesperado |
-| `-2` | `The request was blocked` | Usuário não pode importar pois está bloqueado temporariamente por excesso de requisições     |
-| `-3` | `There is no ad to import` | Não há anúncios para importar   |
-| `-4` | `An ad had problems on import` | Se um anúncio falhar em sua validação, a importação é cancelada      |
-| `-5` | `Import is down` | O serviço de importação está desativado    |
-| `-6` | `Without permission` | Usuário sem permissão  |
-| `-7` | `Trying to import <n> ad(s), but user just have slot for <f> more.` | O usuário está tentando importar <n> anúncios mas só podem importar mais <f>.    |
-| `-8` | `Trying to import <n> ad(s), only <f> were imported and will be processed. The following ads were ignored due to limit exceeded: <t>` | Tentando importar <n> anúncios, só <f> foram importados e serão processados. Os seguintes anúncios foram ignorados devido ao limite excedido.    |
-
 
 
 ```json
@@ -176,31 +174,3 @@ O formato do retorno de nosso servidor será do tipo JSON.
     ]
 }
 ```
-
-| Código | Descrição  |
-|--------------------------------|--------------------------------------------|
-| `ERROR_CATEGORY_INVALID` | Categoria inválida |
-| `ERROR_REGION_MISSING` | Região inválida  |
-| `ERROR_ZIPCODE_INVALID` | CEP inválido |
-| `ERROR_TYPE_INVALID` | Tipo inválido |
-| `ERROR_PHONE_INVALID` | Número de telefone inválido  |
-| `ERROR_PHONE_TOO_SHORT` | Número de telefone muito curto |
-| `ERROR_PHONE_TOO_LONG` | Número de telefone muito longo |
-| `ERROR_BODY_TOO_SHORT` | Descrição muito curta  |
-| `ERROR_BODY_TOO_LONG` | Descrição muito longa  |
-| `ERROR_SUBJECT_TOO_SHORT` | Título muito curto |
-| `ERROR_SUBJECT_TOO_LONG` | Título muito longo |
-| `ERROR_FUEL_INVALID` | Tipo de combustível inválido  |
-| `ERROR_FUEL_MISSING` | Tipo de combustível ausente |
-| `ERROR_CARTYPE_INVALID` | Tipo de carro inválido |
-| `ERROR_DOORS_MISSING` | Tipo de portas inválidos |
-| `ERROR_ROOMS_INVALID` | Total de quartos inválidos |
-| `ERROR_ROOMS_MISSING` | Número de quartos ausente |
-| `ERROR_CATEGORY_SUBTYPE_MISSING` | Tipo de apartamento inválido |
-| `ERROR_SIZE_INVALID` | Tamanho inválido |
-| `ERROR_UNKNOWN_APARTMENT_TYPE` | Tipo de apartamento desconhecido |
-| `ERROR_MILEAGE_INVALID` | Quilometragem incorreta |
-| `ERROR_REGDATE_INVALID` | Ano inválido para carro |
-| `ERROR_UNKNOWN_CAR_FEATURES` | Parâmetro adicional de carros desconhecido |
-| `ERROR_NO_SUCH_PARAMETER` | Indica que não existe o parâmetro passado  |
-| `ERROR_OPERATION_INVALID` | Tipo de operação inválida   |
