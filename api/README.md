@@ -8,12 +8,12 @@ A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------------------|--------------------|
 | [Autenticação oAuth](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md)                   | Permite que anunciantes autentiquem via integrador para configurar integração com OLX                                 | Disponível            |
 | [Importação (Inserção/Edição/Deleção)](https://github.com/olxbr/ad_integration/blob/master/api/import.md) | Permite gestão do inventário de anúncios publicados na OLX.                                                           | Em rollout         |
-| Status de Importação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
+| Status de Publicação                 | Informa o anunciante/integrador sobre o sucesso da publicação de um anúncio, bem como o motivo de uma não-publicação. | Em desenvolvimento |
 | [Marcas/Modelos de Carros/Motos](https://github.com/olxbr/ad_integration/blob/master/api/car_models.md)             | Disponibiliza o catálogo de marcas e modelos de carros e motos que podem ser publicados na OLX                                | Disponível            |
 | [Anúncios Publicados](https://github.com/olxbr/ad_integration/blob/master/api/published_ads.md)       | Lista todos os anúncios publicados, para o anunciante ter controle de quais anúncios estão disponívels na OLX no momento.                         | Disponível      |
 
 
-## Por que uma nova API?
+## Por que uma nova API de Importação?
 
 Estamos construindo uma nova API para atacar diferentes restrições técnicas e de negócio da Integração de Anúncios proporcionada pela API atual. Ela vai substituir duas rotas existentes na API atual: a rota de importação e a rota de status de publicação.
 
@@ -27,9 +27,11 @@ Um dos pontos críticos da API atual é a discrepância entre o limite disponív
 Por baixo dos panos a nova API trará maior robustez, auxiliando na correção de erros e permitindo melhorias. Erros que hoje acontecem correntemente e melhorias que já identificamos (e são inviáveis de serem realizadas na API atual) já serão atendidas com a nova API.
 
 
-## O que muda?
+## O que muda com essas mudanças?
 
-Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em especial, algumas validações que eram síncronas passam a ser assíncronas. Mais detalhes [aqui](lerolerolero.com).
+Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em especial, algumas validações que eram síncronas passam a ser assíncronas. 
+
+Isso significa mudança nas rotas de `Importação` e `Status de Importação`, pois parte das validações deixam de acontecer sincronamente (alterando retorno das chamadas de Inserção ou Edição de Anúncios) e passarão a estar disponíveis e visíveis via rota de `Status de Publicação`.
 
 
 ## Quais as fases do rollout?
