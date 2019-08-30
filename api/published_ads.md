@@ -12,7 +12,7 @@ Exemplo de chamada para a URL https://apps.olx.com.br/autoupload/published:
 }
 ```
 
-O retorno da chamda trará o identificador usado pelo integrador/anunciante na inserção do anúncio e outro identificador do anúncio na OLX. Caso o anunciante não tenha anúncios ativos, será retornado um array vazio.
+O retorno da chamada trará o identificador usado pelo integrador/anunciante na inserção do anúncio e outro identificador do anúncio na OLX. Caso o anunciante não tenha anúncios ativos, será retornado um array vazio.
 
 | Parâmetro | Valores | Descrição  |
 |-----------|-------------------------------------------|------------------------------------------------|
