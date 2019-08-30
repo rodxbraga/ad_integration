@@ -10,12 +10,12 @@ Para importação da categoria de Veículos,
 
 ### Parâmetros específicos por subcategoria
 
-Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](api/README.md).
+Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](/../README.md).
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](api/autos/sub_autos.md)
-- [Motos](api/autos/sub_motorcycle.md)
-- [Ônibus](api/autos/sub_bus.md)
-- [Caminhões](https://github.com/olxbr/ad_integration/blob/json/autos/sub_truck.md)
-- [Barcos e aeronaves](api/autos/sub_boat_plane.md)
+- [Carros, vans e utilitários](./sub_autos.md)
+- [Motos](./sub_motorcycle.md)
+- [Ônibus](./sub_bus.md)
+- [Caminhões](./sub_truck.md)
+- [Barcos e aeronaves](./sub_boat_plane.md)
