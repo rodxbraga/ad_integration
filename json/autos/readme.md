@@ -16,12 +16,12 @@ Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada a
 
 ### Parâmetros específicos por subcategoria
 
-Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](https://github.com/olxbr/ad_integration/blob/master/json/json.md).
+Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](/json/README.md).
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](https://github.com/olxbr/ad_integration/blob/master/json/autos/sub_autos.md) (Em breve)
-- [Motos](https://github.com/olxbr/ad_integration/blob/master/json/autos/sub_motorcycle.md) (Em breve)
-- [Ônibus](https://github.com/olxbr/ad_integration/blob/master/json/autos/sub_bus.md) (Em breve)
-- [Caminhões](https://github.com/olxbr/ad_integration/blob/json/autos/sub_truck.md)
-- [Barcos e aeronaves](https://github.com/olxbr/ad_integration/blob/master/json/autos/sub_boat_plane.md) (Em breve)
+- [Carros, vans e utilitários](sub_autos.md) (Em breve)
+- [Motos](sub_motorcycle.md) (Em breve)
+- [Ônibus](sub_bus.md) (Em breve)
+- [Caminhões](sub_truck.md)
+- [Barcos e aeronaves](sub_boat_plane.md) (Em breve)

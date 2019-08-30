@@ -25,7 +25,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
         {
             "subject": "Caminhão XPTO",
             "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": "2040",
+            "category": 2040,
             "id": "TRUCK003",
             "images": [
                 "https://www.sitedecaminhao.com.br/fotodecaminhao1.jpg",
@@ -55,7 +55,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
         {
             "subject": "Caminhão XPTO",
             "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": "2040",
+            "category": 2040,
             "id": "TRUCK004",
             "images": [
                 "https://www.sitedecaminhao.com.br/fotodecaminhao4.jpg",

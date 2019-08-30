@@ -1,4 +1,6 @@
-Para importação da categoria de Veículos, 
+## Categoria de Imóveis
+
+Para importação da categoria de Veículos, é necessário informar a `category`, que será utilizada para que o anúncio esteja disponível na categoria correta. As subcategorias existentes são as seguintes:
 
 | `category` | Categoria na OLX |
 |------------|----------------------------|
@@ -14,8 +16,8 @@ Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores especí
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](./sub_autos.md)
-- [Motos](./sub_motorcycle.md)
-- [Ônibus](./sub_bus.md)
-- [Caminhões](./sub_truck.md)
-- [Barcos e aeronaves](./sub_boat_plane.md)
+- [Carros, vans e utilitários](sub_autos.md)
+- [Motos](sub_motorcycle.md)
+- [Ônibus](sub_bus.md)
+- [Caminhões](sub_truck.md)
+- [Barcos e aeronaves](sub_boat_plane.md)
