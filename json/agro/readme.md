@@ -19,7 +19,7 @@ Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada a
 
 ### Parâmetros específicos por subcategoria
 
-As subcategorias Agro e Indústria não possuem parâmetros específicos. Desta forma, basta respeitar os [parâmetros gerais para quaisquer anúncio na OLX](https://github.com/olxbr/ad_integration/blob/master/json/json.md).
+As subcategorias Agro e Indústria não possuem parâmetros específicos. Desta forma, basta respeitar os [parâmetros gerais para quaisquer anúncio na OLX](json/json.md).
 
 ### Exemplo de JSON para a categoria
 

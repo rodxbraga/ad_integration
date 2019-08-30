@@ -2,7 +2,7 @@
 
 ## Autenticação oAuth no OLX
 
-Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](https://github.com/olxbr/ad_integration/blob/master/oauth/README.md).
+Para utilizar a integração de anúncios via API, é necessário autenticar-se em nome de um usuário do OLX através do protocolo oAuth. A documentação da autenticação oAuth encontra-se [aqui](api/oauth/README.md).
 
 Na autenticação, o sistema solicitante receberá o `client_id` e o `client_secret` que deverão ser usados na URL de conexão. Durante o fluxo oAuth será requisitado que o usuário dê permissão ao integrador para gerenciar seus anúncios na OLX. No *handshake* do oAuth, é requisitado também o `scope` que a aplicação-cliente necessitará. Para utilizar o sistema de integração de anúncios via API, é preciso o `scope` `autoupload`.
 
@@ -39,17 +39,17 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 
 | Categoria | Subcategoria |
 |-------------------------|-----------------------------------------|
-| [Imóveis](www.lerolero.com) | [Apartamentos](www.lerolero.com) |
-| [Imóveis](www.lerolero.com) | [Casas](www.lerolero.com) |
-| [Imóveis](www.lerolero.com) | [Aluguel de quartos](www.lerolero.com) |
-| [Imóveis](www.lerolero.com) | [Temporada](www.lerolero.com) |
-| [Imóveis](www.lerolero.com) | [Terrenos sítios e fazendas](www.lerolero.com) |
-| [Imóveis](www.lerolero.com) | [Comércio e indústria](www.lerolero.com) |
-| [Autos e peças](www.lerolero.com) | [Carros vans e utilitários](www.lerolero.com) |
-| [Autos e peças](www.lerolero.com) | [Motos](www.lerolero.com) |
-| [Autos e peças](www.lerolero.com) | [Ônibus](www.lerolero.com) |
-| [Autos e peças](www.lerolero.com) | [Caminhões](www.lerolero.com) |
-| [Autos e peças](www.lerolero.com) | [Barcos e aeronaves](www.lerolero.com) |
+| [Imóveis](api/real_estate/README.md) | [Apartamentos](api/real_estate/README.md) |
+| [Imóveis](api/real_estate/README.md) | [Casas](api/real_estate/README.md) |
+| [Imóveis](api/real_estate/README.md) | [Aluguel de quartos](api/real_estate/README.md) |
+| [Imóveis](api/real_estate/README.md) | [Temporada](api/real_estate/README.md) |
+| [Imóveis](api/real_estate/README.md) | [Terrenos sítios e fazendas](api/real_estate/README.md) |
+| [Imóveis](api/real_estate/README.md) | [Comércio e indústria](api/real_estate/README.md) |
+| [Autos e peças](api/autos/README.md) | [Carros vans e utilitários](api/autos/README.md) |
+| [Autos e peças](api/autos/README.md) | [Motos](api/autos/README.md) |
+| [Autos e peças](api/autos/README.md) | [Ônibus](api/autos/README.md) |
+| [Autos e peças](api/autos/README.md) | [Caminhões](api/autos/README.md) |
+| [Autos e peças](api/autos/README.md) | [Barcos e aeronaves](api/autos/README.md) |
 | Peças e acessórios<sup>1</sup> | Carros vans e utilitários<sup>1</sup> |
 | Peças e acessórios<sup>1</sup> | Motos<sup>1</sup> |
 | Peças e acessórios<sup>1</sup> | Ônibus<sup>1</sup> |
