@@ -1,4 +1,5 @@
- 
+### Categoria `Apartamentos`
+
 Para esta categoria, é necessário preencher o parâmetro `category` com o valor `2020`.
 
 Além disso, há parâmetros específicos para esta subcategoria, que devem constar dentro do parâmetro `params` e preenchidos conforme a tabela a seguir:
@@ -10,8 +11,8 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `bathrooms` | `0` para 0 quartos<br> `1` para 1 quarto<br> `2` para 2 quartos<br> `3` para 3 quartos<br> `4` para 4 quartos<br> `5` para 5 ou mais quartos<br> | string | Não | Quantidade de banheiros |
 | `garage_spaces` | `0` para 0 quartos<br> `1` para 1 quarto<br> `2` para 2 quartos<br> `3` para 3 quartos<br> `4` para 4 quartos<br> `5` para 5 ou mais quartos<br> | string | Não | Quantidade de vagas de garagem |
 | `size` |  | integer | Não | Área do apartamento (m²) |
-| `apartment_type` |  | string | Sim | Detalhes do condomínio |
-| `apartment_features` |  | array de strings | Não | Detalhes do condomínio |
+| `apartment_type` | `1` para Padrão<br> `2` para Cobertura<br> `3` para Duplex/triplex<br> `4` para Kitnet<br> `5` para Loft | string | Sim | Detalhes do condomínio |
+| `apartment_features` | `1` para Ar condicionado<br> `2` para Academia<br> `3` para Armários no quarto<br> `4` para Varanda<br> `5` para Área de serviço<br> `6` para Academia<br> `7` para Quarto de serviço<br> `8` para Piscina<br> `11` para Armários na cozinha<br> `12` para Mobiliado | array de strings | Não | Detalhes do condomínio |
 | `apartment_complex_features` | `1` para Condomínio fechado<br> `2` para Elevador<br> `3` para Segurança 24h<br> `4` para Portaria<br> `5` para Permitido animais<br> `6` para Academia<br> `7` para Piscina<br> `8` para Salão de festas<br> | array de strings | Não | Detalhes do condomínio |
 | `price` |  | integer | Não | Preço de venda do imóvel |
 | `iptu` |  | integer | Não | Valor mensal do IPTU |

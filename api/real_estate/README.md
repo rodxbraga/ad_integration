@@ -17,7 +17,7 @@ Cada subcategoria de Imóveis tem seu conjunto de parâmetros e valores específ
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Apartamentos](sub_apartament.md)
+- [Apartamentos](sub_apartment.md)
 - [Casas](sub_house.md)
 - [Aluguel de quartos](sub_roomrent.md)
 - [Temporada](sub_season.md)
