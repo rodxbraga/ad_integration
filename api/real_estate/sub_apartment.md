@@ -17,7 +17,6 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `iptu` |  | integer | Não | Valor mensal do IPTU |
 | `condominio` |  | integer | Não | Valor mensal do condomínio |
 
-
 Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Apartamentos`:
 
 ```json
