@@ -7,11 +7,11 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 
 | Modelo de Integração | Versão em produção | Categorias atendidas | Próximos passos |
 |----------------------|----------------------------|----------------------|---------------------------------------------------------------------------------------|
-| [API](api/readme.md) | Nova versão em desenvolvimento | Autos e Imóveis | Nova versão que suporta todas as categorias em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/readme.md |
-| [JSON](json/readme.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
-| [XML](xml/real_estate/readme.md) | Estável | Imóveis | Nenhuma evolução prevista. Documentação em atualização. |
+| [API](api/README.md) | Nova versão em desenvolvimento | Autos e Imóveis | Nova versão que suporta todas as categorias em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/README.md |
+| [JSON](json/README.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
+| [XML](xml/real_estate/README.md) | Estável | Imóveis | Nenhuma evolução prevista. Documentação em atualização. |
 
-Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com. Uma nova versão da API está em desenvolvimento e terá rollout em breve: https://github.com/olxbr/ad_integration/blob/master/api/readme.md
+Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com. Uma nova versão da API está em desenvolvimento e terá rollout em breve: https://github.com/olxbr/ad_integration/blob/master/api/README.md
 
 ## Categorias Suportadas por cada Modelo de Integração
 
@@ -19,22 +19,22 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 
 | Categoria | Subcategoria | JSON | XML | API |
 |-------------------------|-----------------------------------------|------|-----|-----|
-| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
 | Imóveis | Aluguel de quartos | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
 | Imóveis | Temporada | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
-| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
 | Autos e peças | Carros vans e utilitários | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
 | Autos e peças | Motos | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
 | Autos e peças | Ônibus | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
-| Autos e peças | Caminhões | [Sim](json/auto/readme.md) | Não | Não<sup>2</sup>  |
+| Autos e peças | Caminhões | [Sim](json/auto/README.md) | Não | Não<sup>2</sup>  |
 | Autos e peças | Barcos e aeronaves | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
-| Peças e acessórios | Carros vans e utilitários | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
-| Peças e acessórios | Motos | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
-| Peças e acessórios | Ônibus | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
-| Peças e acessórios | Caminhões | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
-| Peças e acessórios | Barcos e aeronaves | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Carros vans e utilitários | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Motos | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Ônibus | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Caminhões | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Barcos e aeronaves | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
 | Para a sua casa | Móveis | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Para a sua casa | Eletrodomésticos | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Para a sua casa | Materiais de construção e jardim | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
@@ -62,13 +62,13 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Moda e beleza | Roupas e calçados | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Moda e beleza | Bolsas malas e mochilas | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Moda e beleza | Bijouterias relógios e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
-| Agro e indústria | Tratores e máquinas agrícolas | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Máquinas pesadas para construção | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Máquinas para produção industrial | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Peças para tratores e máquinas | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Animais para agropecuária | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Produção Rural | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
-| Agro e indústria | Outros itens para agro e indústria | [Sim](json/agro/readme.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Tratores e máquinas agrícolas | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Máquinas pesadas para construção | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Máquinas para produção industrial | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Peças para tratores e máquinas | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Animais para agropecuária | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Produção Rural | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Outros itens para agro e indústria | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
 | Comércio e escritório | Equipamentos e mobiliário | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Comércio e escritório | Trailers e carrinhos comerciais | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 | Comércio e escritório | Outros itens para comércio e escritório | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
@@ -76,7 +76,7 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 | Vagas de emprego |  | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
 
 <sup>1</sup> A OLX suporta atualmente integração via JSON para essa categoria, mas a documentação ainda não está atualizada. Se deseja integrar com essa categoria, entre em contato com suporterintegrador@olxbr.com ou abra uma issue nesse repositório.<br>
-<sup>2</sup> Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/readme.md
+<sup>2</sup> Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/README.md
 
 
 ## Dúvidas, Sugestões e Comentários

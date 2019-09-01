@@ -11,9 +11,9 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `mileage` |  | integer | Sim | Quilometragem do automóvel |
 | `gearbox` | `1` para Manual<br> `2` para Automático<br> `3` para Semi-Automático | string | Não | Tipo de câmbio |
 | `fuel` | `1` para Gasolina<br> `2` para Álcool<br> `3` para Flex<br> `4` para Gás Natural<br> `5` para Diesel | string | Não | Tipo de combustível |
-| `vehicle_brand` |  | string | Não | Marca do automóvel. Para verificar as disponíveis, [use o serviço da OLX](carmodels.md). |
-| `vehicle_model` |  | string | Não | Modelo da marca do automóvel. Para verificar os disponíveis, [use o serviço da OLX](carmodels.md).  |
-| `vehicle_version` |  | string | Não | Versão do modelo do automóvel. Para verificar as disponíveis, [use o serviço da OLX](carmodels.md).  |
+| `vehicle_brand` |  | string | Não | Marca do automóvel. Para verificar as disponíveis, [use o serviço da OLX](car_models.md). |
+| `vehicle_model` |  | string | Não | Modelo da marca do automóvel. Para verificar os disponíveis, [use o serviço da OLX](car_models.md).  |
+| `vehicle_version` |  | string | Não | Versão do modelo do automóvel. Para verificar as disponíveis, [use o serviço da OLX](car_models.md).  |
 | `car_features` | `1` para Ar condicionado<br> `2` para Direção hidráulica<br> `3` para Vidro elétrico<br> `4` para Trava elétrica<br> `5` para Air bag<br> `6` para Alarme<br> `7` para Som<br> `8` para Sensor de ré<br> `9` para Câmera de ré<br> `10` para Blindado | array de strings | Não | Opcionais |
 | `doors` | `1` para 2 portas<br>`2` para 4 portas | string | Não | Número de portas |
 | `end_tag` | `1` para 0<br> `2` para 1<br> `3` para 2<br> `4` para 3<br> `5` para 4<br> `6` para 5<br> `7` para 6<br> `8` para 7<br> `9` para 8<br> `10` para 9 | string | Não | Número final da placa do automóvel |
