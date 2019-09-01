@@ -25,17 +25,17 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 
 | Categoria | Subcategoria | JSON | XML | API |
 |-------------------------|-----------------------------------------|------|-----|-----|
-| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | Sim<sup>2</sup> |
-| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | Sim<sup>2</sup> |
-| Imóveis | Aluguel de quartos | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
-| Imóveis | Temporada | Sim<sup>1</sup> | Não | Sim<sup>2</sup> |
-| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | Sim<sup>2</sup> |
-| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | Sim<sup>2</sup> |
-| Autos e peças | Carros vans e utilitários | Sim<sup>1</sup> | Não | Sim<sup>2</sup> |
-| Autos e peças | Motos | Sim<sup>1</sup> | Não | Sim<sup>2</sup> |
-| Autos e peças | Ônibus | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
-| Autos e peças | Caminhões | [Sim](json/auto/readme.md) | Não | Não<sup>2</sup> |
-| Autos e peças | Barcos e aeronaves | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Aluguel de quartos | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Imóveis | Temporada | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/readme.md) | [Sim](api/real_estate/README.md) |
+| Autos e peças | Carros vans e utilitários | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Motos | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Ônibus | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Autos e peças | Caminhões | [Sim](json/auto/readme.md) | Não | Não<sup>2</sup>  |
+| Autos e peças | Barcos e aeronaves | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
 | Peças e acessórios | Carros vans e utilitários | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
 | Peças e acessórios | Motos | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
 | Peças e acessórios | Ônibus | [Sim](json/autoparts/readme.md) | Não | Não<sup>2</sup> |
