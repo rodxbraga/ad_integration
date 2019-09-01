@@ -7,15 +7,9 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 
 | Modelo de Integração | Versão em produção | Categorias atendidas | Próximos passos |
 |----------------------|----------------------------|----------------------|---------------------------------------------------------------------------------------|
-| [API](api/readme.md) | Deprecada | Autos e Imóveis | Nova versão que suporta todas as categorias em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/readme.md |
+| [API](api/readme.md) | Nova versão em desenvolvimento | Autos e Imóveis | Nova versão que suporta todas as categorias em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/readme.md |
 | [JSON](json/readme.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
 | [XML](xml/real_estate/readme.md) | Estável | Imóveis | Nenhuma evolução prevista. Documentação em atualização. |
-
-Para acessar a documentação que detalha cada modelo de Integração, acesse:
-
-- [Documentação da Integração via Arquivo JSON (Todas as Categorias)](json/readme.md)<br>
-- [Documentação da Integração via Arquivo XML (Categoria Imóveis)](xml/real_estate/readme.md)<br>
-- [Documentação da Integração via API (Todas as Categorias) - Em construção](api/readme.md)
 
 Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com. Uma nova versão da API está em desenvolvimento e terá rollout em breve: https://github.com/olxbr/ad_integration/blob/master/api/readme.md
 

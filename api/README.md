@@ -59,6 +59,8 @@ Ao final de setembro, vamos virar o restante dos integradores para a nova API, d
 
 ## Quero me integrar com a OLX
 
+Como estamos para colocar no ar uma nova versão da API de Importação de Anúncios, é recomendável que você já faça a integração na nova versão. Para isso, entre em contato com suporteintegrador@olxbr.com ou abra um issue aqui neste repositório.
+
 Verifique cada funcionalidade da API OLX e desenvolva do seu lado para realizar a integração conosco:
 
 | Funcionalidade                       | Descrição                                                                                                             | Status             |
