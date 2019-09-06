@@ -38,7 +38,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
                 "gearbox": "1",
                 "fuel": "1",
                 "bustype": "2",
-                "mileage": "10000",
+                "mileage": 10000,
                 "car_steering": "1",
                 "bus_features": [
                     "1"
@@ -64,7 +64,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
                 "gearbox": "1",
                 "fuel": "1",
                 "bustype": "2",
-                "mileage": "10000",
+                "mileage": 10000,
                 "car_steering": "1",
                 "bus_features": [
                     "1"

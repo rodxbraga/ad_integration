@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
             "car_steering": "3",
             "gearbox": "2",
             "fuel": "5",
-            "mileage": "123123",
+            "mileage": 123123,
             "regdate": "1980",
             "trucktype": "6",
             "truck_features": [
@@ -67,7 +67,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
             "car_steering": "3",
             "gearbox": "2",
             "fuel": "5",
-            "mileage": "123123",
+            "mileage": 123123,
             "regdate": "1980",
             "trucktype": "6",
             "truck_features": [
