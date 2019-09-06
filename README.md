@@ -1,37 +1,88 @@
 # Documentação para a Importação de Anúncios da OLX Brasil
 
-A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que querem gerenciar seus anúncios a partir de um software terceiro (ou seja, sem passar pelas interfaces nativas da OLX para gestão de inventário).
-
-Há duas formas principais para integrar anúncios: via API ou via arquivo (JSON ou XML).
-
-## Integração via arquivo (JSON ou XML)
-
-Para a integração via Arquivo, a OLX vai consultar periodicamente (mínimo de uma vez por dia) o arquivo disponibilizado pelo anunciante. Para isso, caberá ao anunciante (junto com seu integrador, quando isso for aplicável) disponibilizar uma URL onde esse arquivo estará sempre disponível.
-
-[Categoria Imóveis, via arquivo (XML)](https://github.com/olxbr/ad_integration/blob/master/docs/real_estate_xml.md)<br>
-[Categoria Veículos, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autos_json.md)<br>
-[Categoria Autopeças, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/autoparts_json.md)<br>
-[Categoria Agro e Indústria, via arquivo (JSON)](https://github.com/olxbr/ad_integration/blob/master/docs/agro_json.md)
-
-#### Inserção e Deleção
-
-A OLX funciona com um modelo de inserção paga de anúncios. Para a importação de anúncios via arquivo, a OLX vai inferir que há uma nova inserção quando houver um anúncio com identificar inédito. Para JSONs, o identificador é o parâmetro `id` e, para XMLs, o identificador é o parâmetro `<CodigoImovel>`. 
-
-Se um anúncio com um identificador já existente estiver no arquivo, presumiremos que é o mesmo anúncio e trataremos a operação como uma edição (e não inserção), caso hajam alterações nas informações do arquivo.
-
-Para que ocorra a deleção de um anúncio, basta que ele deixe de existir no arquivo e, no próximo processamento dessa carga vamos inferir que esse anúncio deve ser removido. 
-
-Importante: se um anúncio for removido e no próximo processamento ele voltar a aparecer no arquivo (ou, especificamente, se um anúncio com um determinado identificador , vamos inferir (e, portanto, contabilizar) uma nova inserção. Por isso é crítico que um anúncio sempre esteja disponível no arquivo e deixe de aparecer quando de fato tivermos que removê-lo do seu inventário.
+A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que querem gerenciar seus anúncios a partir de um software terceiro (ou seja, sem passar pelas interfaces nativas da OLX para gestão de inventário): via API ou via arquivo (JSON ou XML).
 
 
-## Integração via API
+## Status das Integrações da OLX
 
-Atualmente a OLX tem uma API para integração, que suporta apenas as categorias `Imóveis`, `Carros, vans e utilitários` e `Motos`. Uma nova versão está em desenvolvimento e será publicada aqui assim que disponível: https://github.com/olxbr/ad_integration/blob/master/api/README.md
+| Modelo de Integração | Versão em produção | Categorias atendidas | Próximos passos |
+|----------------------|----------------------------|----------------------|---------------------------------------------------------------------------------------|
+| [API](api/README.md) | Nova versão em desenvolvimento | Autos e Imóveis | Nova versão que suporta todas as categorias em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/README.md |
+| [JSON](json/README.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
+| [XML](xml/real_estate/README.md) | Estável | Imóveis | Nenhuma evolução prevista. Documentação em atualização. |
 
-Para ter informações sobre a integração via API atual (chamada de Autoupload), contate suporteintegrador@olxbr.com.
+Para integração via API, há uma API legada (chamada Autoupload) em produção. Ela suporta as subcategorias `Carros vans e utilitários` e `Motos`, além da categoria `Imóveis`. Para utilizá-la, contate suporteintegrador@olxbr.com. Uma nova versão da API está em desenvolvimento e terá rollout em breve: https://github.com/olxbr/ad_integration/blob/master/api/README.md
 
-## Dúvidas, sugestões e comentários
+## Categorias Suportadas por cada Modelo de Integração
+
+Nem todas as categorias de anúncios na OLX são suportadas pelas integrações existentes:
+
+| Categoria | Subcategoria | JSON | XML | API |
+|-------------------------|-----------------------------------------|------|-----|-----|
+| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Aluguel de quartos | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Imóveis | Temporada | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Autos e peças | Carros vans e utilitários | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Motos | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Ônibus | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Autos e peças | Caminhões | [Sim](json/auto/README.md) | Não | Não<sup>2</sup>  |
+| Autos e peças | Barcos e aeronaves | Sim<sup>1</sup> | Não | Não<sup>2</sup>  |
+| Peças e acessórios | Carros vans e utilitários | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Motos | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Ônibus | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Caminhões | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Peças e acessórios | Barcos e aeronaves | [Sim](json/autoparts/README.md) | Não | Não<sup>2</sup> |
+| Para a sua casa | Móveis | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Para a sua casa | Eletrodomésticos | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Para a sua casa | Materiais de construção e jardim | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Para a sua casa | Utilidades domésticas | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Para a sua casa | Objetos de decoração | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Eletrônicos e celulares | Videogames | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Eletrônicos e celulares | Computadores e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Eletrônicos e celulares | Celulares e telefonia | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Eletrônicos e celulares | Áudio TV vídeo e fotografia | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Música e hobbies | Instrumentos musicais | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Música e hobbies | CDs DVDs etc | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Música e hobbies | Livros e revistas | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Música e hobbies | Antiguidades | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Música e hobbies | Hobbies e coleções | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Esportes e lazer | Esportes e ginástica | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Esportes e lazer | Ciclismo | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Artigos infantis |  | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Cachorros e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Gatos e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Cavalos e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Aquários e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Roedores e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Animais de estimação | Outros animais e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Moda e beleza | Beleza e saúde | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Moda e beleza | Roupas e calçados | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Moda e beleza | Bolsas malas e mochilas | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Moda e beleza | Bijouterias relógios e acessórios | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Agro e indústria | Tratores e máquinas agrícolas | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Máquinas pesadas para construção | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Máquinas para produção industrial | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Peças para tratores e máquinas | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Animais para agropecuária | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Produção Rural | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Agro e indústria | Outros itens para agro e indústria | [Sim](json/agro/README.md) | Não | Não<sup>2</sup> |
+| Comércio e escritório | Equipamentos e mobiliário | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Comércio e escritório | Trailers e carrinhos comerciais | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Comércio e escritório | Outros itens para comércio e escritório | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Serviços |  | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+| Vagas de emprego |  | Sim<sup>1</sup> | Não | Não<sup>2</sup> |
+
+<sup>1</sup> A OLX suporta atualmente integração via JSON para essa categoria, mas a documentação ainda não está atualizada. Se deseja integrar com essa categoria, entre em contato com suporterintegrador@olxbr.com ou abra uma issue nesse repositório.<br>
+<sup>2</sup> Uma nova versão da API de Integração da OLX está em desenvolvimento, com rollout iminente: https://github.com/olxbr/ad_integration/blob/master/api/README.md
+
+
+## Dúvidas, Sugestões e Comentários
 
 Caso você queria um suporte para sua integração, pode enviar email para suporteintegrador@olxbr.com.
 
-Alternativamente, você pode simplesmente abrir uma [`Issue` aqui neste repositório](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai discutir quaisquer questões levantadas.
+Ou você pode [abrir uma Issue neste repo](https://github.com/olxbr/ad_integration/issues), que a equipe técnica da OLX vai olhar e responder a issue.
+
+**Importante**: Esta documentação está focada na importação de anúncios para o portal OLX Brasil. Para importação de anúncios para os portais Autoshift e Storia Imóveis, contate suporteintegrador@olxbr.com.

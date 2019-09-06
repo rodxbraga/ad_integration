@@ -16,71 +16,63 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `financial` | `1` para Financiado<br> `2` para IPVA Pago<br> `3` para Com multas<br> `4` para De leilão | string | Não | Estado financeiro |
 | `owner` | `1` para Sim<br> `2` para Não | string | Não | Único dono |
 
-Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
+Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Caminhões`:
 
 ```json
 {
-    "account_id": "12345",
+    "access_token": "ca18abccaadd282490e75173f98b8ec6f0c1c6c8",
     "ad_list": [
         {
-            "subject": "Caminhão XPTO",
-            "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": "2040",
-            "id": "TRUCK003",
-            "images": [
-                "https://www.sitedecaminhao.com.br/fotodecaminhao1.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao2.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao3.jpg"
-            ],
+            "id": "5555555555",
+            "operation": "insert",
+            "category": 2040,
+            "subject": "Caminhão Novo",
+            "body": "Caminhão legal, super bom, com características X, Y e Z.\nEntre em contato e vamos fazer negócio.",
+            "phone": 2155555555,
+            "type": "s",
+            "price": 10500,
+            "zipcode": "24230090",
             "params": {
-                "financial": "3",
-                "owner": "1",
-                "exchange": "2",
-                "car_steering": "3",
-                "gearbox": "2",
-                "fuel": "5",
-                "mileage": "123123",
-                "regdate": "1980",
-                "trucktype": "6",
+                "regdate": "1988",
+                "gearbox": "1",
+                "fuel": "1",
+                "trucktype": "2",
+                "mileage": "10000",
+                "carcolor": "1",
                 "truck_features": [
                     "1",
-                    "2",
-                    "4"
+                    "2"
                 ]
             },
-            "price": 1000,
-            "type": "s",
-            "zipcode": "20521160"
+            "images": [
+                "http://www.a.com/image1.png",
+                "http://www.a.com/image2.png"
+            ]
         },
         {
-            "subject": "Caminhão XPTO",
-            "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": "2040",
-            "id": "TRUCK004",
-            "images": [
-                "https://www.sitedecaminhao.com.br/fotodecaminhao4.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao5.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao6.jpg"
-            ],
+            "id": "666666666",
+            "operation": "insert",
+            "category": 2040,
+            "subject": "Caminhão Novo 2",
+            "body": "Caminhão legal, super bom, com características X, Y e Z.\nEntre em contato e vamos fazer negócio.",
+            "phone": 2155555544,
+            "type": "s",
+            "price": 12500,
+            "zipcode": "24234590",
             "params": {
-                "financial": "3",
-                "owner": "1",
-                "exchange": "2",
-                "car_steering": "3",
+                "regdate": "2001",
                 "gearbox": "2",
-                "fuel": "5",
-                "mileage": "123123",
-                "regdate": "1980",
-                "trucktype": "6",
+                "fuel": "3",
+                "trucktype": "2",
+                "mileage": "1",
                 "truck_features": [
                     "1",
-                    "2",
-                    "4"
+                    "2"
                 ]
             },
-            "price": 1000,
-            "type": "s",
-            "zipcode": "20521160"
+            "images": [
+                "http://www.a.com/image3.png"
+            ]
         }
     ]
 }
