@@ -6,13 +6,13 @@ Este manual tem como objetivo auxiliar a implantação de importação de anúnc
 
 Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada anúncio esteja associado à `category` correspondente:
 
-| `category` | Categoria na OLX |
+| `category` | Categoria na OLX           |
 |------------|----------------------------|
-| `2101` | Carros, vans e utilitários |
-| `2103` | Motos |
-| `2105` | Ônibus |
-| `2102` | Caminhões |
-| `2104` | Barcos e aeronaves |
+| `2101`     | Carros, vans e utilitários |
+| `2103`     | Motos                      |
+| `2105`     | Ônibus                     |
+| `2102`     | Caminhões                  |
+| `2104`     | Barcos e aeronaves         |
 
 
 ### Parâmetros específicos por subcategoria

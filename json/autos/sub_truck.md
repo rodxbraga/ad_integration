@@ -19,69 +19,66 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
 
 ```json
-{
-    "account_id": "12345",
-    "ad_list": [
-        {
-            "subject": "Caminhão XPTO",
-            "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": 2040,
-            "id": "TRUCK003",
-            "images": [
-                "https://www.sitedecaminhao.com.br/fotodecaminhao1.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao2.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao3.jpg"
-            ],
-            "params": {
-                "financial": "3",
-                "owner": "1",
-                "exchange": "2",
-                "car_steering": "3",
-                "gearbox": "2",
-                "fuel": "5",
-                "mileage": "123123",
-                "regdate": "1980",
-                "trucktype": "6",
-                "truck_features": [
-                    "1",
-                    "2",
-                    "4"
-                ]
-            },
-            "price": 1000,
-            "type": "s",
-            "zipcode": "20521160"
+[
+    {
+        "subject": "Caminhão XPTO",
+        "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
+        "category": 2040,
+        "id": "TRUCK003",
+        "images": [
+            "https://www.sitedecaminhao.com.br/fotodecaminhao1.jpg",
+            "https://www.sitedecaminhao.com.br/fotodecaminhao2.jpg",
+            "https://www.sitedecaminhao.com.br/fotodecaminhao3.jpg"
+        ],
+        "params": {
+            "financial": "3",
+            "owner": "1",
+            "exchange": "2",
+            "car_steering": "3",
+            "gearbox": "2",
+            "fuel": "5",
+            "mileage": "123123",
+            "regdate": "1980",
+            "trucktype": "6",
+            "truck_features": [
+                "1",
+                "2",
+                "4"
+            ]
         },
-        {
-            "subject": "Caminhão XPTO",
-            "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
-            "category": 2040,
-            "id": "TRUCK004",
-            "images": [
-                "https://www.sitedecaminhao.com.br/fotodecaminhao4.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao5.jpg",
-                "https://www.sitedecaminhao.com.br/fotodecaminhao6.jpg"
-            ],
-            "params": {
-                "financial": "3",
-                "owner": "1",
-                "exchange": "2",
-                "car_steering": "3",
-                "gearbox": "2",
-                "fuel": "5",
-                "mileage": "123123",
-                "regdate": "1980",
-                "trucktype": "6",
-                "truck_features": [
-                    "1",
-                    "2",
-                    "4"
-                ]
-            },
-            "price": 1000,
-            "type": "s",
-            "zipcode": "20521160"
-        }
-    ]
-}
+        "price": 1000,
+        "type": "s",
+        "zipcode": "20521160"
+    },
+    {
+        "subject": "Caminhão XPTO",
+        "body": "Caminhão grande, com um monte de coisa, tipo:\nVários pneus\nUm volante\nBancos\nMotor\nEu se fosse você comprava agora",
+        "category": 2040,
+        "id": "TRUCK004",
+        "images": [
+            "https://www.sitedecaminhao.com.br/fotodecaminhao4.jpg",
+            "https://www.sitedecaminhao.com.br/fotodecaminhao5.jpg",
+            "https://www.sitedecaminhao.com.br/fotodecaminhao6.jpg"
+        ],
+        "params": {
+            "financial": "3",
+            "owner": "1",
+            "exchange": "2",
+            "car_steering": "3",
+            "gearbox": "2",
+            "fuel": "5",
+            "mileage": "123123",
+            "regdate": "1980",
+            "trucktype": "6",
+            "truck_features": [
+                "1",
+                "2",
+                "4"
+            ]
+        },
+        "price": 1000,
+        "type": "s",
+        "zipcode": "20521160"
+    }
+]
 ```

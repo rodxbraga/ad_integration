@@ -134,7 +134,7 @@ Obs.: Em alguns casos, será solicitado ao cliente que envie os dados de acesso 
 | Tag XML| Tamanho | Obrigatório? | Descrição|
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|--------------|---------------------------------------------------------------------------------------------|
 | `<CodigoImovel>` | 20 | Sim | Referência do anúncio no banco de dados do cliente|
-| `<TituloAnuncio>` | 20 | Não | Título do Imóvel, que será mostrado na listagem de resultados|
+| `<TituloAnuncio>` | 90 | Não | Título do Imóvel, que será mostrado na listagem de resultados|
 | `<TipoImovel>` | 40 | Sim | Classificação do imóvel (ex.: Apartamentos, Casa, Terreno, etc)|
 | `<SubTipoImovel>` | 40 | Sim | Segunda classificação (ex.: Casa de Vila, Casa de Condominio)|
 | `<CategoriaImovel>` | 30 | Sim | Classificação do imóvel|
