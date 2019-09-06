@@ -18,7 +18,7 @@ Aqui está um exemplo de JSON para a subcategoria `Barcos e aeronaves`:
    {  
       "subject":"Peça de barco em ótimo estado",
       "body":"Peça de barco do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2104",
+      "category":2104,
       "id":"BOAT005_ROD1",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Barcos e aeronaves`:
    {  
       "subject":"Peça de avião em ótimo estado",
       "body":"Peça de avião do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2104",
+      "category":2104,
       "id":"PLANE005_ROD2",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",

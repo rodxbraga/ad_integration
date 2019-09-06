@@ -18,7 +18,7 @@ Aqui está um exemplo de JSON para a subcategoria `Motos`:
    {  
       "subject":"Peça de moto em ótimo estado",
       "body":"Peça de moto do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2103",
+      "category":2103,
       "id":"MOTO005_ROD1",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Motos`:
    {  
       "subject":"Peça de moto em ótimo estado",
       "body":"Peça de moto do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2103",
+      "category":2103,
       "id":"MOTO005_ROD2",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",

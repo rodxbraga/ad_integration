@@ -18,7 +18,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
    {  
       "subject":"Peça de caminhão em ótimo estado",
       "body":"Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2102",
+      "category":2102,
       "id":"TRUCK005_ROD1",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
    {  
       "subject":"Peça de caminhão em ótimo estado",
       "body":"Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2102",
+      "category":2102,
       "id":"TRUCK005_ROD2",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",

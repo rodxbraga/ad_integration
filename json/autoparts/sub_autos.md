@@ -18,7 +18,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
    {  
       "subject":"Peça de carro em ótimo estado",
       "body":"Peça de carro do tipo X, usado no caso Y.\nPeça em excelente estado, não aceito trocas.",
-      "category":"2101",
+      "category":2101,
       "id":"CAR005_ROD1",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
    {  
       "subject":"Peça de carro em ótimo estado",
       "body":"Peça de carro do tipo X, usado no caso Y.\nPeça em excelente estado, não aceito trocas.",
-      "category":"2101",
+      "category":2101,
       "id":"CAR005_ROD2",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",

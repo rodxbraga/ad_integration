@@ -18,7 +18,7 @@ Aqui está um exemplo de JSON para a subcategoria `Ônibus`:
    {  
       "subject":"Peça de ônibus em ótimo estado",
       "body":"Peça de ônibus do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2105",
+      "category":2105,
       "id":"BUS005_ROD1",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
@@ -37,7 +37,7 @@ Aqui está um exemplo de JSON para a subcategoria `Ônibus`:
    {  
       "subject":"Peça de ônibus em ótimo estado",
       "body":"Peça de ônibus do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":"2105",
+      "category":2105,
       "id":"BUS005_ROD2",
       "images":[  
          "http://www.sitedeautos.com/img1.jpg",
