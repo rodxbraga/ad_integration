@@ -11,7 +11,7 @@ Na autenticação, o sistema solicitante receberá o `client_id` e o `client_se
 
 O processo de integração de anúncios via API consiste no envio de um arquivo no formato JSON descrevendo um ou mais anúncios para inserção, edição ou deleção.
 
-A URL usada para fazer o envio do arquivo JSON é: https://apps.olx.com.br/autoupload/import
+A URL usada para envio da requisição é: https://apps.olx.com.br/autoupload/import
 
 O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8`.
 
