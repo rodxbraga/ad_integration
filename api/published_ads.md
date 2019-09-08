@@ -2,7 +2,7 @@
 
 Esta consulta retorna todos os anúncios que já foram processados e estão ativos, ou seja, disponíveis para visualização em nosso site por qualquer usuário da OLX.
 
-Nosso servidor deve receber a requisição com método do tipo `POST`, contendo um arquivo JSON.
+Nosso servidor deve receber a requisição com método do tipo `POST` e com um JSON no corpo da requisição.
 
 Exemplo de chamada para a URL https://apps.olx.com.br/autoupload/published:
 

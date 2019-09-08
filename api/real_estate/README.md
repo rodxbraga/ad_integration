@@ -2,14 +2,14 @@
 
 Para importação da categoria de Imóveis, é necessário informar a `category`, que será utilizada para que o anúncio esteja disponível na categoria correta. As subcategorias existentes são as seguintes:
 
-| `category` | Categoria na OLX |
-|------------|----------------------------|
-| `1020` | Apartamentos |
-| `1040` | Casas |
-| `1060` | Aluguel de quartos |
-| `1080` | Temporada |
-| `1100` | Terrenos, sítios e fazendas |
-| `1120` | Comércio e indústria |
+| `category` | Categoria na OLX            |
+|------------|-----------------------------|
+| `1020`     | Apartamentos                |
+| `1040`     | Casas                       |
+| `1060`     | Aluguel de quartos          |
+| `1080`     | Temporada                   |
+| `1100`     | Terrenos, sítios e fazendas |
+| `1120`     | Comércio e indústria        |
 
 ### Parâmetros específicos por subcategoria
 

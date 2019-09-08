@@ -35,7 +35,7 @@ Aqui está um exemplo de JSON para a subcategoria `Barcos e aeronaves`:
             "zipcode": "24230090",
             "params": {
                 "regdate": "1950",
-                "mileage": "20000",
+                "mileage": 20000,
                 "fuel": "1",
                 "boattype": "2",
                 "boatlength": "10",
@@ -61,7 +61,7 @@ Aqui está um exemplo de JSON para a subcategoria `Barcos e aeronaves`:
             "zipcode": "24234590",
             "params": {
                 "regdate": "1950",
-                "mileage": "20000"
+                "mileage": 20000
             },
             "images": [
                 "http://www.a.com/image3.png"

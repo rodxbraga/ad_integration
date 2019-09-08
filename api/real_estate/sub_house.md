@@ -39,8 +39,8 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
                 "bathrooms": "2",
                 "garage_spaces": "2",
                 "size": "150",
-                "iptu": "1000",
-                "condominio": "500",
+                "iptu": 1000,
+                "condominio": 500,
                 "home_type": "3",
                 "home_features": [
                     "1",
@@ -71,8 +71,8 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
                 "bathrooms": "2",
                 "garage_spaces": "2",
                 "size": "150",
-                "iptu": "1000",
-                "condominio": "500",
+                "iptu": 1000,
+                "condominio": 500,
                 "home_type": "3",
                 "home_features": [
                     "1",

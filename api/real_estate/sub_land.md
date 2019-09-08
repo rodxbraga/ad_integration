@@ -21,7 +21,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
     "access_token": "ca18abccaadd282490e75173f98b8ec6f0c1c6c8",
     "ad_list": [
         {
-           "id": "5555555555",
+            "id": "5555555555",
             "operation": "insert",
             "category": 1100,
             "subject": "Terreno à Venda Super Legal",
@@ -32,8 +32,8 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
             "zipcode": "24230090",
             "params": {
                 "size": "150",
-                "iptu": "1000",
-                "condominio": "500",
+                "iptu": 1000,
+                "condominio": 500,
                 "re_land_type": "2",
                 "re_land_features": [
                     "1",
@@ -46,7 +46,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
             ]
         },
         {
-           "id": "66666666",
+            "id": "66666666",
             "operation": "insert",
             "category": 1100,
             "subject": "Terreno à Venda Super Legal",
@@ -57,8 +57,8 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
             "zipcode": "24230090",
             "params": {
                 "size": "150",
-                "iptu": "1000",
-                "condominio": "500",
+                "iptu": 1000,
+                "condominio": 500,
                 "re_land_type": "2",
                 "re_land_features": [
                     "1",

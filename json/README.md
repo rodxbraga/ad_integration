@@ -24,11 +24,11 @@ Exemplos de JSONs de cada categoria podem ser achados na documentação específ
 
 **A Integração via JSON é suportada para anúncios de todas as categorias da OLX**. Atualmente temos a documentação escrita para as seguintes categorias:
 
-- [Autopeças](https://github.com/olxbr/ad_integration/tree/master/json/autoparts/cat_autoparts.md)
-- [Veículos](https://github.com/olxbr/ad_integration/tree/master/json/autos/cat_autos.md)
-- [Agro & Indústria](https://github.com/olxbr/ad_integration/tree/master/json/agro/cat_agro.md)
+- [Autopeças](autoparts/README.md)
+- [Veículos](autos/README.md)
+- [Agro & Indústria](agro/README.md)
 
-Estamos escrevendo a documentação ad hoc. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
+Estamos escrevendo a documentação sob demanda. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
 
 
 ### Inferência de Inserção, Edição e Deleção de Anúncios
