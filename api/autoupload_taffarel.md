@@ -46,6 +46,6 @@ Várias das validações que antes eram feitas pela API passam a acontecer assin
 | `ERROR_PHONE_TOO_SHORT` | Número de telefone muito curto |
 | `ERROR_PHONE_TOO_LONG` | Número de telefone muito longo |
 
-Ainda está em desenvolvimento um endpoint responsável por trazer o status da publicação de cada anúncio. Esse endpoint será responsável por estes e outros status. Se a sua plataforma **não** requer do status de publicação, recomendamos migrar para a nova API imediatamente.
+Ainda está em desenvolvimento a atualização do endpoint responsável por trazer o status da publicação de cada anúncio, contendo as validações que passam a ser assíncronas. Se a sua plataforma **não** requer do status de publicação, recomendamos migrar para a nova API imediatamente.
 
 Caso precise mostrar o status de publicação, traremos mais detalhes brevemente.
