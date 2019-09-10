@@ -1,6 +1,6 @@
 # Documentação da API de Integração de Anúncios da OLX
 
-## IMPORTANTE: A OLX está prestes a lançar uma **nova versão de sua API de Integração de Anúncios**. Este doc explica o funcionamento da API e detalha a mudança.
+## IMPORTANTE: A OLX está prestes a lançar uma **nova versão de sua API de Integração de Anúncios**. Este doc explica o funcionamento da API e detalha a mudança. Se você já está integrado, [veja aqui o que muda](autoupload_taffarel.md).
 
 A API de Importação de Anúncios da OLX contempla as seguintes funcionalidades:
 
@@ -27,11 +27,13 @@ Um dos pontos críticos da API atual é a discrepância entre o limite disponív
 Por baixo dos panos a nova API trará maior robustez, auxiliando na correção de erros e permitindo melhorias. Erros que hoje acontecem correntemente e melhorias que já identificamos (e são inviáveis de serem realizadas na API atual) já serão atendidas com a nova API.
 
 
-## O que muda com essas mudanças?
+## O que muda com a nova API?
 
 Fora os benefícios acima, do ponto de vista técnico muda pouca coisa. Em especial, algumas validações que eram síncronas passam a ser assíncronas. 
 
-Isso significa mudança nas rotas de `Importação` e `Status de Importação`, pois parte das validações deixam de acontecer sincronamente (alterando retorno das chamadas de Inserção ou Edição de Anúncios) e passarão a estar disponíveis e visíveis via rota de `Status de Publicação`.
+Isso significa mudança nas rotas de `Importação` e `Status de Importação`, pois parte das validações deixam de acontecer sincronamente (alterando retorno das chamadas de Inserção ou Edição de Anúncios) e passarão a estar disponíveis e visíveis via rota de `Status de Publicação`. 
+
+Para ter mais detalhes, [veja aqui o que muda com a nova API](autoupload_taffarel.md).
 
 
 ## Quais as fases do rollout?
