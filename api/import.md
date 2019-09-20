@@ -28,7 +28,7 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | `category` |  | integer | sim | Categoria do anúncio. |
 | `Subject` |  | string | sim | Título do anúncio. Mínimo de 2 e máximo de 90 caracteres. |
 | `Body` |  | string | sim | Descrição do anúncio. Mínimo de 2 e máximo de 6 mil caracteres |
-| `Phone` |  | string númerica | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
+| `Phone` |  | integer | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
 | `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. |
