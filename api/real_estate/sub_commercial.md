@@ -11,8 +11,8 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `size` |  | string numérica | Não | Área do imóvel (m²) |
 | `commercial_type` | `1` para Escritório<br> `2` para Galpão/Depósito<br> `3` para Hotel<br> `4` para Fábrica<br> `5` para Garagem/Vaga<br>`6` para Loja<br>`7` para Outros | string | Não | Tipo de imóvel comercial |
 | `commercial_features` | `1` para Garagem<br> `2` para Segurança 24h<br> `3` para Câmeras de segurança<br> `4` para Elevador<br> `5` para Portaria<br> `6` para Acesso para deficientes | array de strings | Não | Detalhes do imóvel |
-| `iptu` |  | integer | Não | Valor mensal do IPTU |
-| `condominio` |  | integer | Não | Valor mensal do condomínio |
+| `iptu` |  | string numérica | Não | Valor mensal do IPTU |
+| `condominio` |  | string numérica | Não | Valor mensal do condomínio |
 
 Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Comércio e indústria`:
 
