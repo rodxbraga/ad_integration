@@ -13,7 +13,7 @@ O processo de integração de anúncios via API consiste no envio de um arquivo 
 
 A URL usada para envio da requisição é: https://apps.olx.com.br/autoupload/import
 
-O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8`.
+O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8` e o tamanho do payload não pode ultrapassar `1mb`.
 
 
 ## Inserção ou Edição de Anúncios
