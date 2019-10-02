@@ -95,7 +95,7 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 | Serviços<sup>1</sup> |  |
 | Vagas de emprego<sup>1</sup> |  |
 
-<sup>1</sup> Estamos escrevendo a documentação gradualmente. Caso tenha interesse em integrar para uma categoria com documentação ainda não disponível, abra uma Issue ou entre em contato via suporteintegrador@olxbr.com.
+<sup>1</sup> Categoria não suportada atualmente pela API de Importação de Anúncios da OLX
 
 
 ## Deleção de Anúncios
