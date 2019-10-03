@@ -16,7 +16,7 @@ Cada subcategoria de Veículos tem seu conjunto de parâmetros e valores especí
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
-- [Carros, vans e utilitários](sub_autos.md)
+- [Carros, vans e utilitários](sub_auto.md)
 - [Motos](sub_motorcycle.md)
 - [Ônibus](sub_bus.md)
 - [Caminhões](sub_truck.md)
