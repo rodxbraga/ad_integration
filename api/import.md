@@ -13,7 +13,7 @@ O processo de integração de anúncios via API consiste no envio de um arquivo 
 
 A URL usada para envio da requisição é: https://apps.olx.com.br/autoupload/import
 
-O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8`.
+O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8` e o tamanho do payload não pode ultrapassar `1mb`.
 
 
 ## Inserção ou Edição de Anúncios
@@ -28,7 +28,7 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | `category` |  | integer | sim | Categoria do anúncio. |
 | `Subject` |  | string | sim | Título do anúncio. Mínimo de 2 e máximo de 90 caracteres. |
 | `Body` |  | string | sim | Descrição do anúncio. Mínimo de 2 e máximo de 6 mil caracteres |
-| `Phone` |  | string númerica | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
+| `Phone` |  | integer | sim | Telefone para contato. Mínimo de 10 e máximo de 11 caracteres. Enviar DDD + Telefone sem caracteres especiais ou espaços. |
 | `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. |
@@ -95,7 +95,7 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 | Serviços<sup>1</sup> |  |
 | Vagas de emprego<sup>1</sup> |  |
 
-<sup>1</sup> Estamos escrevendo a documentação gradualmente. Caso tenha interesse em integrar para uma categoria com documentação ainda não disponível, abra uma Issue ou entre em contato via suporteintegrador@olxbr.com.
+<sup>1</sup> Categoria não suportada atualmente pela API de Importação de Anúncios da OLX
 
 
 ## Deleção de Anúncios

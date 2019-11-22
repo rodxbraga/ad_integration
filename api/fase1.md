@@ -1,10 +1,8 @@
-# Mudanças com a nova API de Integração de Anúncios
+# Mudanças na Fase 1 de Migração para a API de Importação de Anúncios da OLX
 
 A OLX está migrando seus integradores para uma nova API de Importação de Anúncios. Se você já está integrado via API com a OLX, é importante deixar claro o que muda na sua vida. 
 
-Para felicidade geral, do ponto de vista técnico muda pouca coisa. E do ponto de vista de experiência, acreditamos que vai mudar bastante.
-
-A grande mudança - do ponto de vista técnico - está na resposta síncrona da API. Teremos menos casos sendo validados sincronamente. A seguir estão os casos validados sincronamente pela API:
+A grande mudança - do ponto de vista técnico - está na resposta síncrona da API. Teremos algumas poucas validações síncronas adicionais, em linha com o que os outros canais de inserção (JSON, XML e inserção manual) já aplicam.
 
 | Código | Descrição  |
 |-----------------------|-----------------------------------------|
@@ -13,15 +11,6 @@ A grande mudança - do ponto de vista técnico - está na resposta síncrona da 
 | `NO_IMAGE` | Anúncio enviado sem imagens |
 | `NO_REGION` | CEP enviado corresponde a região inválida  |
 | `NO_REGION` | CEP enviado em formato inválido |
-
-Caso algum anúncio enviado viole algumas dessas validações, é importante notar que a importação falhará, **mesmo** se houver anúncios válidos na carga.
-
-## Validações deprecadas
-
-Várias das validações que antes eram feitas pela API passam a acontecer assincronamente. Ou seja, não serão retornadas pela nova API e terão que ser consultadas em outros endpoints. A saber:
-
-| Código | Descrição  |
-|----------------------------------|--------------------------------------------|
 | `ERROR_TYPE_INVALID` | Tipo inválido |
 | `ERROR_BODY_TOO_SHORT` | Descrição muito curta  |
 | `ERROR_BODY_TOO_LONG` | Descrição muito longa  |
@@ -45,7 +34,17 @@ Várias das validações que antes eram feitas pela API passam a acontecer assin
 | `ERROR_PHONE_INVALID` | Número de telefone inválido  |
 | `ERROR_PHONE_TOO_SHORT` | Número de telefone muito curto |
 | `ERROR_PHONE_TOO_LONG` | Número de telefone muito longo |
+| `ERROR_BODY_HTML`<sup>1</sup> | Descrição do anúncio contém tag HTML |
 
-Ainda está em desenvolvimento a atualização do endpoint responsável por trazer o status da publicação de cada anúncio, contendo as validações que passam a ser assíncronas. Se a sua plataforma **não** requer do status de publicação, recomendamos migrar para a nova API imediatamente.
+<sup>1</sup> Nova validação síncrona, antes não existente na API de Importação da OLX.
 
-Caso precise mostrar o status de publicação, traremos mais detalhes brevemente.
+
+## Quem é elegível para a mudança nessa Fase 1?
+
+Todos os integradores serão migrados nessa Fase 1, incluindo quem consulta a rota de Status de Publicação de Anúncios já existente.
+
+
+
+## Como será a migração dos integradores para nova API durante essa Fase 1?
+
+Todos os integradores serão migrados nessa Fase 1, incluindo quem consulta a rota de Status de Publicação de Anúncios já existente. Faremos a migração dos anunciantes de cada integrador elegível gradualmente, de modo a garantir que consigamos entender se há impacto na capacidade de inserção de anúncios da OLX.
