@@ -5,7 +5,7 @@ Para a Fase 2, a maior mudança é a remoção de boa parte das validações sí
 
 ## Data limite para adaptação
 
-Ainda não temos data definida, mas provavelmente no segundo semestre de 2020. 
+Ainda não temos data definida, mas provavelmente no segundo semestre de 2020. Comunicaremos com tempo amplo para que vocês se adequem a esse novo modelo.
 
 A partir dessa data, não teremos boa parte das validações síncronas existentes na API de Importação. Vai continuar funcionando, mas para saber o que houve com o anúncio será necessário consultar a rota de Status de Publicação (na qual estamos trabalhando).
 

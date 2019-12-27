@@ -17,12 +17,12 @@ A visão final da nova API traz diferentes benefícios, como expansão para dife
 ## **Fase 1**: Migração dos integradores para nova API
 Migração de todos os integradores para a nova API, emulando contrato e funcionamento da API atual. Mais detalhes na [seção que detalha essa primeira Fase](fase1.md). 
 
-**Previsão**: Alteração durante Outubro/2019
+**Status**: Concluída
 
 ## **Fase 2**: Adequação a validações assíncronas
 Remoção da maior parte de validações síncronas, com necessidade do intregrador passar a utilizar novos mecanismos de consulta de status de publicação do anúncio. Expansão para novas categorias.
 
-**Previsão**: Início no final de 2019, com período de adaptação até meio de 2020.
+**Status**: Início no final de 2019, com período de adaptação até meio de 2020.
 
 
 # Dúvidas e sugestões
