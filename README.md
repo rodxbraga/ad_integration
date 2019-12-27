@@ -19,12 +19,12 @@ Nem todas as categorias de anúncios na OLX são suportadas pelas integrações 
 
 | Categoria | Subcategoria | JSON | XML | API |
 |-------------------------|-----------------------------------------|------|-----|-----|
-| Imóveis | Apartamentos | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Casas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Aluguel de quartos | Sim<sup>1</sup> | Não | Sim<sup>1</sup>  |
-| Imóveis | Temporada | Sim<sup>1</sup> | Não | Sim<sup>1</sup>  |
-| Imóveis | Terrenos sítios e fazendas | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Comércio e indústria | Sim<sup>1</sup> | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Apartamentos | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Casas | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Aluguel de quartos | [Sim](json/real_estate/README.md) | Não | Sim<sup>1</sup>  |
+| Imóveis | Temporada | [Sim](json/real_estate/README.md) | Não | Sim<sup>1</sup>  |
+| Imóveis | Terrenos sítios e fazendas | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Comércio e indústria | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
 | Autos e peças | Carros vans e utilitários | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
 | Autos e peças | Motos | Sim<sup>1</sup> | Não | [Sim](api/autos/README.md) |
 | Autos e peças | Ônibus | Sim<sup>1</sup> | Não | Sim<sup>1</sup> |

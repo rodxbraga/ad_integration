@@ -26,6 +26,7 @@ Exemplos de JSONs de cada categoria podem ser achados na documentação específ
 
 - [Autopeças](autoparts/README.md)
 - [Veículos](autos/README.md)
+- [Imóveis](real_estate/README.md)
 - [Agro & Indústria](agro/README.md)
 
 Estamos escrevendo a documentação sob demanda. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
