@@ -50,11 +50,11 @@ Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrad
 | [Autos e peças](autos/README.md) | [Ônibus](autos/README.md) |
 | [Autos e peças](autos/README.md) | [Caminhões](autos/README.md) |
 | [Autos e peças](autos/README.md) | [Barcos e aeronaves](autos/README.md) |
-| Peças e acessórios<sup>1</sup> | Carros vans e utilitários<sup>1</sup> |
-| Peças e acessórios<sup>1</sup> | Motos<sup>1</sup> |
-| Peças e acessórios<sup>1</sup> | Ônibus<sup>1</sup> |
-| Peças e acessórios<sup>1</sup> | Caminhões<sup>1</sup> |
-| Peças e acessórios<sup>1</sup> | Barcos e aeronaves<sup>1</sup> |
+| [Peças e acessórios](autoparts/README.md)  | [Carros vans e utilitários](autoparts/README.md) |
+| [Peças e acessórios](autoparts/README.md)| [Motos](autoparts/README.md) |
+| [Peças e acessórios](autoparts/README.md) | [Ônibus](autoparts/README.md) |
+| [Peças e acessórios](autoparts/README.md)| [Caminhões](autoparts/README.md) |
+| [Peças e acessórios](autoparts/README.md) | [Barcos e aeronaves](autoparts/README.md) |
 | Para a sua casa<sup>1</sup> | Móveis<sup>1</sup> |
 | Para a sua casa<sup>1</sup> | Eletrodomésticos<sup>1</sup> |
 | Para a sua casa<sup>1</sup> | Materiais de construção e jardim<sup>1</sup> |
