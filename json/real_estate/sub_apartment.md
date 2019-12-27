@@ -1,6 +1,6 @@
-### Categoria `Apartamentos`
+### Subcategoria `Apartamentos`
 
-Para esta categoria, é necessário preencher o parâmetro `category` com o valor `1020`.
+Para esta subcategoria, é necessário preencher o parâmetro `category` com o valor `1020`.
 
 Além disso, há parâmetros específicos para esta subcategoria, que devem constar dentro do parâmetro `params` e preenchidos conforme a tabela a seguir:
 

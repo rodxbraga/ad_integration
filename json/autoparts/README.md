@@ -1,4 +1,4 @@
-# Documentação para a Importação via JSON para Peças na OLX
+# Documentação para a Importação via JSON para Autopeças na OLX
 
 Este manual tem como objetivo auxiliar a implantação de importação de anúncios de autopeças para as subcategorias `Carros, vans e utilitários`, `Ônibus`, `Caminhões`, `Motos` e `Barcos e aeronaves`, via JSON.
 
@@ -17,7 +17,7 @@ Para que o anúncio seja categorizado corretamente na OLX, é preciso que cada a
 
 ### Parâmetros específicos por subcategoria
 
-Cada subcategoria de autopeças tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](/json/README.md).
+Cada subcategoria de Autopeças tem seu conjunto de parâmetros e valores específicos. Para isso, você deverá considerar os parâmetros específicos para cada subcategoria, bem como os [parâmetros gerais para quaisquer anúncio na OLX](/json/README.md).
 
 Exemplos de JSONs completos de cada subcategoria estão disponíveis na página de cada subcategoria.
 
