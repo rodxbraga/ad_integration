@@ -8,7 +8,6 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | Parâmetro | Valor | Tipo | Obrigatório | Descrição |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|----------------------------|
 | `room_rent_features` | `1` para Armário no quarto<br> `2` para Banheiro no quarto<br> `3` para Mobiliado<br> `4` para Ar condicionado<br> `5` para Varanda<br> `6` para Aquecimento<br> `7` para Internet<br> `8` para TV a cabo | array de strings | Não | Detalhes do quarto |
-| `price` |  | integer | Não | Preço de aluguel do quarto |
 
 Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Aluguel de quartos`:
 
@@ -27,7 +26,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
             "price": 1000,
             "zipcode": "24230090",
             "params": {
-                "apartment_features": [
+                "room_rent_features": [
                     "1",
                     "2"
                 ]
@@ -48,7 +47,7 @@ Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcat
             "price": 1000,
             "zipcode": "24230090",
             "params": {
-                "apartment_features": [
+                "room_rent_features": [
                     "1",
                     "2"
                 ]

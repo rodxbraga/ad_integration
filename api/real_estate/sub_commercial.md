@@ -7,13 +7,12 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 
 | Parâmetro | Valor | Tipo | Obrigatório | Descrição |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|----------------------------|
-| `garage_spaces` | `0` para 0 quartos<br> `1` para 1 quarto<br> `2` para 2 quartos<br> `3` para 3 quartos<br> `4` para 4 quartos<br> `5` para 5 ou mais quartos<br> | string | Não | Quantidade de vagas de garagem |
-| `size` |  | integer | Não | Área do imóvel (m²) |
+| `garage_spaces` | `0` para 0 vagas<br> `1` para 1 vaga<br> `2` para 2 vagas<br> `3` para 3 vagas<br> `4` para 4 vagas<br> `5` para 5 ou mais vagas<br> | string | Não | Quantidade de vagas de garagem |
+| `size` |  | string numérica | Não | Área do imóvel (m²) |
 | `commercial_type` | `1` para Escritório<br> `2` para Galpão/Depósito<br> `3` para Hotel<br> `4` para Fábrica<br> `5` para Garagem/Vaga<br>`6` para Loja<br>`7` para Outros | string | Não | Tipo de imóvel comercial |
 | `commercial_features` | `1` para Garagem<br> `2` para Segurança 24h<br> `3` para Câmeras de segurança<br> `4` para Elevador<br> `5` para Portaria<br> `6` para Acesso para deficientes | array de strings | Não | Detalhes do imóvel |
-| `price` |  | integer | Não | Preço de venda do imóvel |
-| `iptu` |  | integer | Não | Valor mensal do IPTU |
-| `condominio` |  | integer | Não | Valor mensal do condomínio |
+| `iptu` |  | string numérica | Não | Valor mensal do IPTU |
+| `condominio` |  | string numérica | Não | Valor mensal do condomínio |
 
 Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Comércio e indústria`:
 
