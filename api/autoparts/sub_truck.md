@@ -14,44 +14,47 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 Aqui está um exemplo de JSON para a subcategoria `Caminhões`:
 
 ```json
-[  
-   {  
-      "subject":"Peça de caminhão em ótimo estado",
-      "body":"Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":2102,
-      "id":"TRUCK005_ROD1",
-      "images":[  
-         "http://www.sitedeautos.com/img1.jpg",
-         "http://www.sitedeautos.com/img2.jpg"
-      ],
-      "params":{  
-         "carcolor":"1",
-         "parts_name_cars":"9",
-         "condition":"1",
-         "exchange":"2"
-      },
-      "price":1000,
-      "type":"s",
-      "zipcode":"20521160"
-   },
-   {  
-      "subject":"Peça de caminhão em ótimo estado",
-      "body":"Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
-      "category":2102,
-      "id":"TRUCK005_ROD2",
-      "images":[  
-         "http://www.sitedeautos.com/img1.jpg",
-         "http://www.sitedeautos.com/img2.jpg"
-      ],
-      "params":{  
-         "carcolor":"1",
-         "parts_name_cars":"9",
-         "condition":"1",
-         "exchange":"2"
-      },
-      "price":1000,
-      "type":"s",
-      "zipcode":"20521160"
-   }
-]
+{
+    "access_token": "ca18abccaadd282490e75173f98b8ec6f0c1c6c8",
+    "ad_list": [
+        {
+            "subject": "Peça de caminhão em ótimo estado",
+            "body": "Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
+            "category": 2102,
+            "id": "TRUCK005_ROD1",
+            "images": [
+                "http://www.sitedeautos.com/img1.jpg",
+                "http://www.sitedeautos.com/img2.jpg"
+            ],
+            "params": {
+                "carcolor": "1",
+                "parts_name_cars": "9",
+                "condition": "1",
+                "exchange": "2"
+            },
+            "price": 1000,
+            "type": "s",
+            "zipcode": "20521160"
+        },
+        {
+            "subject": "Peça de caminhão em ótimo estado",
+            "body": "Peça de caminhão do tipo X, usado no caso Y.\nPeça em excelente estado, com características X, Y e Z.",
+            "category": 2102,
+            "id": "TRUCK005_ROD2",
+            "images": [
+                "http://www.sitedeautos.com/img1.jpg",
+                "http://www.sitedeautos.com/img2.jpg"
+            ],
+            "params": {
+                "carcolor": "1",
+                "parts_name_cars": "9",
+                "condition": "1",
+                "exchange": "2"
+            },
+            "price": 1000,
+            "type": "s",
+            "zipcode": "20521160"
+        }
+    ]
+}
 ```

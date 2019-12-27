@@ -1,6 +1,6 @@
-### Categoria `Motos`
+### Subcategoria `Motos`
 
-Para esta categoria, é necessário preencher o parâmetro `category` com o valor `2060`.
+Para esta subcategoria, é necessário preencher o parâmetro `category` com o valor `2060`.
 
 Além disso, há parâmetros específicos para esta subcategoria, que devem constar dentro do parâmetro `params` e preenchidos conforme a tabela a seguir:
 
