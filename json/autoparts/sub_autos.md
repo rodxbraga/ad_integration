@@ -11,7 +11,7 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 | `condition` | `1` para Novo<br>`2` para Usado | String | sim | Produto novo ou de segunda mão  |
 | `exchange` | `1` para Sim<br>`2` para Não | String | não<sup>1</sup> | Aceita troca como pagamento |
 
-<sup>1</sup>: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou `0`, a operação vai falhar (a menos, é claro, que o valor `0` seja esperado para esse parâmetro).
+1: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou 0, a operação vai falhar (a menos, é claro, que o valor 0 seja esperado para esse parâmetro).
 
 Aqui está um exemplo de JSON para a subcategoria `Carros, vans e utilitários`:
 
