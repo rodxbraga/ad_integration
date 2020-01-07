@@ -17,12 +17,8 @@ Para a montagem do JSON, é necessário respeitar parâmetros genéricos e espec
 | `zipcode` |  | string numérica | sim | CEP do local onde o produto está disponível.|
 | `type` | `s` | string | sim | Tipo de oferta do anúncio. O valor `s` indica que o produto está à venda. |
 
-<<<<<<< Updated upstream
-=======
 <sup>1</sup>: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou `0`, a operação vai falhar (a menos, é claro, que o valor `0` seja esperado para esse parâmetro).
 
-
->>>>>>> Stashed changes
 Exemplos de JSONs de cada categoria podem ser achados na documentação específica por categoria.
 
 
