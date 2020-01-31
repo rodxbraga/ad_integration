@@ -7,12 +7,14 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 
 | Parâmetro | Valor | Tipo | Obrigatório | Descrição |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------|-------------|----------------------------|
-| `garage_spaces` | `0` para 0 vagas<br> `1` para 1 vaga<br> `2` para 2 vagas<br> `3` para 3 vagas<br> `4` para 4 vagas<br> `5` para 5 ou mais vagas<br> | string | Não | Quantidade de vagas de garagem |
-| `size` |  | string numérica | Não | Área do imóvel (m²) |
-| `commercial_type` | `1` para Escritório<br> `2` para Galpão/Depósito<br> `3` para Hotel<br> `4` para Fábrica<br> `5` para Garagem/Vaga<br>`6` para Loja<br>`7` para Outros | string | Não | Tipo de imóvel comercial |
-| `commercial_features` | `1` para Garagem<br> `2` para Segurança 24h<br> `3` para Câmeras de segurança<br> `4` para Elevador<br> `5` para Portaria<br> `6` para Acesso para deficientes | array de strings | Não | Detalhes do imóvel |
-| `iptu` |  | string numérica | Não | Valor mensal do IPTU |
-| `condominio` |  | string numérica | Não | Valor mensal do condomínio |
+| `garage_spaces` | `0` para 0 vagas<br> `1` para 1 vaga<br> `2` para 2 vagas<br> `3` para 3 vagas<br> `4` para 4 vagas<br> `5` para 5 ou mais vagas<br> | string | Não<sup>1</sup> | Quantidade de vagas de garagem |
+| `size` |  | string numérica | Não<sup>1</sup> | Área do imóvel (m²) |
+| `commercial_type` | `1` para Escritório<br> `2` para Galpão/Depósito<br> `3` para Hotel<br> `4` para Fábrica<br> `5` para Garagem/Vaga<br>`6` para Loja<br>`7` para Outros | string | Não<sup>1</sup> | Tipo de imóvel comercial |
+| `commercial_features` | `1` para Garagem<br> `2` para Segurança 24h<br> `3` para Câmeras de segurança<br> `4` para Elevador<br> `5` para Portaria<br> `6` para Acesso para deficientes | array de strings | Não<sup>1</sup> | Detalhes do imóvel |
+| `iptu` |  | string numérica | Não<sup>1</sup> | Valor mensal do IPTU |
+| `condominio` |  | string numérica | Não<sup>1</sup> | Valor mensal do condomínio |
+
+<sup>1</sup>: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou `0`, a operação vai falhar (a menos, é claro, que o valor `0` seja esperado para esse parâmetro).
 
 Aqui está um exemplo de JSON para inserção ou edição de anúncios na subcategoria `Comércio e indústria`:
 
