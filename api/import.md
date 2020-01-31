@@ -13,7 +13,7 @@ O processo de integração de anúncios via API consiste no envio de um arquivo 
 
 A URL usada para envio da requisição é: https://apps.olx.com.br/autoupload/import
 
-O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8` e o tamanho do payload não pode ultrapassar `1mb`.
+O nosso servidor deve receber a chamada com método do tipo `PUT` e o header enviado deverá ser: `Content-type: application/json`. O formato do *encode* do JSON deverá ser `UTF-8` e o tamanho do payload não pode ultrapassar 1 MB.
 
 
 ## Inserção ou Edição de Anúncios
@@ -32,15 +32,13 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. |
-<<<<<<< Updated upstream
 | `params` |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | `images` | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
-=======
 | `params` |  | array | não<sup>1</sup> | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | `images` | URL da imagem | array de string | não<sup>1</sup> | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 
 <sup>1</sup>: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou `0`, a operação vai falhar (a menos, é claro, que o valor `0` seja esperado para esse parâmetro).
->>>>>>> Stashed changes
+
 
 Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrados na documentação de cada categoria:
 
