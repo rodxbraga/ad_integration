@@ -22,4 +22,4 @@ Exemplos de JSONs completos de cada subcategoria estão disponíveis na página 
 - [Aluguel de quartos](sub_roomrent.md)
 - [Temporada](sub_season.md)
 - [Terrenos, sítios e fazendas](sub_land.md)
-- [Comércio de Indústria](sub_commercial.md)
+- [Comércio e Indústria](sub_commercial.md)

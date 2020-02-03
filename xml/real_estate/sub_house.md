@@ -23,7 +23,7 @@ Além disso, há parâmetros específicos para esta subcategoria, que devem cons
 |------------------|---------|------------------|-------------|
 | `<SubTipoImovel>` | Consulte tabela anterior | Sim | Define a categoria onde o anúncio estará localizado na OLX |
 | `<QtdDormitorios>` | `0` para 0 quartos<br> `1` para 1 quarto<br> `2` para 2 quartos<br> `3` para 3 quartos<br> `4` para 4 quartos<br> `5` para 5 ou mais quartos<br> | Sim | Quantidade de quartos |
-| `<QtdBanheiros>` | `0` para 0 banheiros<br>`0` para 1 banheiro<br> `2` para 2 banheiros<br> `3` para 3 banheiros<br> `4` para 4 banheiros<br> `5` para 5 ou mais banheiros<br> | Não | Quantidade de banheiros |
+| `<QtdBanheiros>` | `0` para 0 banheiros<br>`1` para 1 banheiro<br> `2` para 2 banheiros<br> `3` para 3 banheiros<br> `4` para 4 banheiros<br> `5` para 5 ou mais banheiros<br> | Não | Quantidade de banheiros |
 | `<QtdVagas>` | `0` para 0 vagas<br> `1` para 1 vaga<br> `2` para 2 vagas<br> `3` para 3 vagas<br> `4` para 4 vagas<br> `5` para 5 ou mais vagas<br> | Não | Quantidade de vagas de garagem |
 
 Aqui está um exemplo de XML para inserção ou edição de anúncios na subcategoria `Casas`:
