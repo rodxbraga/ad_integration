@@ -39,4 +39,4 @@ Cada subcategoria pode ter parâmetros específicos para cada uma delas. A docum
 - [Apartamentos](sub_apartment.md)
 - [Casas](sub_house.md)
 - [Terrenos, sítios e fazendas](sub_land.md)
-- [Comércio de Indústria](sub_commercial.md)
+- [Comércio e Indústria](sub_commercial.md)
