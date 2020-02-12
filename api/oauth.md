@@ -4,7 +4,7 @@ Este documento descreve como utilizar o protocolo oAuth 2.0 como forma de autent
 
 
 ## Registro da Aplicação
-Antes de iniciar o protocolo de autenticação com o servidor olx.com.br, o cliente deverá registrar sua aplicação, fornecendo os seguintes dados para novointegrador@olxbr.com:
+Antes de iniciar o protocolo de autenticação com o servidor olx.com.br, o cliente deverá registrar sua aplicação, fornecendo os seguintes dados para suporteintegrador@olxbr.com:
 
 - Nome do cliente
 - Nome da aplicação
