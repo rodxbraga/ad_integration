@@ -32,6 +32,32 @@ Para a montagem do XML, é necessário respeitar parâmetros genéricos e espec�
 | `<AreaUtil>` | Número inteiro, sem parte decimal | Não | Tamanho em metros quadrados do imóvel. Se a `<AreaTotal>` for preenchida, a tag `<AreaUtil>` é ignorada. |
 | `<Foto>` `<URLArquivo>` |  | Não | URL em que a imagem está hospedada |
 | `<Foto>` `<Principal>` | `1` para definir a imagem principal | Não | Valor `1` caso a imagem seja a imagem principal do anúncio |
+| `<Videos>` `<Video>`<sup>1</sup> |  | Não | URL de video<sup>2</sup> que será inserida no anúncio do olx.com.br deve ser apenas do https://www.youtube.com. Aceito 1 vídeo por anúncio. |
+
+<sup>1</sup>: **A inserção de vídeo está em fase Beta** e pode sofrer alterações com o tempo. **A disponibilidade via XML é apenas para categoria de Imóveis.**
+
+<sup>2</sup>: Formato recomendado de URL: https://www.youtube.com/watch?v=Vt&28raiI1q5
+
+Segue um exemplo de envio de Vídeo:
+
+```  
+
+ <Videos>
+        <Video>https://www.youtube.com/watch?v=Vt28raiI1q5</Video>
+ </Videos>
+ 
+```
+
+***Observações:***
+
+*- Caso seja necessário alterar o **vídeo** do anúncio, deve-se alterar a URL e realizar uma edição em outro campo, por exemplo: Descrição e título.*
+
+*- A tag de <Videos> deve estar dentro da estrutura de `<Imovel>`. Seguir a mesma estrutura para `<Fotos>`*
+
+*- Caso seja **enviado mais de um link** de vídeo no anúncio **será publicado apenas o primeiro** da listagem.*
+
+*-Em caso de **dúvidas entre em contato: video.experience@olxbr.com***
+
 
 
 Cada subcategoria pode ter parâmetros específicos para cada uma delas. A documentação destas pode ser achada na página de cada subcategoria - onde também você encontrará exemplos de XMLs para cada subcategoria.
