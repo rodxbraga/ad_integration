@@ -32,12 +32,31 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. |
-| `params` |  | array | não | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
-| `images` | URL da imagem | array de string | não | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 | `params` |  | array | não<sup>1</sup> | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | `images` | URL da imagem | array de string | não<sup>1</sup> | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
+| `videos`<sup>2</sup> | URL do vídeo | array de string | não<sup>1</sup> | URL de vídeo<sup>3</sup>. que será inserida no anúncio do olx.com.br deve ser apenas do https://www.youtube.com/. Aceito 1 vídeo por anúncio! |
 
 <sup>1</sup>: Se você não quer enviar um parâmetro não-obrigatório, deixe de enviar o parâmetro no payload. Se você enviar o parâmetro com valor vazio ou `0`, a operação vai falhar (a menos, é claro, que o valor `0` seja esperado para esse parâmetro).
+
+<sup>2</sup>: **A inserção de vídeo está em fase Beta** e pode sofrer alterações com o tempo. **A disponibilidade via API é para categoria de Autos e Imóveis.**
+
+<sup>3</sup> Formato recomendado de URL: https://www.youtube.com/watch?v=Vt&28raiI1q5
+
+Segue um exemplo de envio de Vídeo: 
+
+       },
+        "videos": [
+            "https://www.youtube.com/watch?v=Vt&28raiI1q5"
+        ]
+    },
+
+***Observações:***
+
+*- Caso seja necessário alterar o vídeo do anúncio, deve-se alterar a URL e realizar uma edição em outro campo, por exemplo: Descrição e título.*
+
+*- Caso seja **enviado mais de um link** de vídeo no anúncio **será publicado apenas o primeiro da listagem.***
+
+*- Em caso de **dúvidas entre em contato: video.experience@olxbr.com***
 
 
 Os parâmetros específicos de categorias e JSONs de exemplo podem ser encontrados na documentação de cada categoria:
