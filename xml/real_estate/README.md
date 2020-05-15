@@ -52,11 +52,11 @@ Segue um exemplo de envio de Vídeo:
 
 *- Caso seja necessário alterar o **vídeo** do anúncio, deve-se alterar a URL e realizar uma edição em outro campo, por exemplo: Descrição e título.*
 
-*- A tag de <Videos> deve estar dentro da estrutura de `<Imovel>`. Seguir a mesma estrutura para `<Fotos>`*
+*- A tag de `<Videos>` deve estar dentro da estrutura de `<Imovel>`. Seguir a mesma estrutura para `<Fotos>`*
 
 *- Caso seja **enviado mais de um link** de vídeo no anúncio **será publicado apenas o primeiro** da listagem.*
 
-*-Em caso de **dúvidas entre em contato: video.experience@olxbr.com***
+*- Em caso de **dúvidas entre em contato: video.experience@olxbr.com***
 
 
 
