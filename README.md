@@ -7,8 +7,7 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 
 | Modelo de Integração | Versão em produção | Categorias atendidas | Próximos passos |
 |----------------------|----------------------------|----------------------|---------------------------------------------------------------------------------------|
-| [API](api/README.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. Preparar comunicação e rollout da Fase 2 da nova API de Integração de Anúncios. |
-| [JSON](json/README.md) | Estável | Todas as categorias | Escrever documentação de categorias não-documentadas. |
+| [API](api/README.md) | Estável | Autos e Imóveis | Escrever documentação de categorias não-documentadas. Preparar comunicação e rollout da Fase 2 da nova API de Integração de Anúncios. |
 | [XML](xml/real_estate/README.md) | Estável | Imóveis | Nenhuma evolução prevista. Documentação atualizada.
 
 
