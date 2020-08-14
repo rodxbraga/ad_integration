@@ -15,24 +15,24 @@ A OLX hoje suporta dois tipos de importação de anúncios, para anunciantes que
 
 Nem todas as categorias de anúncios na OLX são suportadas pelas integrações existentes:
 
-| Categoria | Subcategoria | JSON | XML | API |
-|-------------------------|-----------------------------------------|------|-----|-----|
-| Imóveis | Apartamentos | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Casas | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Aluguel de quartos | [Sim](json/real_estate/README.md) | Não | Sim  |
-| Imóveis | Temporada | [Sim](json/real_estate/README.md) | Não | Sim  |
-| Imóveis | Terrenos sítios e fazendas | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Imóveis | Comércio e indústria | [Sim](json/real_estate/README.md) | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
-| Autos e peças | Carros vans e utilitários | Sim | Não | [Sim](api/autos/README.md) |
-| Autos e peças | Motos | Sim | Não | [Sim](api/autos/README.md) |
-| Autos e peças | Ônibus | Sim | Não | Sim |
-| Autos e peças | Caminhões | [Sim](json/auto/README.md) | Não | Sim |
-| Autos e peças | Barcos e aeronaves | Sim | Não | Sim |
-| Peças e acessórios | Carros vans e utilitários | [Sim](json/autoparts/README.md) | Não | [Sim](api/autoparts/README.md) |
-| Peças e acessórios | Motos | [Sim](json/autoparts/README.md) | Não | [Sim](api/autoparts/README.md) |
-| Peças e acessórios | Ônibus | [Sim](json/autoparts/README.md) | Não | [Sim](api/autoparts/README.md) |
-| Peças e acessórios | Caminhões | [Sim](json/autoparts/README.md) | Não | [Sim](api/autoparts/README.md) |
-| Peças e acessórios | Barcos e aeronaves | [Sim](json/autoparts/README.md) | Não | [Sim](api/autoparts/README.md) |
+| Categoria | Subcategoria | XML | API |
+|-------------------------|-----------------------------------------|-----|-----|
+| Imóveis | Apartamentos | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Casas | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Aluguel de quartos | Não | Sim  |
+| Imóveis | Temporada | Não | Sim  |
+| Imóveis | Terrenos sítios e fazendas | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Imóveis | Comércio e indústria | [Sim](xml/real_estate/README.md) | [Sim](api/real_estate/README.md) |
+| Autos e peças | Carros vans e utilitários | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Motos | Não | [Sim](api/autos/README.md) |
+| Autos e peças | Ônibus | Não | Sim |
+| Autos e peças | Caminhões | Não | Sim |
+| Autos e peças | Barcos e aeronaves | Não | Sim |
+| Peças e acessórios | Carros vans e utilitários | Não | [Sim](api/autoparts/README.md) |
+| Peças e acessórios | Motos | Não | [Sim](api/autoparts/README.md) |
+| Peças e acessórios | Ônibus | Não | [Sim](api/autoparts/README.md) |
+| Peças e acessórios | Caminhões | Não | [Sim](api/autoparts/README.md) |
+| Peças e acessórios | Barcos e aeronaves| Não | [Sim](api/autoparts/README.md) |
 
 
 ## Perguntas e Dúvidas Frequentes
