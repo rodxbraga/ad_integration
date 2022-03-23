@@ -31,7 +31,7 @@ Exemplos de JSONs de cada categoria podem ser achados na documentação específ
 - [Imóveis](real_estate/README.md)
 - [Agro & Indústria](agro/README.md)
 
-Estamos escrevendo a documentação sob demanda. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos abrir uma Issue ou entrar em contato via suporteintegrador@olxbr.com.
+Estamos escrevendo a documentação sob demanda. Caso tenha interesse em integrar para uma categoria não contemplada, recomendamos entrar em contato via suporteintegrador@olxbr.com.
 
 
 ### Inferência de Inserção, Edição e Deleção de Anúncios
