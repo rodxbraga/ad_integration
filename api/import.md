@@ -32,6 +32,7 @@ Para uma inserção ou edição de anúncios, é necessário montar o JSON com p
 | `type` | `s` ou `u`  | string | sim | Tipo de oferta do anúncio. `s` para venda e `u` para aluguel. |
 | `price` |  | integer | não | Preço do anúncio (não aceita centavos) |
 | `zipcode` |  | string numérica | sim | O CEP do anúncio. |
+| `phone_hidden` | `true` ou `false`  | boolean | não | Ocultar telefone? `true` para ocultar e `false` para mostrar o telefone no anúncio. Caso não envie o comando o mesmo será interpretado como 'false'. Enviar os valores sem aspas |
 | `params` |  | array | não<sup>1</sup> | Lista de parâmetros com as características do anúncio. Os valores dessa lista variam de acordo com a categoria do anúncio. |
 | `images` | URL da imagem | array de string | não<sup>1</sup> | URL de imagens que serão inseridas no anúncio do olx.com.br. Não pode haver URLs repetidas neste array. Máximo de 20 imagens. Importante: a primeira imagem da lista será a imagem principal do anúncio! |
 | `videos`<sup>2</sup> | URL do vídeo | array de string | não<sup>1</sup> | URL de vídeo<sup>3</sup>. que será inserida no anúncio do olx.com.br deve ser apenas do https://www.youtube.com/. Aceito 1 vídeo por anúncio! |
